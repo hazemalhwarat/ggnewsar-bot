@@ -20,7 +20,7 @@ GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 
 # =============== إعداد Gemini ===============
 genai.configure(api_key=GEMINI_API_KEY)
-MODEL = genai.GenerativeModel("gemini-2.0-flash")
+MODEL = genai.GenerativeModel("gemini-2.5-flash")
 
 # =============== ملف تتبع الأخبار المرسلة سابقاً ===============
 SEEN_FILE = "seen_articles.json"
