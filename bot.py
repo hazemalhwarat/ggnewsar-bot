@@ -5,6 +5,7 @@ GGNewsAR Bot — RSS to Telegram (نسخة بدون AI)
 - يقرأ كل RSS feeds من feeds.py
 - يرسل الجديد فقط لتيليقرام: المصدر + العنوان + الوصف + الرابط
 - أول تشغيل: يسكّت كل شي حالياً ويبدأ من الجديد فقط
+- يتجاهل أي خبر أقدم من MAX_AGE_HOURS ساعة
 - ما يستخدم Gemini أو أي AI
 """
 
@@ -34,6 +35,7 @@ MAX_ENTRIES_PER_FEED  = 10         # كم خبر نفحص من كل مصدر
 MAX_MSG_PER_RUN       = 100        # حماية من الفيضان
 SEND_DELAY            = 0.8        # ثواني بين كل رسالتين
 REQUEST_TIMEOUT       = 20
+MAX_AGE_HOURS         = 48         # تجاهل أي خبر أقدم من هذا
 
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -79,6 +81,23 @@ def clean_html(text: str) -> str:
     text = html.unescape(text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
+
+
+def is_recent(entry) -> bool:
+    """يرجّع True لو الخبر منشور خلال آخر MAX_AGE_HOURS ساعة."""
+    published = (
+        entry.get("published_parsed")
+        or entry.get("updated_parsed")
+    )
+    if not published:
+        # ما في تاريخ = نعتبره غير موثوق ونتجاهله (احتياط)
+        return False
+    try:
+        article_time = time.mktime(published)
+        age_hours = (time.time() - article_time) / 3600
+        return age_hours <= MAX_AGE_HOURS
+    except Exception:
+        return False
 
 
 def get_entry_id(entry) -> str:
@@ -164,6 +183,7 @@ def main():
     feeds = all_feeds()
     new_ids = set()
     sent_count = 0
+    skipped_old = 0
     failed_feeds = []
 
     for i, feed in enumerate(feeds, 1):
@@ -183,6 +203,11 @@ def main():
             new_here = 0
 
             for entry in entries:
+                # فلتر العمر — نتجاهل أي خبر أقدم من MAX_AGE_HOURS ساعة
+                if not is_recent(entry):
+                    skipped_old += 1
+                    continue
+
                 eid = get_entry_id(entry)
                 if not eid or eid in seen or eid in new_ids:
                     continue
@@ -220,11 +245,13 @@ def main():
     if is_first_run:
         print(f"✅ أول تشغيل خلص:")
         print(f"   • {len(new_ids)} خبر تسكّن")
+        print(f"   • {skipped_old} خبر قديم تم تجاهله (أقدم من {MAX_AGE_HOURS} ساعة)")
         print(f"   • 0 رسالة أُرسلت")
         print(f"   • التشغيل الجاي راح يبدأ بإرسال الجديد")
     else:
         print(f"✅ التشغيل خلص:")
         print(f"   • {sent_count} رسالة جديدة أُرسلت")
+        print(f"   • {skipped_old} خبر قديم تم تجاهله (أقدم من {MAX_AGE_HOURS} ساعة)")
         print(f"   • {len(seen)} خبر مسجّل بالمجمل")
 
     if failed_feeds:
