@@ -1,266 +1,245 @@
-# -*- coding: utf-8 -*-
 """
-GGNewsAR Bot — RSS to Telegram (نسخة بدون AI)
-=================================================
-- يقرأ كل RSS feeds من feeds.py
-- يرسل الجديد فقط لتيليقرام: المصدر + العنوان + الوصف + الرابط
-- أول تشغيل: يسكّت كل شي حالياً ويبدأ من الجديد فقط
-- يتجاهل أي خبر أقدم من MAX_AGE_HOURS ساعة
-- ما يستخدم Gemini أو أي AI
+GGNewsAR Telegram bot — v2
+Pure RSS forwarder with:
+  - smart deduplication (URL + normalized title hash)
+  - esports relevance filter (whitelist + blacklist, word boundary)
+  - per source tier classification (Tier 1 bypasses filter, Tier 2 must pass it)
+  - 48 hour freshness window
+  - detailed run statistics in logs
 """
 
 import os
 import re
 import json
-import html
+import hashlib
 import time
+from datetime import datetime, timezone, timedelta
+
 import feedparser
 import requests
-from pathlib import Path
 
-from feeds import all_feeds
+from feeds import FEEDS, ESPORTS_KEYWORDS, BLACKLIST_KEYWORDS
 
-# ════════════════════════════════════════════════════════════════
-# إعدادات (من GitHub Secrets)
-# ════════════════════════════════════════════════════════════════
-BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-CHAT_ID   = os.environ["TELEGRAM_CHAT_ID"]
+# Configuration
 
-# ════════════════════════════════════════════════════════════════
-# ثوابت
-# ════════════════════════════════════════════════════════════════
-STATE_FILE            = "seen.json"
-MAX_DESC_LEN          = 280        # حد طول الوصف
-MAX_ENTRIES_PER_FEED  = 10         # كم خبر نفحص من كل مصدر
-MAX_MSG_PER_RUN       = 100        # حماية من الفيضان
-SEND_DELAY            = 0.8        # ثواني بين كل رسالتين
-REQUEST_TIMEOUT       = 20
-MAX_AGE_HOURS         = 48         # تجاهل أي خبر أقدم من هذا
+TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
-USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/124.0.0.0 Safari/537.36"
-)
+SEEN_FILE = "seen.json"
+MAX_MESSAGES_PER_RUN = 100
+MESSAGE_DELAY_SECONDS = 0.8
+MAX_AGE_HOURS = 48
+SEEN_RING_SIZE = 5000  # cap for seen.json to prevent unbounded growth
+
+TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
+
+# Helpers
+
+def normalize_title(title: str) -> str:
+    """Lowercase, strip punctuation, collapse whitespace."""
+    t = title.lower()
+    t = re.sub(r"[^\w\s]", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
 
 
-# ════════════════════════════════════════════════════════════════
-# إدارة الحالة (seen.json)
-# ════════════════════════════════════════════════════════════════
-
-def load_seen() -> set:
-    """يحمّل قائمة IDs اللي شفناها سابقاً."""
-    if not Path(STATE_FILE).exists():
-        return set()
-    try:
-        data = json.loads(Path(STATE_FILE).read_text(encoding="utf-8"))
-        return set(data)
-    except Exception as e:
-        print(f"⚠️  ما قدرت أقرأ {STATE_FILE}: {e}")
-        return set()
+def title_hash(title: str) -> str:
+    return hashlib.md5(normalize_title(title).encode("utf-8")).hexdigest()
 
 
-def save_seen(seen: set) -> None:
-    """يحفظ الحالة. نحتفظ بآخر 15,000 ID لمنع تضخم الملف."""
-    items = list(seen)[-15000:]
-    Path(STATE_FILE).write_text(
-        json.dumps(items, ensure_ascii=False, indent=0),
-        encoding="utf-8",
-    )
-
-
-# ════════════════════════════════════════════════════════════════
-# معالجة المحتوى
-# ════════════════════════════════════════════════════════════════
-
-def clean_html(text: str) -> str:
-    """يشيل HTML tags ويرجع نص نظيف."""
+def strip_html(text: str) -> str:
     if not text:
         return ""
-    text = re.sub(r"<[^>]+>", "", text)
-    text = html.unescape(text)
+    text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
 
-def is_recent(entry) -> bool:
-    """يرجّع True لو الخبر منشور خلال آخر MAX_AGE_HOURS ساعة."""
-    published = (
-        entry.get("published_parsed")
-        or entry.get("updated_parsed")
-    )
-    if not published:
-        # ما في تاريخ = نعتبره غير موثوق ونتجاهله (احتياط)
-        return False
+def is_recent(entry, max_age_hours: int) -> bool:
+    """Reject items older than max_age_hours. If no date, accept (RSS quirk)."""
+    pub = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
+    if not pub:
+        return True
+    pub_time = datetime(*pub[:6], tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - pub_time) <= timedelta(hours=max_age_hours)
+
+
+def is_esports_relevant(title: str, summary: str, tier: int) -> bool:
+    """
+    Tier 1 sources are esports dedicated, always pass.
+    Tier 2 sources must contain at least one esports keyword.
+    Whitelist wins over blacklist (e.g. PSG Talon esports beats PSG FC blacklist).
+    """
+    if tier == 1:
+        return True
+    text = (title + " " + strip_html(summary)).lower()
+    has_esports = any(re.search(r"\b" + re.escape(kw) + r"\b", text) for kw in ESPORTS_KEYWORDS)
+    if has_esports:
+        return True
+    return False
+
+
+def load_seen() -> dict:
+    """Load seen state. Supports old format (list of urls) for backward compat."""
+    if not os.path.exists(SEEN_FILE):
+        return {"urls": [], "titles": []}
     try:
-        article_time = time.mktime(published)
-        age_hours = (time.time() - article_time) / 3600
-        return age_hours <= MAX_AGE_HOURS
-    except Exception:
-        return False
+        with open(SEEN_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return {"urls": [], "titles": []}
+    if isinstance(data, list):
+        return {"urls": data, "titles": []}
+    return {
+        "urls": data.get("urls", []),
+        "titles": data.get("titles", []),
+    }
 
 
-def get_entry_id(entry) -> str:
-    """ID مستقر للخبر — نفضّل الـ link لأنه الأكثر استقراراً."""
-    return entry.get("link") or entry.get("id") or entry.get("guid", "")
+def save_seen(seen: dict) -> None:
+    seen["urls"] = seen["urls"][-SEEN_RING_SIZE:]
+    seen["titles"] = seen["titles"][-SEEN_RING_SIZE:]
+    with open(SEEN_FILE, "w", encoding="utf-8") as f:
+        json.dump(seen, f, ensure_ascii=False, indent=2)
 
 
-def format_message(feed_name: str, entry) -> str:
-    """يبني رسالة تيليقرام بصيغة HTML."""
-    title = clean_html(entry.get("title", "Untitled"))
-    link  = entry.get("link", "")
-
-    desc = clean_html(
-        entry.get("summary")
-        or entry.get("description")
-        or ""
-    )
-    # شيل العنوان من بداية الوصف لو متكرر
-    if desc.startswith(title):
-        desc = desc[len(title):].lstrip(" -—:|")
-
-    if len(desc) > MAX_DESC_LEN:
-        desc = desc[:MAX_DESC_LEN].rsplit(" ", 1)[0] + "…"
-
-    parts = [
-        f"📰 <b>{html.escape(feed_name)}</b>",
-        "",
-        f"<b>{html.escape(title)}</b>",
-    ]
-    if desc:
-        parts += ["", html.escape(desc)]
-    parts += ["", f"🔗 {link}"]
-
+def format_message(source_name: str, title: str, summary: str, link: str) -> str:
+    summary_clean = strip_html(summary)[:280]
+    parts = [f"<b>{source_name}</b>", "", title]
+    if summary_clean:
+        parts.extend(["", summary_clean])
+    parts.extend(["", link])
     return "\n".join(parts)
 
 
-# ════════════════════════════════════════════════════════════════
-# إرسال إلى تيليقرام
-# ════════════════════════════════════════════════════════════════
-
-def send_telegram(text: str, retries: int = 2) -> bool:
-    """يرسل رسالة لتيليقرام. يرجّع True لو نجح."""
-    url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
+def send_to_telegram(text: str) -> bool:
     payload = {
-        "chat_id": CHAT_ID,
+        "chat_id": TELEGRAM_CHAT_ID,
         "text": text,
         "parse_mode": "HTML",
         "disable_web_page_preview": False,
     }
-
-    for attempt in range(retries + 1):
-        try:
-            r = requests.post(url, json=payload, timeout=REQUEST_TIMEOUT)
-            if r.status_code == 200:
-                return True
-            # 429 = Too Many Requests، خذ راحة
-            if r.status_code == 429:
-                wait = r.json().get("parameters", {}).get("retry_after", 5)
-                print(f"  ⏸  Telegram rate limit، انتظار {wait}s")
-                time.sleep(wait + 1)
-                continue
-            print(f"  ⚠️  Telegram {r.status_code}: {r.text[:200]}")
+    try:
+        r = requests.post(TELEGRAM_API, data=payload, timeout=15)
+        if r.status_code != 200:
+            print(f"  Telegram error {r.status_code}: {r.text[:200]}")
             return False
-        except Exception as e:
-            print(f"  ⚠️  محاولة {attempt+1}: {type(e).__name__}: {e}")
-            time.sleep(2)
-    return False
+        return True
+    except Exception as e:
+        print(f"  Telegram exception: {e}")
+        return False
 
 
-# ════════════════════════════════════════════════════════════════
-# الحلقة الرئيسية
-# ════════════════════════════════════════════════════════════════
+# Main
 
-def main():
+def main() -> None:
     seen = load_seen()
-    is_first_run = len(seen) == 0
+    seen_urls = set(seen["urls"])
+    seen_titles = set(seen["titles"])
 
-    if is_first_run:
-        print("🆕 أول تشغيل — راح أسكّت كل شي حالياً وأبدأ من الجديد فقط.\n")
-    else:
-        print(f"📂 {len(seen)} خبر مسجّل سابقاً في seen.json\n")
+    first_run = len(seen_urls) == 0
+    if first_run:
+        print("First run detected. Indexing existing items silently, no messages sent.")
 
-    feeds = all_feeds()
-    new_ids = set()
     sent_count = 0
-    skipped_old = 0
-    failed_feeds = []
+    new_urls = []
+    new_titles = []
 
-    for i, feed in enumerate(feeds, 1):
-        name = feed["name"]
-        url  = feed["url"]
+    stats = {
+        "sources_ok": 0,
+        "sources_failed": 0,
+        "entries_seen_total": 0,
+        "skip_seen_url": 0,
+        "skip_old": 0,
+        "skip_dup_title": 0,
+        "skip_irrelevant": 0,
+        "sent": 0,
+        "send_failures": 0,
+    }
+
+    failed_sources = []
+
+    for feed_info in FEEDS:
+        source_name = feed_info["name"]
+        url = feed_info["url"]
+        tier = feed_info.get("tier", 2)
 
         try:
-            d = feedparser.parse(url, agent=USER_AGENT)
-            entries = d.entries[:MAX_ENTRIES_PER_FEED] if hasattr(d, "entries") else []
+            d = feedparser.parse(url)
+            if not d.entries:
+                raise RuntimeError(f"no entries (bozo={d.bozo})")
+            stats["sources_ok"] += 1
+        except Exception as e:
+            stats["sources_failed"] += 1
+            failed_sources.append(f"{source_name}: {e}")
+            continue
 
-            if not entries:
-                status = getattr(d, "status", "?")
-                failed_feeds.append(f"{name} (HTTP {status})")
-                print(f"[{i:3d}/{len(feeds)}] ⚠️  {name}: ما فيه أخبار")
+        for entry in d.entries:
+            stats["entries_seen_total"] += 1
+            link = (entry.get("link") or "").strip()
+            title = (entry.get("title") or "").strip()
+            summary = entry.get("summary") or entry.get("description") or ""
+
+            if not link or not title:
                 continue
 
-            new_here = 0
+            if link in seen_urls:
+                stats["skip_seen_url"] += 1
+                continue
 
-            for entry in entries:
-                # فلتر العمر — نتجاهل أي خبر أقدم من MAX_AGE_HOURS ساعة
-                if not is_recent(entry):
-                    skipped_old += 1
-                    continue
+            if not is_recent(entry, MAX_AGE_HOURS):
+                stats["skip_old"] += 1
+                seen_urls.add(link)
+                new_urls.append(link)
+                continue
 
-                eid = get_entry_id(entry)
-                if not eid or eid in seen or eid in new_ids:
-                    continue
+            t_hash = title_hash(title)
+            if t_hash in seen_titles:
+                stats["skip_dup_title"] += 1
+                seen_urls.add(link)
+                new_urls.append(link)
+                continue
 
-                if is_first_run:
-                    # تسكين: نعلّمه شفناه بدون إرسال
-                    new_ids.add(eid)
-                    continue
+            if not is_esports_relevant(title, summary, tier):
+                stats["skip_irrelevant"] += 1
+                seen_urls.add(link)
+                new_urls.append(link)
+                continue
 
-                if sent_count >= MAX_MSG_PER_RUN:
-                    # حماية من الفيضان — نعلّمه شفناه ولا نرسله
-                    new_ids.add(eid)
-                    continue
+            # Passed all checks
+            seen_urls.add(link)
+            seen_titles.add(t_hash)
+            new_urls.append(link)
+            new_titles.append(t_hash)
 
-                msg = format_message(name, entry)
-                if send_telegram(msg):
-                    new_ids.add(eid)
-                    sent_count += 1
-                    new_here += 1
-                    time.sleep(SEND_DELAY)
+            if first_run:
+                continue
 
-            symbol = "🆕" if new_here else "✓"
-            print(f"[{i:3d}/{len(feeds)}] {symbol} {name}: {new_here} جديد")
+            if sent_count >= MAX_MESSAGES_PER_RUN:
+                continue
 
-        except Exception as e:
-            failed_feeds.append(f"{name} ({type(e).__name__})")
-            print(f"[{i:3d}/{len(feeds)}] ❌ {name}: {type(e).__name__}: {str(e)[:80]}")
+            message = format_message(source_name, title, summary, link)
+            if send_to_telegram(message):
+                sent_count += 1
+                stats["sent"] += 1
+            else:
+                stats["send_failures"] += 1
+            time.sleep(MESSAGE_DELAY_SECONDS)
 
-    # حفظ الحالة
-    seen.update(new_ids)
+    # Persist state
+    seen["urls"] = list({*seen["urls"], *new_urls})
+    seen["titles"] = list({*seen["titles"], *new_titles})
     save_seen(seen)
 
-    # ════════ ملخص نهائي ════════
-    print(f"\n{'='*60}")
-    if is_first_run:
-        print(f"✅ أول تشغيل خلص:")
-        print(f"   • {len(new_ids)} خبر تسكّن")
-        print(f"   • {skipped_old} خبر قديم تم تجاهله (أقدم من {MAX_AGE_HOURS} ساعة)")
-        print(f"   • 0 رسالة أُرسلت")
-        print(f"   • التشغيل الجاي راح يبدأ بإرسال الجديد")
-    else:
-        print(f"✅ التشغيل خلص:")
-        print(f"   • {sent_count} رسالة جديدة أُرسلت")
-        print(f"   • {skipped_old} خبر قديم تم تجاهله (أقدم من {MAX_AGE_HOURS} ساعة)")
-        print(f"   • {len(seen)} خبر مسجّل بالمجمل")
+    # Logs
+    print("\n=== Run Summary ===")
+    for k, v in stats.items():
+        print(f"  {k:25s} {v}")
 
-    if failed_feeds:
-        print(f"\n⚠️  {len(failed_feeds)} مصدر فشل:")
-        for f in failed_feeds[:20]:
-            print(f"   • {f}")
-        if len(failed_feeds) > 20:
-            print(f"   ... و{len(failed_feeds) - 20} غيرهم")
-    print(f"{'='*60}")
+    if failed_sources:
+        print(f"\n=== Failed Sources ({len(failed_sources)}) ===")
+        for line in failed_sources:
+            print(f"  - {line}")
 
 
 if __name__ == "__main__":
