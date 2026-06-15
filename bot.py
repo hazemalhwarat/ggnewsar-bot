@@ -1,11 +1,12 @@
 """
-GGNewsAR Telegram bot — v2
+GGNewsAR Telegram bot — v3
 Pure RSS forwarder with:
-  - smart deduplication (URL + normalized title hash)
-  - esports relevance filter (whitelist + blacklist, word boundary)
-  - per source tier classification (Tier 1 bypasses filter, Tier 2 must pass it)
-  - 48 hour freshness window
-  - detailed run statistics in logs
+  • smart deduplication (URL + normalized title hash, source suffix stripped)
+  • esports relevance filter (whitelist + blacklist, word boundary)
+  • per source tier classification (Tier 1 bypasses filter, Tier 2 must pass)
+  • 48 hour freshness window
+  • cap protection (overflow items not marked seen, picked up next run)
+  • detailed run statistics in logs
 """
 
 import os
@@ -21,23 +22,29 @@ import requests
 from feeds import FEEDS, ESPORTS_KEYWORDS, BLACKLIST_KEYWORDS
 
 # Configuration
-
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 SEEN_FILE = "seen.json"
-MAX_MESSAGES_PER_RUN = 100
+MAX_MESSAGES_PER_RUN = 200          # raised from 100 for safety margin
 MESSAGE_DELAY_SECONDS = 0.8
 MAX_AGE_HOURS = 48
-SEEN_RING_SIZE = 5000  # cap for seen.json to prevent unbounded growth
+SEEN_RING_SIZE = 8000               # raised from 5000 to fit 48h volume
 
 TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
-# Helpers
+# Source suffix patterns that Google News and other aggregators append
+SOURCE_SUFFIX_RE = re.compile(
+    r"\s*[\-\|\u2013\u2014:]\s*[^\-\|\u2013\u2014:]{1,40}$"
+)
 
+# Helpers
 def normalize_title(title: str) -> str:
-    """Lowercase, strip punctuation, collapse whitespace."""
-    t = title.lower()
+    """Lowercase, strip source suffix, strip punctuation, collapse whitespace."""
+    t = title.lower().strip()
+    # strip trailing " — Source" / " | Source" / " : Source" (once)
+    t = SOURCE_SUFFIX_RE.sub("", t).strip()
+    # strip punctuation
     t = re.sub(r"[^\w\s]", " ", t)
     t = re.sub(r"\s+", " ", t).strip()
     return t
@@ -64,19 +71,36 @@ def is_recent(entry, max_age_hours: int) -> bool:
     return (datetime.now(timezone.utc) - pub_time) <= timedelta(hours=max_age_hours)
 
 
+def has_blacklist(text: str) -> bool:
+    return any(re.search(r"\b" + re.escape(kw) + r"\b", text) for kw in BLACKLIST_KEYWORDS)
+
+
+def has_esports(text: str) -> bool:
+    return any(re.search(r"\b" + re.escape(kw) + r"\b", text) for kw in ESPORTS_KEYWORDS)
+
+
 def is_esports_relevant(title: str, summary: str, tier: int) -> bool:
     """
-    Tier 1 sources are esports dedicated, always pass.
-    Tier 2 sources must contain at least one esports keyword.
-    Whitelist wins over blacklist (e.g. PSG Talon esports beats PSG FC blacklist).
+    Tier 1: dedicated esports outlets. Always pass unless clearly off-topic.
+    Tier 2: aggregators. Must contain an esports keyword AND not be a pure traditional sports item.
+    Whitelist wins over blacklist (e.g. 'PSG Talon esports' beats 'PSG FC' blacklist).
     """
-    if tier == 1:
-        return True
     text = (title + " " + strip_html(summary)).lower()
-    has_esports = any(re.search(r"\b" + re.escape(kw) + r"\b", text) for kw in ESPORTS_KEYWORDS)
-    if has_esports:
+    esports_hit = has_esports(text)
+    blacklist_hit = has_blacklist(text)
+
+    if tier == 1:
+        # Tier 1 trusted, only block if blacklist AND no esports keyword present
+        if blacklist_hit and not esports_hit:
+            return False
         return True
-    return False
+
+    # Tier 2 strict
+    if not esports_hit:
+        return False
+    if blacklist_hit and not esports_hit:
+        return False
+    return True
 
 
 def load_seen() -> dict:
@@ -94,6 +118,17 @@ def load_seen() -> dict:
         "urls": data.get("urls", []),
         "titles": data.get("titles", []),
     }
+
+
+def merge_preserve_order(existing: list, new_items: list) -> list:
+    """Append new items to existing in order, deduped, keeping oldest first."""
+    seen_set = set(existing)
+    out = list(existing)
+    for item in new_items:
+        if item not in seen_set:
+            out.append(item)
+            seen_set.add(item)
+    return out
 
 
 def save_seen(seen: dict) -> None:
@@ -131,7 +166,6 @@ def send_to_telegram(text: str) -> bool:
 
 
 # Main
-
 def main() -> None:
     seen = load_seen()
     seen_urls = set(seen["urls"])
@@ -153,6 +187,7 @@ def main() -> None:
         "skip_old": 0,
         "skip_dup_title": 0,
         "skip_irrelevant": 0,
+        "skip_cap": 0,
         "sent": 0,
         "send_failures": 0,
     }
@@ -187,13 +222,16 @@ def main() -> None:
                 stats["skip_seen_url"] += 1
                 continue
 
+            t_hash = title_hash(title)
+
             if not is_recent(entry, MAX_AGE_HOURS):
                 stats["skip_old"] += 1
                 seen_urls.add(link)
+                seen_titles.add(t_hash)
                 new_urls.append(link)
+                new_titles.append(t_hash)
                 continue
 
-            t_hash = title_hash(title)
             if t_hash in seen_titles:
                 stats["skip_dup_title"] += 1
                 seen_urls.add(link)
@@ -203,19 +241,24 @@ def main() -> None:
             if not is_esports_relevant(title, summary, tier):
                 stats["skip_irrelevant"] += 1
                 seen_urls.add(link)
+                seen_titles.add(t_hash)
                 new_urls.append(link)
+                new_titles.append(t_hash)
                 continue
 
-            # Passed all checks
+            # Cap check BEFORE marking as seen
+            # Overflow items stay unseen so the next run picks them up.
+            if not first_run and sent_count >= MAX_MESSAGES_PER_RUN:
+                stats["skip_cap"] += 1
+                continue
+
+            # Passed all checks AND under cap
             seen_urls.add(link)
             seen_titles.add(t_hash)
             new_urls.append(link)
             new_titles.append(t_hash)
 
             if first_run:
-                continue
-
-            if sent_count >= MAX_MESSAGES_PER_RUN:
                 continue
 
             message = format_message(source_name, title, summary, link)
@@ -226,9 +269,9 @@ def main() -> None:
                 stats["send_failures"] += 1
             time.sleep(MESSAGE_DELAY_SECONDS)
 
-    # Persist state
-    seen["urls"] = list({*seen["urls"], *new_urls})
-    seen["titles"] = list({*seen["titles"], *new_titles})
+    # Persist state, preserving insertion order (oldest first)
+    seen["urls"] = merge_preserve_order(seen["urls"], new_urls)
+    seen["titles"] = merge_preserve_order(seen["titles"], new_titles)
     save_seen(seen)
 
     # Logs
