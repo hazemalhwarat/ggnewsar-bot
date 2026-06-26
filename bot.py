@@ -1,12 +1,13 @@
 """
-GGNewsAR Telegram bot — v4
+GGNewsAR Telegram bot — v5
 Pure RSS forwarder with:
   • smart deduplication (URL + normalized title hash, source suffix stripped)
-  • esports relevance filter (whitelist + blacklist, word boundary)
-  • per source tier classification (Tier 1 bypasses filter, Tier 2 must pass)
+  • STRICT esports relevance: an item must be about one of your titles / the
+    esports scene (scope) AND about the competitive scene (context). Game
+    content (skins, patches, guides, lore) and non listed games are dropped.
   • match result suppression (drops live scores / routine results,
     keeps finals, titles and championship moments)
-  • 12 hour freshness window (sized for a 5 hour schedule, never delays)
+  • 12 hour freshness window (sized for a fast schedule, never delays)
   • cap protection (overflow items not marked seen, picked up next run)
   • detailed run statistics in logs
 """
@@ -21,7 +22,7 @@ from datetime import datetime, timezone, timedelta
 import feedparser
 import requests
 
-from feeds import FEEDS, ESPORTS_KEYWORDS, BLACKLIST_KEYWORDS
+from feeds import FEEDS, TITLE_SCOPE, CONTEXT_SIGNALS, BLACKLIST_KEYWORDS
 
 # Configuration
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
@@ -35,6 +36,10 @@ SEEN_RING_SIZE = 8000               # raised from 5000 to fit volume
 
 TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
+# Explicit esports words. If one of these is present, the traditional sports
+# guard is skipped (e.g. "esports nations cup" near "nations" is fine).
+ESPORTS_WORDS = ["esports", "esport", "e-sports", "e-sport"]
+
 # Source suffix patterns that Google News and other aggregators append
 SOURCE_SUFFIX_RE = re.compile(
     r"\s*[\-\|\u2013\u2014:]\s*[^\-\|\u2013\u2014:]{1,40}$"
@@ -44,8 +49,7 @@ SOURCE_SUFFIX_RE = re.compile(
 # RESULT_PATTERNS flag a routine / live score (candidate to drop).
 # CHAMPION_PATTERNS override the drop, so finals and titles always pass.
 RESULT_PATTERNS = re.compile(
-    r"\blive\b[: ]|\blive blog\b|\bresults?\b[: ]|\bday \d\b|\bmatchday\b|"
-    r"\bgroup stage\b|\bstandings\b|\brecap\b|\bround-?up\b|"
+    r"\blive\b[: ]|\blive blog\b|\bresults?\b|\brecap\b|\bround-?up\b|\bstandings\b|"
     r"\b\d{1,2}\s?[-\u2013:]\s?\d{1,2}\b|"
     r"\b(beat|beats|defeat|defeats|def\.|downs|edge|edges|topple|overcome)\b|"
     r"\bvs\.?\b|\bhead to head\b",
@@ -93,35 +97,34 @@ def is_recent(entry, max_age_hours: int) -> bool:
     return (datetime.now(timezone.utc) - pub_time) <= timedelta(hours=max_age_hours)
 
 
-def has_blacklist(text: str) -> bool:
-    return any(re.search(r"\b" + re.escape(kw) + r"\b", text) for kw in BLACKLIST_KEYWORDS)
-
-
-def has_esports(text: str) -> bool:
-    return any(re.search(r"\b" + re.escape(kw) + r"\b", text) for kw in ESPORTS_KEYWORDS)
+def has_any(text: str, keywords) -> bool:
+    return any(re.search(r"\b" + re.escape(kw.strip()) + r"\b", text) for kw in keywords)
 
 
 def is_esports_relevant(title: str, summary: str, tier: int) -> bool:
     """
-    Tier 1: dedicated esports outlets. Always pass unless clearly off-topic.
-    Tier 2: aggregators. Must contain an esports keyword AND not be a pure traditional sports item.
-    Whitelist wins over blacklist (e.g. 'PSG Talon esports' beats 'PSG FC' blacklist).
+    STRICT. Keep an item only if:
+      1) it mentions one of your titles / circuits / orgs / the esports scene
+         (TITLE_SCOPE), AND
+      2) it is about the competitive scene, not game content (CONTEXT_SIGNALS).
+    A traditional sports / entertainment guard blocks items that hit the
+    blacklist without any explicit esports word. Tier does not relax the two
+    gates; it only keeps the guard a touch softer for trusted esports outlets.
     """
     text = (title + " " + strip_html(summary)).lower()
-    esports_hit = has_esports(text)
-    blacklist_hit = has_blacklist(text)
 
-    if tier == 1:
-        # Tier 1 trusted, only block if blacklist AND no esports keyword present
-        if blacklist_hit and not esports_hit:
-            return False
-        return True
+    # Gate 1: is it about one of your titles / the esports scene?
+    if not has_any(text, TITLE_SCOPE):
+        return False
 
-    # Tier 2 strict
-    if not esports_hit:
+    # Gate 2: is it about the competitive scene (not skins / patches / guides)?
+    if not has_any(text, CONTEXT_SIGNALS):
         return False
-    if blacklist_hit and not esports_hit:
+
+    # Guard: traditional sports / entertainment, unless an esports word is present
+    if has_any(text, BLACKLIST_KEYWORDS) and not has_any(text, ESPORTS_WORDS):
         return False
+
     return True
 
 

@@ -1,15 +1,20 @@
 """
 feeds.py — sources + keyword lists for GGNewsAR bot
-English only.
+English only. Competitive esports scene only.
 
 FEEDS: each item is a dict with name, url, tier.
-  tier 1 = dedicated esports outlets  -> pulled in full
-  tier 2 = general gaming + mainstream -> must mention esports to pass
+  tier 1 = dedicated esports outlets
+  tier 2 = general gaming + mainstream
+Both tiers are filtered the same strict way now (scope AND context).
+Tier only softens the traditional-sports guard for trusted esports outlets.
 
-Lines marked "verify" should be confirmed on the first run (any source that
-shows DEAD in the Actions log can simply be deleted from this list).
-Lines marked "needs bridge" have no native RSS; generate one with RSSHub or
-rss.app and paste the generated url in.
+An item is kept only if it satisfies BOTH:
+  1) TITLE_SCOPE   -> it is about one of your titles, circuits, orgs, or the esports scene
+  2) CONTEXT_SIGNALS -> it is about the COMPETITIVE scene (tournament, roster,
+                        transfer, title...), not game content (skins, patches, guides)
+
+Lines marked "verify" should be confirmed on the first run.
+Lines marked "needs bridge" have no native RSS; generate one with RSSHub or rss.app.
 """
 
 FEEDS = [
@@ -37,7 +42,7 @@ FEEDS = [
     # Rocket League (octane.gg): stats only -> rely on Dexerto / Dot Esports
     # Liquipedia / Leaguepedia: no usable RSS -> keep the screenshot workflow
 
-    # ---------- TIER 2: general gaming (keyword filtered) ----------
+    # ---------- TIER 2: general gaming (strict filter) ----------
     {"name": "PC Gamer",          "url": "https://www.pcgamer.com/rss/",                 "tier": 2},
     {"name": "Eurogamer",         "url": "https://www.eurogamer.net/feed",               "tier": 2},
     {"name": "VGC",               "url": "https://www.videogameschronicle.com/feed/",    "tier": 2},
@@ -51,42 +56,88 @@ FEEDS = [
     {"name": "Game Rant",         "url": "https://gamerant.com/feed/",                   "tier": 2},
     {"name": "IGN",               "url": "https://www.ign.com/rss/articles/feed",        "tier": 2},  # verify
 
-    # ---------- TIER 2: mainstream / global news (keyword filtered) ----------
+    # ---------- TIER 2: mainstream / global news (strict filter) ----------
     {"name": "The Guardian Esports", "url": "https://www.theguardian.com/games/esports/rss", "tier": 2},
     {"name": "The Guardian Games",   "url": "https://www.theguardian.com/games/rss",         "tier": 2},
     {"name": "Forbes Games",         "url": "https://www.forbes.com/games/feed/",            "tier": 2},  # verify
 ]
 
 
-# Whitelist: an item must contain at least one of these to count as esports
-# (matched as a whole word, case insensitive, by bot.py).
-ESPORTS_KEYWORDS = [
+# ----------------------------------------------------------------------------
+# GATE 1 — TITLE_SCOPE
+# The item must mention one of your titles, a circuit, a known org, or the
+# esports scene. A non listed game (Fortnite, EA FC, Elden Ring...) is ignored.
+# ----------------------------------------------------------------------------
+TITLE_SCOPE = [
+    # esports umbrella
     "esports", "esport", "e-sports", "e-sport",
-    "pro player", "roster", "lineup", "line-up", "benched",
-    "tournament", "qualifier", "playoffs", "grand final", "prize pool",
-    "lan", "world championship", "major",
-    "vct", "valorant", "champions tour",
-    "lck", "lec", "lpl", "lcs", "worlds", "msi",
-    "iem", "esl", "blast", "pgl",
-    "rlcs", "rocket league",
-    "cdl", "call of duty league",
-    "owl", "overwatch",
-    "ewc", "esports world cup",
-    "the international", "dota",
+    # Counter-Strike
     "counter-strike", "cs2", "csgo",
-    "league of legends",
-    "rainbow six", "siege",
-    "mobile legends", "mlbb",
-    "pubg mobile", "honor of kings",
-    "apex legends", "starcraft",
-    "evo", "tekken", "street fighter",
-    "asian games", "esports nations cup",
+    # VALORANT
+    "valorant", "vct", "champions tour", "valorant champions",
+    # League of Legends
+    "league of legends", "lol esports", "worlds", "msi",
+    "lck", "lec", "lpl", "lcs", "lck cup",
+    # Dota 2
+    "dota 2", "dota2", "the international",
+    # Rocket League
+    "rocket league", "rlcs",
+    # Rainbow Six
+    "rainbow six", "siege", "r6", "six invitational",
+    # Mobile Legends
+    "mobile legends", "mlbb", "mpl", "m6", "m7",
+    # PUBG Mobile
+    "pubg mobile", "pmsl", "pmwc", "pmgc",
+    # Honor of Kings
+    "honor of kings", "kic", "king pro league",
+    # Call of Duty
+    "call of duty league", "cdl",
+    # Overwatch
+    "overwatch", "owcs", "overwatch champions",
+    # Apex
+    "apex legends", "algs",
+    # Fighting games
+    "tekken", "street fighter", "fighting game", "evo ",
+    # Chess
+    "chess",
+    # multi game events you cover
+    "ewc", "esports world cup", "esports nations cup", "asian games",
+    "iem", "esl pro league", "blast", "pgl",
+    # distinctive orgs (help catch terse transfer headlines)
+    "navi", "faze", "fnatic", "astralis", "team falcons", "team liquid",
+    "team spirit", "team vitality", "sentinels", "gen.g", "the mongolz",
+    "furia", "g2 esports", "twisted minds", "geekay",
 ]
 
 
-# Blacklist: trims off topic items from mixed Tier 1 sites (traditional sports
-# and pure entertainment). Whitelist always wins, so an esports item is never
-# blocked by these.
+# ----------------------------------------------------------------------------
+# GATE 2 — CONTEXT_SIGNALS
+# The item must be about the COMPETITIVE scene, not game content.
+# A bare game title with no competitive word will NOT pass.
+# ----------------------------------------------------------------------------
+CONTEXT_SIGNALS = [
+    # events / stages
+    "tournament", "qualifier", "qualify", "qualifies", "qualified",
+    "playoffs", "grand final", "final", "finals", "semifinal", "semi-final",
+    "bracket", "championship", "champions", "champion", "title", "trophy",
+    "crowned", "winner", "wins", "prize pool", "lan", "major",
+    # roster / personnel
+    "roster", "lineup", "line-up", "signs", "signing", "sign",
+    "transfer", "benched", "stand-in", "free agent",
+    "joins", "joined", "leaves", "departs", "departure",
+    "retires", "retirement", "acquire", "acquires",
+    "pro player", "head coach", "coach", "igl",
+    # circuits double as context
+    "vct", "iem", "esl", "blast", "pgl", "rlcs", "cdl", "algs", "mpl",
+    "ewc", "esports world cup", "esports nations cup", "the international",
+    "worlds", "msi", "owcs", "six invitational",
+]
+
+
+# ----------------------------------------------------------------------------
+# Guard — traditional sports / pure entertainment.
+# Only blocks when there is NO explicit esports word present.
+# ----------------------------------------------------------------------------
 BLACKLIST_KEYWORDS = [
     "nfl", "nba", "mlb", "nhl",
     "premier league", "la liga", "serie a", "bundesliga", "ligue 1",
