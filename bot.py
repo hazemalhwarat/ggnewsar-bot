@@ -36,6 +36,13 @@ SEEN_RING_SIZE = 8000               # raised from 5000 to fit volume
 
 TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
+# Some sites (Cloudflare / WordPress) return an empty page to the default
+# feedparser agent. A normal browser User-Agent fixes most of those.
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+)
+
 # Explicit esports words. If one of these is present, the traditional sports
 # guard is skipped (e.g. "esports nations cup" near "nations" is fine).
 ESPORTS_WORDS = ["esports", "esport", "e-sports", "e-sport"]
@@ -238,7 +245,7 @@ def main() -> None:
         tier = feed_info.get("tier", 2)
 
         try:
-            d = feedparser.parse(url)
+            d = feedparser.parse(url, agent=USER_AGENT)
             if not d.entries:
                 raise RuntimeError(f"no entries (bozo={d.bozo})")
             stats["sources_ok"] += 1

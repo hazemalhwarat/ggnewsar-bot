@@ -49,7 +49,7 @@ FEEDS = [
     {"name": "GamesIndustry.biz", "url": "https://www.gamesindustry.biz/feed",           "tier": 2},
     {"name": "Polygon",           "url": "https://www.polygon.com/rss/index.xml",        "tier": 2},
     {"name": "Kotaku",            "url": "https://kotaku.com/rss",                        "tier": 2},
-    {"name": "The Verge Games",   "url": "https://www.theverge.com/games/rss/index.xml", "tier": 2},
+    {"name": "The Verge",         "url": "https://www.theverge.com/rss/index.xml",       "tier": 2},
     {"name": "Rock Paper Shotgun","url": "https://www.rockpapershotgun.com/feed",        "tier": 2},
     {"name": "GamesRadar",        "url": "https://www.gamesradar.com/rss/",              "tier": 2},
     {"name": "TheGamer",          "url": "https://www.thegamer.com/feed/",               "tier": 2},
@@ -59,7 +59,6 @@ FEEDS = [
     # ---------- TIER 2: mainstream / global news (strict filter) ----------
     {"name": "The Guardian Esports", "url": "https://www.theguardian.com/games/esports/rss", "tier": 2},
     {"name": "The Guardian Games",   "url": "https://www.theguardian.com/games/rss",         "tier": 2},
-    {"name": "Forbes Games",         "url": "https://www.forbes.com/games/feed/",            "tier": 2},  # verify
 ]
 
 
