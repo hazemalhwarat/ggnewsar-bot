@@ -23,15 +23,15 @@ FEEDS = [
     {"name": "Dexerto Esports",  "url": "https://www.dexerto.com/esports/feed/", "tier": 1},
     {"name": "Dot Esports",      "url": "https://dotesports.com/feed",            "tier": 1},
     {"name": "Esports Insider",  "url": "https://esportsinsider.com/feed",        "tier": 1},
-    {"name": "Esports.net",      "url": "https://www.esports.net/news/feed/",     "tier": 1},
+    {"name": "Esports.net",      "url": "https://news.google.com/rss/search?q=site:esports.net+when:2d&hl=en-US&gl=US&ceid=US:en",   "tier": 1},  # Cloudflare, bridged via Google News
     {"name": "ESTNN",            "url": "https://estnn.com/feed/",                "tier": 1},
-    {"name": "Jaxon",            "url": "https://jaxon.gg/feed/",                 "tier": 1},
-    {"name": "ONE Esports",      "url": "https://www.oneesports.gg/feed/",        "tier": 1},
+    {"name": "Jaxon",            "url": "https://news.google.com/rss/search?q=site:jaxon.gg+when:2d&hl=en-US&gl=US&ceid=US:en",       "tier": 1},  # Cloudflare, bridged via Google News
+    {"name": "ONE Esports",      "url": "https://news.google.com/rss/search?q=site:oneesports.gg+when:2d&hl=en-US&gl=US&ceid=US:en", "tier": 1},  # Cloudflare, bridged via Google News
     {"name": "Esports News UK",  "url": "https://esports-news.co.uk/feed/",       "tier": 1},
-    {"name": "GGRecon",          "url": "https://www.ggrecon.com/feed/",          "tier": 1},  # verify
+    {"name": "GGRecon",          "url": "https://news.google.com/rss/search?q=site:ggrecon.com+when:2d&hl=en-US&gl=US&ceid=US:en",   "tier": 1},  # Cloudflare, bridged via Google News
     {"name": "The Game Haus",    "url": "https://thegamehaus.com/feed/",          "tier": 1},
     {"name": "Esports.gg",       "url": "https://www.esports.gg/feed/",           "tier": 1},  # verify
-    {"name": "Inven Global",     "url": "https://www.invenglobal.com/rss",        "tier": 1},  # verify
+    {"name": "Inven Global",     "url": "https://news.google.com/rss/search?q=site:invenglobal.com+when:2d&hl=en-US&gl=US&ceid=US:en", "tier": 1},  # Cloudflare, bridged via Google News
 
     # ---------- TIER 1: dedicated esports (game specific) ----------
     {"name": "HLTV",             "url": "https://www.hltv.org/rss/news",          "tier": 1},  # CS2 NEWS ONLY
