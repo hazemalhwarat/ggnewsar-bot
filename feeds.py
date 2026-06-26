@@ -23,6 +23,7 @@ FEEDS = [
     {"name": "Dexerto Esports",  "url": "https://www.dexerto.com/esports/feed/", "tier": 1},
     {"name": "Dot Esports",      "url": "https://dotesports.com/feed",            "tier": 1},
     {"name": "Esports Insider",  "url": "https://esportsinsider.com/feed",        "tier": 1},
+    {"name": "The Esports Radar","url": "https://esportsradar.gg/feed/",           "tier": 1},  # esports business
     {"name": "Esports.net",      "url": "https://news.google.com/rss/search?q=site:esports.net+when:2d&hl=en-US&gl=US&ceid=US:en",   "tier": 1},  # Cloudflare, bridged via Google News
     {"name": "ESTNN",            "url": "https://estnn.com/feed/",                "tier": 1},
     {"name": "Jaxon",            "url": "https://news.google.com/rss/search?q=site:jaxon.gg+when:2d&hl=en-US&gl=US&ceid=US:en",       "tier": 1},  # Cloudflare, bridged via Google News
@@ -96,7 +97,7 @@ TITLE_SCOPE = [
     # Apex
     "apex legends", "algs",
     # Fighting games
-    "tekken", "street fighter", "fighting game", "evo ",
+    "tekken", "street fighter", "fighting game", "evo",
     # Chess
     "chess",
     # multi game events you cover
@@ -130,6 +131,11 @@ CONTEXT_SIGNALS = [
     "vct", "iem", "esl", "blast", "pgl", "rlcs", "cdl", "algs", "mpl",
     "ewc", "esports world cup", "esports nations cup", "the international",
     "worlds", "msi", "owcs", "six invitational",
+    # esports business / industry (opened per request)
+    "sponsorship", "sponsor", "sponsors", "title sponsor",
+    "partnership", "partners with", "partner with",
+    "investment", "investor", "funding round", "raises", "valuation", "acquisition",
+    "viewership", "viewers", "peak viewers",
 ]
 
 
