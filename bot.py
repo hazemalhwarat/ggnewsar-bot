@@ -1,10 +1,12 @@
 """
-GGNewsAR Telegram bot — v3
+GGNewsAR Telegram bot — v4
 Pure RSS forwarder with:
   • smart deduplication (URL + normalized title hash, source suffix stripped)
   • esports relevance filter (whitelist + blacklist, word boundary)
   • per source tier classification (Tier 1 bypasses filter, Tier 2 must pass)
-  • 48 hour freshness window
+  • match result suppression (drops live scores / routine results,
+    keeps finals, titles and championship moments)
+  • 12 hour freshness window (sized for a 5 hour schedule, never delays)
   • cap protection (overflow items not marked seen, picked up next run)
   • detailed run statistics in logs
 """
@@ -28,14 +30,34 @@ TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 SEEN_FILE = "seen.json"
 MAX_MESSAGES_PER_RUN = 200          # raised from 100 for safety margin
 MESSAGE_DELAY_SECONDS = 0.8
-MAX_AGE_HOURS = 48
-SEEN_RING_SIZE = 8000               # raised from 5000 to fit 48h volume
+MAX_AGE_HOURS = 12                  # only ignore items older than this. NOT a delay.
+SEEN_RING_SIZE = 8000               # raised from 5000 to fit volume
 
 TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
 # Source suffix patterns that Google News and other aggregators append
 SOURCE_SUFFIX_RE = re.compile(
     r"\s*[\-\|\u2013\u2014:]\s*[^\-\|\u2013\u2014:]{1,40}$"
+)
+
+# Match result suppression
+# RESULT_PATTERNS flag a routine / live score (candidate to drop).
+# CHAMPION_PATTERNS override the drop, so finals and titles always pass.
+RESULT_PATTERNS = re.compile(
+    r"\blive\b[: ]|\blive blog\b|\bresults?\b[: ]|\bday \d\b|\bmatchday\b|"
+    r"\bgroup stage\b|\bstandings\b|\brecap\b|\bround-?up\b|"
+    r"\b\d{1,2}\s?[-\u2013:]\s?\d{1,2}\b|"
+    r"\b(beat|beats|defeat|defeats|def\.|downs|edge|edges|topple|overcome)\b|"
+    r"\bvs\.?\b|\bhead to head\b",
+    re.I,
+)
+CHAMPION_PATTERNS = re.compile(
+    r"\bgrand final\b|\bworld champion|\bchampions\b|\bchampionship\b|"
+    r"\bwins? the (major|championship|cup|title|world)|\bcrowned\b|"
+    r"\blift(s)? the trophy\b|\bclaim(s)? the title\b|\bfirst (ever )?major\b|"
+    r"\bwins? (iem|esl|blast|ewc|rlcs|vct|the international|worlds|msi)\b|"
+    r"\btitle\b|\btrophy\b",
+    re.I,
 )
 
 # Helpers
@@ -101,6 +123,18 @@ def is_esports_relevant(title: str, summary: str, tier: int) -> bool:
     if blacklist_hit and not esports_hit:
         return False
     return True
+
+
+def is_match_result_spam(title: str, summary: str) -> bool:
+    """
+    True  = looks like a live / routine match result -> drop it.
+    False = keep it.
+    Finals, titles and championship moments are protected and always kept.
+    """
+    text = (title + " " + strip_html(summary)).lower()
+    if CHAMPION_PATTERNS.search(text):
+        return False                      # title moment -> keep
+    return bool(RESULT_PATTERNS.search(text))
 
 
 def load_seen() -> dict:
@@ -187,6 +221,7 @@ def main() -> None:
         "skip_old": 0,
         "skip_dup_title": 0,
         "skip_irrelevant": 0,
+        "skip_result": 0,
         "skip_cap": 0,
         "sent": 0,
         "send_failures": 0,
@@ -240,6 +275,14 @@ def main() -> None:
 
             if not is_esports_relevant(title, summary, tier):
                 stats["skip_irrelevant"] += 1
+                seen_urls.add(link)
+                seen_titles.add(t_hash)
+                new_urls.append(link)
+                new_titles.append(t_hash)
+                continue
+
+            if is_match_result_spam(title, summary):
+                stats["skip_result"] += 1
                 seen_urls.add(link)
                 seen_titles.add(t_hash)
                 new_urls.append(link)
