@@ -1,15 +1,16 @@
 """
-GGNewsAR Telegram bot — v5
-Pure RSS forwarder with:
-  • smart deduplication (URL + normalized title hash, source suffix stripped)
-  • STRICT esports relevance: an item must be about one of your titles / the
-    esports scene (scope) AND about the competitive scene (context). Game
-    content (skins, patches, guides, lore) and non listed games are dropped.
-  • match result suppression (drops live scores / routine results,
-    keeps finals, titles and championship moments)
-  • 12 hour freshness window (sized for a fast schedule, never delays)
-  • cap protection (overflow items not marked seen, picked up next run)
-  • detailed run statistics in logs
+GGNewsAR Telegram bot — v7 (rebuilt from scratch)
+
+Pipeline (per entry):
+  freshness (12h)  ->  url dedup  ->  title dedup  ->  filters.should_send  ->  cap  ->  send
+
+Statistics:
+  Every drop reason from filters.py is counted separately, so the Actions
+  log shows you exactly why each item didn't make it through. Failed
+  feeds are listed at the bottom.
+
+Configuration (top of file): freshness window, cap, message format.
+All relevance logic lives in filters.py; all sources in feeds.py.
 """
 
 import os
@@ -17,71 +18,41 @@ import re
 import json
 import hashlib
 import time
+from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 
 import feedparser
 import requests
 
-from feeds import FEEDS, TITLE_SCOPE
+from feeds import FEEDS
+from filters import should_send
 
+# ----------------------------------------------------------------------------
 # Configuration
+# ----------------------------------------------------------------------------
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 SEEN_FILE = "seen.json"
-MAX_MESSAGES_PER_RUN = 200          # raised from 100 for safety margin
+MAX_MESSAGES_PER_RUN = 40            # per user spec
 MESSAGE_DELAY_SECONDS = 0.8
-MAX_AGE_HOURS = 12                  # only ignore items older than this. NOT a delay.
-SEEN_RING_SIZE = 8000               # raised from 5000 to fit volume
+MAX_AGE_HOURS = 12                   # ignore items older than this; not a delay
+SEEN_RING_SIZE = 8000
 
 TELEGRAM_API = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
-# Explicit esports words. If one of these is present, the traditional sports
-# guard is skipped (e.g. "esports nations cup" near "nations" is fine).
-ESPORTS_WORDS = ["esports", "esport", "e-sports", "e-sport"]
+# Source suffix Google News and aggregators append to titles
+SOURCE_SUFFIX_RE = re.compile(r"\s*[\-\|\u2013\u2014:]\s*[^\-\|\u2013\u2014:]{1,40}$")
 
-# Source suffix patterns that Google News and other aggregators append
-SOURCE_SUFFIX_RE = re.compile(
-    r"\s*[\-\|\u2013\u2014:]\s*[^\-\|\u2013\u2014:]{1,40}$"
-)
 
-# Match result suppression
-# RESULT_PATTERNS flag a routine / live score (candidate to drop).
-# CHAMPION_PATTERNS override the drop, so finals and titles always pass.
-RESULT_PATTERNS = re.compile(
-    r"\blive\b[: ]|\blive blog\b|\bresults?\b|\brecap\b|\bround-?up\b|\bstandings\b|"
-    r"\b\d{1,2}\s?[-\u2013:]\s?\d{1,2}\b|"
-    r"\b(beat|beats|defeat|defeats|def\.|downs|edge|edges|topple|overcome)\b|"
-    r"\bvs\.?\b|\bhead to head\b",
-    re.I,
-)
-CHAMPION_PATTERNS = re.compile(
-    r"\bgrand final\b|\bworld champion|\bchampions\b|\bchampionship\b|"
-    r"\bwins? the (major|championship|cup|title|world)|\bcrowned\b|"
-    r"\blift(s)? the trophy\b|\bclaim(s)? the title\b|\bfirst (ever )?major\b|"
-    r"\bwins? (iem|esl|blast|ewc|rlcs|vct|the international|worlds|msi)\b|"
-    r"\btitle\b|\btrophy\b",
-    re.I,
-)
-
-# Game additions phrased with the game name in the middle, e.g.
-# "new VALORANT agent", "new CS2 map", "new Apex legend" -> game content, drop.
-GAME_CONTENT_RE = re.compile(
-    r"\bnew\s+(?:\w+\s+){0,3}"
-    r"(agent|operator|hero|legend|map|weapon|mode|skin|character|bundle)\b",
-    re.I,
-)
-
+# ----------------------------------------------------------------------------
 # Helpers
+# ----------------------------------------------------------------------------
 def normalize_title(title: str) -> str:
-    """Lowercase, strip source suffix, strip punctuation, collapse whitespace."""
     t = title.lower().strip()
-    # strip trailing " — Source" / " | Source" / " : Source" (once)
     t = SOURCE_SUFFIX_RE.sub("", t).strip()
-    # strip punctuation
     t = re.sub(r"[^\w\s]", " ", t)
-    t = re.sub(r"\s+", " ", t).strip()
-    return t
+    return re.sub(r"\s+", " ", t).strip()
 
 
 def title_hash(title: str) -> str:
@@ -92,12 +63,10 @@ def strip_html(text: str) -> str:
     if not text:
         return ""
     text = re.sub(r"<[^>]+>", " ", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def is_recent(entry, max_age_hours: int) -> bool:
-    """Reject items older than max_age_hours. If no date, accept (RSS quirk)."""
     pub = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
     if not pub:
         return True
@@ -105,40 +74,10 @@ def is_recent(entry, max_age_hours: int) -> bool:
     return (datetime.now(timezone.utc) - pub_time) <= timedelta(hours=max_age_hours)
 
 
-def has_any(text: str, keywords) -> bool:
-    return any(re.search(r"\b" + re.escape(kw.strip()) + r"\b", text) for kw in keywords)
-
-
-def is_esports_relevant(title: str, summary: str, tier: int) -> bool:
-    """
-    SEND EVERYTHING ESPORTS. No content filtering.
-      - Tier 1 (esports sources): everything passes.
-      - Tier 2 (general / mixed sources): must mention an esports title or term,
-        so only the esports items come through (not the whole site).
-    The only thing still removed is live / routine match score spam, handled
-    separately by is_match_result_spam in the main loop.
-    """
-    if tier == 2:
-        text = (title + " " + strip_html(summary)).lower()
-        if not has_any(text, TITLE_SCOPE):
-            return False
-    return True
-
-
-def is_match_result_spam(title: str, summary: str) -> bool:
-    """
-    True  = looks like a live / routine match result -> drop it.
-    False = keep it.
-    Finals, titles and championship moments are protected and always kept.
-    """
-    text = (title + " " + strip_html(summary)).lower()
-    if CHAMPION_PATTERNS.search(text):
-        return False                      # title moment -> keep
-    return bool(RESULT_PATTERNS.search(text))
-
-
+# ----------------------------------------------------------------------------
+# State (seen URLs and titles, persisted across runs)
+# ----------------------------------------------------------------------------
 def load_seen() -> dict:
-    """Load seen state. Supports old format (list of urls) for backward compat."""
     if not os.path.exists(SEEN_FILE):
         return {"urls": [], "titles": []}
     try:
@@ -148,14 +87,10 @@ def load_seen() -> dict:
         return {"urls": [], "titles": []}
     if isinstance(data, list):
         return {"urls": data, "titles": []}
-    return {
-        "urls": data.get("urls", []),
-        "titles": data.get("titles", []),
-    }
+    return {"urls": data.get("urls", []), "titles": data.get("titles", [])}
 
 
 def merge_preserve_order(existing: list, new_items: list) -> list:
-    """Append new items to existing in order, deduped, keeping oldest first."""
     seen_set = set(existing)
     out = list(existing)
     for item in new_items:
@@ -172,6 +107,9 @@ def save_seen(seen: dict) -> None:
         json.dump(seen, f, ensure_ascii=False, indent=2)
 
 
+# ----------------------------------------------------------------------------
+# Telegram
+# ----------------------------------------------------------------------------
 def format_message(source_name: str, title: str, summary: str, link: str) -> str:
     summary_clean = strip_html(summary)[:280]
     parts = [f"<b>{source_name}</b>", "", title]
@@ -199,7 +137,9 @@ def send_to_telegram(text: str) -> bool:
         return False
 
 
+# ----------------------------------------------------------------------------
 # Main
+# ----------------------------------------------------------------------------
 def main() -> None:
     seen = load_seen()
     seen_urls = set(seen["urls"])
@@ -210,24 +150,11 @@ def main() -> None:
         print("First run detected. Indexing existing items silently, no messages sent.")
 
     sent_count = 0
-    new_urls = []
-    new_titles = []
+    new_urls: list = []
+    new_titles: list = []
 
-    stats = {
-        "sources_ok": 0,
-        "sources_failed": 0,
-        "entries_seen_total": 0,
-        "skip_seen_url": 0,
-        "skip_old": 0,
-        "skip_dup_title": 0,
-        "skip_irrelevant": 0,
-        "skip_result": 0,
-        "skip_cap": 0,
-        "sent": 0,
-        "send_failures": 0,
-    }
-
-    failed_sources = []
+    stats = defaultdict(int)
+    failed_sources: list = []
 
     for feed_info in FEEDS:
         source_name = feed_info["name"]
@@ -253,53 +180,42 @@ def main() -> None:
             if not link or not title:
                 continue
 
+            # url dedup
             if link in seen_urls:
                 stats["skip_seen_url"] += 1
                 continue
 
             t_hash = title_hash(title)
 
+            # freshness
             if not is_recent(entry, MAX_AGE_HOURS):
                 stats["skip_old"] += 1
-                seen_urls.add(link)
-                seen_titles.add(t_hash)
-                new_urls.append(link)
-                new_titles.append(t_hash)
+                seen_urls.add(link); new_urls.append(link)
+                seen_titles.add(t_hash); new_titles.append(t_hash)
                 continue
 
+            # title dedup
             if t_hash in seen_titles:
                 stats["skip_dup_title"] += 1
-                seen_urls.add(link)
-                new_urls.append(link)
+                seen_urls.add(link); new_urls.append(link)
                 continue
 
-            if not is_esports_relevant(title, summary, tier):
-                stats["skip_irrelevant"] += 1
-                seen_urls.add(link)
-                seen_titles.add(t_hash)
-                new_urls.append(link)
-                new_titles.append(t_hash)
+            # relevance + match-result guard (filters.py)
+            send, reason = should_send(title, summary, tier)
+            if not send:
+                stats[f"drop_{reason}"] += 1
+                seen_urls.add(link); new_urls.append(link)
+                seen_titles.add(t_hash); new_titles.append(t_hash)
                 continue
 
-            if is_match_result_spam(title, summary):
-                stats["skip_result"] += 1
-                seen_urls.add(link)
-                seen_titles.add(t_hash)
-                new_urls.append(link)
-                new_titles.append(t_hash)
-                continue
-
-            # Cap check BEFORE marking as seen
-            # Overflow items stay unseen so the next run picks them up.
+            # cap (do NOT mark as seen, so next run picks them up)
             if not first_run and sent_count >= MAX_MESSAGES_PER_RUN:
                 stats["skip_cap"] += 1
                 continue
 
-            # Passed all checks AND under cap
-            seen_urls.add(link)
-            seen_titles.add(t_hash)
-            new_urls.append(link)
-            new_titles.append(t_hash)
+            # passed everything
+            seen_urls.add(link); new_urls.append(link)
+            seen_titles.add(t_hash); new_titles.append(t_hash)
 
             if first_run:
                 continue
@@ -312,15 +228,15 @@ def main() -> None:
                 stats["send_failures"] += 1
             time.sleep(MESSAGE_DELAY_SECONDS)
 
-    # Persist state, preserving insertion order (oldest first)
+    # persist state
     seen["urls"] = merge_preserve_order(seen["urls"], new_urls)
     seen["titles"] = merge_preserve_order(seen["titles"], new_titles)
     save_seen(seen)
 
-    # Logs
+    # logs
     print("\n=== Run Summary ===")
-    for k, v in stats.items():
-        print(f"  {k:25s} {v}")
+    for k in sorted(stats.keys()):
+        print(f"  {k:30s} {stats[k]}")
 
     if failed_sources:
         print(f"\n=== Failed Sources ({len(failed_sources)}) ===")
