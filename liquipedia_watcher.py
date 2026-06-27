@@ -81,7 +81,8 @@ def fetch_page_revisions(wiki: str, pages: list[str], session: Optional[requests
             "prop": "revisions",
             "titles": "|".join(batch),
             "rvprop": "ids|timestamp|user|comment|size|flags",
-            "rvlimit": 3,  # Last 3 revisions per page
+            # NOTE: rvlimit is NOT compatible with multi-title queries.
+            # MediaWiki returns the latest revision per title automatically.
             "maxlag": 5,
             "redirects": 1,
         }
