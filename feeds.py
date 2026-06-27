@@ -253,6 +253,18 @@ def stats() -> dict:
     }
 
 
+# ============================================================
+# Backward compatibility for legacy bot.py
+# ============================================================
+# The old bot.py imports `FEEDS` from this module as a flat list of URLs.
+# We expose it here so the legacy bot keeps running until we build
+# the new collector architecture (rss_collector.py + scraper.py + bot.py v2).
+#
+# Once the new bot.py lands, this block can be deleted.
+
+FEEDS = [f["url"] for f in RSS_FEEDS]
+
+
 if __name__ == "__main__":
     import json
     print(json.dumps(stats(), indent=2))
