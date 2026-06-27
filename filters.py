@@ -1,70 +1,132 @@
 """
 GGNewsAR Bot — Filters Module
-Decides which feed entries should be sent to Telegram.
+Called from bot.py as: should_send(title, summary, tier) -> (bool, reason)
 
-Minimal implementation to keep the legacy bot.py running after
-we replaced feeds.py. If the original filters.py had additional rules
-(drop keywords, source-specific logic), drop them into the lists below.
+Returned reason is used in stats[f"drop_{reason}"], so reasons should be
+short snake_case strings, no spaces.
+
+Logic:
+  1. Drop spam/off-topic (gambling, casino, betting predictions, etc).
+  2. Tier 1 sources (primary game-specific): pass through (trusted).
+  3. Tier 2 sources (aggregators): require an esports keyword in title/summary.
+  4. Pure match scoreline-only posts (no editorial words): dropped.
 """
 
 import re
 
-
-# Patterns in the article title that mark it as noise (case-insensitive regex)
-DROP_TITLE_PATTERNS = [
-    # Add patterns here as you spot noise. Examples:
-    # r'\bsponsored\b',
-    # r'\bgiveaway\b',
-    # r'\bpromo code\b',
+# ---------------------------------------------------------------------------
+# Esports keyword whitelist
+# ---------------------------------------------------------------------------
+ESPORTS_KEYWORDS = [
+    # Generic
+    "esports", "esport", "e-sports",
+    # CS / CS2
+    "cs2", "counter-strike", "counterstrike", "csgo", "cs:go",
+    "hltv", "iem", "blast", "pgl", "esl pro league", "esl one",
+    # VALORANT
+    "valorant", "vct", "masters", "champions tour",
+    # LoL
+    "league of legends", "lol esports", "lck", "lec", "lpl", "lcs",
+    "worlds 20", "world championship", "msi", "mid-season invitational",
+    # Dota 2
+    "dota 2", "dota2", "the international", "dpc", "blast slam",
+    # R6
+    "rainbow six", "siege", "six invitational", "siegegg",
+    # Rocket League
+    "rocket league", "rlcs", "octane",
+    # Mobile esports
+    "mobile legends", "mlbb", "mpl", "m series", "msc",
+    "honor of kings", "kpl", "king pro league",
+    "pubg mobile", "pmgc", "pmsl", "pubg",
+    # Apex
+    "apex legends", "algs",
+    # Overwatch
+    "overwatch", "owcs", "ow2",
+    # FGC
+    "tekken", "street fighter", "mortal kombat", "guilty gear",
+    "evo", "evolution championship", "capcom cup", "fgc",
+    # EA FC / FIFA
+    "ea fc", "ea sports fc", "fifa esports", "fc pro",
+    "fifae", "eworld cup",
+    # CoD
+    "call of duty", "cdl", "cod league", "warzone",
+    # Tournament organizers and big events
+    "esports world cup", "ewc 2026", "gamers8",
+    "dreamhack", "iesf", "olympic esports",
+    # Roster/business actions
+    "roster move", "lineup change", "signs ", "signing", "transfers to",
+    "joins ", "leaves ", "released by", "benched", "stand-in",
+    "qualifies for", "qualifier", "eliminated", "wins ",
+    "grand final", "playoff", "group stage", "prize pool",
+    "champion", "trophy",
+    # Arab orgs (always relevant for GGNewsAR)
+    "falcons", "twisted minds", "nigma galaxy", "geekay", "fate esports",
+    "saudi esports", "ksa esports", "mena esports",
 ]
 
-# Patterns in the article URL that mark the source as noise
-DROP_URL_PATTERNS = [
-    # Examples:
-    # r'/sponsored/',
-    # r'/promo/',
+# ---------------------------------------------------------------------------
+# Drop list (spam / off-topic / regulated content)
+# ---------------------------------------------------------------------------
+DROP_KEYWORDS = [
+    # Gambling content
+    "betting tips", "best odds", "predictions and odds", "betting predictions",
+    "best esports betting", "casino bonus", "deposit bonus", "free spins",
+    "slot machine", "online casino", "promo code", "sportsbook review",
+    # Off-topic
+    "horoscope", "celebrity gossip", "weight loss",
+    # Hardware reviews (not esports news)
+    "best gaming chair", "best gaming mouse review",
 ]
 
-# Minimum title length to consider an entry valid
-MIN_TITLE_LENGTH = 10
+# Patterns that indicate a pure scoreline-only post
+# (we want news, not match results spam)
+SCORELINE_RE = re.compile(r"\b\d{1,2}\s*[-:]\s*\d{1,2}\b")
+
+# News-y words that justify keeping a scoreline post (it's a recap, not a score)
+NEWSY_WORDS = [
+    "news", "report", "announcement", "interview", "analysis",
+    "recap", "review", "controversy", "scandal", "ban", "penalty",
+    "comeback", "upset", "stuns", "claims title", "lifts trophy",
+    "advance", "advances", "secure", "secures",
+]
 
 
-def should_send(entry) -> bool:
+def should_send(title: str, summary: str, tier: int = 2) -> tuple[bool, str]:
     """
-    Return True if the feed entry should be sent to Telegram.
-    Called by bot.py inside the main feed loop.
-    
-    Accepts feedparser entry objects (which support both .attr and ['key']).
+    Decide whether an RSS entry should be sent to Telegram.
+
+    Returns:
+        (decision, reason). The reason is used in stats[f"drop_{reason}"]
+        so keep it short snake_case.
     """
-    # Extract title and link defensively
-    if hasattr(entry, 'get'):
-        title = entry.get('title', '') or ''
-        link = entry.get('link', '') or ''
-    else:
-        title = getattr(entry, 'title', '') or ''
-        link = getattr(entry, 'link', '') or ''
-    
-    title = title.strip()
-    link = link.strip()
-    
-    # Must have both
-    if not title or not link:
-        return False
-    
-    # Title must be meaningful
-    if len(title) < MIN_TITLE_LENGTH:
-        return False
-    
-    # Apply drop patterns
-    title_lower = title.lower()
-    link_lower = link.lower()
-    
-    for pattern in DROP_TITLE_PATTERNS:
-        if re.search(pattern, title_lower, re.IGNORECASE):
-            return False
-    
-    for pattern in DROP_URL_PATTERNS:
-        if re.search(pattern, link_lower, re.IGNORECASE):
-            return False
-    
-    return True
+    title = (title or "").strip()
+    summary = (summary or "").strip()
+
+    if not title:
+        return False, "no_title"
+
+    full_text = (title + " " + summary).lower()
+
+    # Drop spam first (applies to all tiers)
+    for kw in DROP_KEYWORDS:
+        if kw in full_text:
+            return False, "spam_keyword"
+
+    # Tier 1: trusted primary game sites
+    if tier == 1:
+        # Even tier 1: drop scoreline-only short titles with no editorial framing
+        if len(title) < 60 and SCORELINE_RE.search(title):
+            if not any(w in full_text for w in NEWSY_WORDS):
+                return False, "scoreline_only"
+        return True, "tier1_pass"
+
+    # Tier 2+: require at least one esports keyword
+    if not any(kw in full_text for kw in ESPORTS_KEYWORDS):
+        return False, "no_esports_match"
+
+    # Tier 2 scoreline guard (same as tier 1)
+    if len(title) < 60 and SCORELINE_RE.search(title):
+        if not any(w in full_text for w in NEWSY_WORDS):
+            return False, "scoreline_only"
+
+    return True, "ok"

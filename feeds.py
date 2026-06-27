@@ -254,15 +254,20 @@ def stats() -> dict:
 
 
 # ============================================================
-# Backward compatibility for legacy bot.py
+# Backward compatibility for bot.py v7
 # ============================================================
-# The old bot.py imports `FEEDS` from this module as a flat list of URLs.
-# We expose it here so the legacy bot keeps running until we build
-# the new collector architecture (rss_collector.py + scraper.py + bot.py v2).
-#
-# Once the new bot.py lands, this block can be deleted.
+# bot.py iterates FEEDS as a list of dicts with name/url/tier.
+# Tier 1 = primary game-specific sites (trusted, pass through filters easily).
+# Tier 2 = aggregators (must mention an esports keyword to pass).
 
-FEEDS = [f["url"] for f in RSS_FEEDS]
+def _tier_from_type(t: str) -> int:
+    return 1 if t == TYPE_PRIMARY else 2
+
+
+FEEDS = [
+    {"name": f["name"], "url": f["url"], "tier": _tier_from_type(f["type"])}
+    for f in RSS_FEEDS
+]
 
 
 if __name__ == "__main__":
