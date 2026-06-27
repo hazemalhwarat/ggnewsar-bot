@@ -22,7 +22,7 @@ from datetime import datetime, timezone, timedelta
 import feedparser
 import requests
 
-from feeds import FEEDS, TITLE_SCOPE, CONTEXT_SIGNALS, BLACKLIST_KEYWORDS
+from feeds import FEEDS, TITLE_SCOPE
 
 # Configuration
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
@@ -61,6 +61,14 @@ CHAMPION_PATTERNS = re.compile(
     r"\blift(s)? the trophy\b|\bclaim(s)? the title\b|\bfirst (ever )?major\b|"
     r"\bwins? (iem|esl|blast|ewc|rlcs|vct|the international|worlds|msi)\b|"
     r"\btitle\b|\btrophy\b",
+    re.I,
+)
+
+# Game additions phrased with the game name in the middle, e.g.
+# "new VALORANT agent", "new CS2 map", "new Apex legend" -> game content, drop.
+GAME_CONTENT_RE = re.compile(
+    r"\bnew\s+(?:\w+\s+){0,3}"
+    r"(agent|operator|hero|legend|map|weapon|mode|skin|character|bundle)\b",
     re.I,
 )
 
@@ -103,28 +111,17 @@ def has_any(text: str, keywords) -> bool:
 
 def is_esports_relevant(title: str, summary: str, tier: int) -> bool:
     """
-    STRICT. Keep an item only if:
-      1) it mentions one of your titles / circuits / orgs / the esports scene
-         (TITLE_SCOPE), AND
-      2) it is about the competitive scene, not game content (CONTEXT_SIGNALS).
-    A traditional sports / entertainment guard blocks items that hit the
-    blacklist without any explicit esports word. Tier does not relax the two
-    gates; it only keeps the guard a touch softer for trusted esports outlets.
+    SEND EVERYTHING ESPORTS. No content filtering.
+      - Tier 1 (esports sources): everything passes.
+      - Tier 2 (general / mixed sources): must mention an esports title or term,
+        so only the esports items come through (not the whole site).
+    The only thing still removed is live / routine match score spam, handled
+    separately by is_match_result_spam in the main loop.
     """
-    text = (title + " " + strip_html(summary)).lower()
-
-    # Gate 1: is it about one of your titles / the esports scene?
-    if not has_any(text, TITLE_SCOPE):
-        return False
-
-    # Gate 2: is it about the competitive scene (not skins / patches / guides)?
-    if not has_any(text, CONTEXT_SIGNALS):
-        return False
-
-    # Guard: traditional sports / entertainment, unless an esports word is present
-    if has_any(text, BLACKLIST_KEYWORDS) and not has_any(text, ESPORTS_WORDS):
-        return False
-
+    if tier == 2:
+        text = (title + " " + strip_html(summary)).lower()
+        if not has_any(text, TITLE_SCOPE):
+            return False
     return True
 
 
