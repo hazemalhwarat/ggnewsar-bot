@@ -2,6 +2,12 @@
 GGNewsAR Bot — Liquipedia Watchlist
 Pages to monitor for changes. Edit this file to add or remove pages.
 
+Rebalanced 2026-06-29: CS2 and VALORANT previously dominated this list
+because they had the most pages, which meant they generated proportionally
+more Liquipedia messages too. Other titles (R6, RL, MLBB, PUBGM, HoK) are
+now expanded to comparable page counts, and two wikis that were entirely
+missing (Fighting Games, EA Sports FC) have been added.
+
 Notes:
 - Use underscores in page titles, exactly as in the Liquipedia URL
 - For example, "Team Falcons" → "Team_Falcons"
@@ -27,7 +33,7 @@ WATCHLIST = {
         "Team_Liquid",
         "Eternal_Fire",
         "TheMongolz",
-        # Star players (use Liquipedia page names)
+        # Star players
         "S1mple",
         "ZywOo",
         "Donk",
@@ -43,7 +49,7 @@ WATCHLIST = {
         "Esports_World_Cup/2026/Counter-Strike_2",
         "Esports_Nations_Cup/2026/Counter-Strike_2",
     ],
-    
+
     # === VALORANT ===
     "valorant": [
         # Arab teams
@@ -65,7 +71,7 @@ WATCHLIST = {
         "VCT/2026/Masters",
         "VCT/2026/Champions",
     ],
-    
+
     # === League of Legends ===
     "leagueoflegends": [
         # Top teams
@@ -83,7 +89,7 @@ WATCHLIST = {
         "LPL/2026",
         "Esports_World_Cup/2026/League_of_Legends",
     ],
-    
+
     # === Dota 2 ===
     "dota2": [
         # Arab teams
@@ -99,61 +105,104 @@ WATCHLIST = {
         "The_International/2026",
         "Esports_World_Cup/2026/Dota_2",
     ],
-    
-    # === Rainbow Six Siege ===
+
+    # === Rainbow Six Siege (expanded) ===
     "rainbowsix": [
         # Arab teams
         "Team_Falcons",
         "Twisted_Minds",
-        # Top international
-        "G2_Esports",
+        # Top international teams (from live Liquipedia standings)
+        "DarkZero",
+        "Ninjas_in_Pyjamas",
         "Team_Liquid",
-        "Wolves_Esports",
+        "Shifters",
+        "G2_Esports",
+        "w7m_esports",
+        "Spacestation_Gaming",
         "FaZe_Clan",
+        "Wolves_Esports",
+        "Virtus.pro",
         # Tournaments
         "Six_Invitational/2026",
-        "Esports_World_Cup/2026/Rainbow_Six_Siege",
+        "Esports_World_Cup/2026",
+        "Esports_Nations_Cup/2026",
+        "BLAST_R6_Major/2026/Salt_Lake_City",
     ],
-    
-    # === Rocket League ===
+
+    # === Rocket League (expanded) ===
     "rocketleague": [
         # Arab teams
         "Team_Falcons",
         "Twisted_Minds",
-        # Top international
-        "Karmine_Corp",
-        "Gen.G_Mobil1_Racing",
-        "Team_BDS",
+        # Top international teams (from live Liquipedia standings)
         "Vitality",
+        "NRG",
+        "Karmine_Corp",
+        "Spacestation_Gaming",
+        "Dignitas",
+        "Gen.G_Mobil1_Racing",
+        "Gentle_Mates",
+        "Team_BDS",
+        "FURIA",
         # Tournaments
         "RLCS_2026",
-        "Esports_World_Cup/2026/Rocket_League",
+        "Esports_World_Cup/2026",
+        "FIFAe_World_Cup/2026",
     ],
-    
-    # === Mobile Legends ===
+
+    # === Mobile Legends (expanded) ===
     "mobilelegends": [
         "ONIC_Esports",
         "RRQ_Hoshi",
         "EVOS_Glory",
         "Selangor_Red_Giants",
+        "Blacklist_International",
+        "Echo",
+        "TLID",
+        "Falcons_Esports",
         "MPL/Indonesia/2026",
+        "MPL/Philippines/2026",
+        "MSC/2026",
+        "M_Series/2026",
         "Esports_World_Cup/2026/Mobile_Legends:_Bang_Bang",
     ],
-    
-    # === Honor of Kings ===
+
+    # === Honor of Kings (expanded) ===
     "honorofkings": [
-        "Esports_World_Cup/2026/Honor_of_Kings",
         "King_Pro_League/2026",
+        "Honor_of_Kings_World_Cup/2026",
+        "Esports_World_Cup/2026",
     ],
-    
-    # === PUBG Mobile ===
+
+    # === PUBG Mobile (expanded) ===
     "pubgmobile": [
         # Arab teams
         "Team_Falcons",
         # Major tournaments
         "PMGC/2026",
-        "Esports_World_Cup/2026/PUBG_Mobile",
+        "PMPL/2026",
+        "PMCO/2026",
+        "Esports_World_Cup/2026",
         "PUBG_Mobile_Asian_Games_2026",
+    ],
+
+    # === Fighting Games (new) ===
+    "fighters": [
+        # Top players across the major titles (Tekken, Street Fighter)
+        "Tekken",
+        "Street_Fighter_6",
+        "Tekken_World_Tour/2026",
+        "Capcom_Cup/12",
+        "Esports_World_Cup/2026/T8",
+        "Esports_World_Cup/2026/SF6",
+        "EVO/2026",
+    ],
+
+    # === EA Sports FC (new) ===
+    "easportsfc": [
+        "FC_Pro_26_World_Championship",
+        "EChampions_League/2026",
+        "Esports_World_Cup/2026",
     ],
 }
 
@@ -165,3 +214,9 @@ def total_pages() -> int:
 
 def all_wikis() -> list[str]:
     return list(WATCHLIST.keys())
+
+
+if __name__ == "__main__":
+    print(f"Total pages: {total_pages()}")
+    for wiki, pages in WATCHLIST.items():
+        print(f"  {wiki:18s} {len(pages)} pages")

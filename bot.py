@@ -358,13 +358,15 @@ def format_liquipedia_message(rev: dict, reason: str) -> str:
         "counterstrike": "🔫", "valorant": "🎯", "leagueoflegends": "⚔️",
         "dota2": "🐉", "rainbowsix": "🛡️", "rocketleague": "🚀",
         "mobilelegends": "📱", "honorofkings": "👑", "pubgmobile": "🪂",
+        "fighters": "🥊", "easportsfc": "⚽",
     }
     game_names = {
         "counterstrike": "Counter Strike 2", "valorant": "VALORANT",
         "leagueoflegends": "League of Legends", "dota2": "Dota 2",
         "rainbowsix": "Rainbow Six Siege", "rocketleague": "Rocket League",
         "mobilelegends": "Mobile Legends", "honorofkings": "Honor of Kings",
-        "pubgmobile": "PUBG Mobile",
+        "pubgmobile": "PUBG Mobile", "fighters": "Fighting Games",
+        "easportsfc": "EA Sports FC",
     }
     wiki = rev["wiki"]
     emoji = game_emojis.get(wiki, "🎮")
