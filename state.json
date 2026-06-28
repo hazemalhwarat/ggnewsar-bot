@@ -2179,6 +2179,162 @@
         "690554"
       ],
       "size": 2127
+    },
+    "rainbowsix:DarkZero": {
+      "revids": [
+        "868016"
+      ],
+      "size": 1418
+    },
+    "rainbowsix:Esports Nations Cup/2026": {
+      "revids": [
+        "868759"
+      ],
+      "size": 78923
+    },
+    "rainbowsix:Esports World Cup/2026": {
+      "revids": [
+        "873809"
+      ],
+      "size": 7753
+    },
+    "rainbowsix:Ninjas in Pyjamas": {
+      "revids": [
+        "852808"
+      ],
+      "size": 3701
+    },
+    "rainbowsix:Shifters": {
+      "revids": [
+        "873758"
+      ],
+      "size": 2380
+    },
+    "rainbowsix:Spacestation Gaming": {
+      "revids": [
+        "862295"
+      ],
+      "size": 2777
+    },
+    "rainbowsix:Virtus.pro": {
+      "revids": [
+        "868502"
+      ],
+      "size": 2036
+    },
+    "rainbowsix:W7m esports": {
+      "revids": [
+        "868442"
+      ],
+      "size": 2037
+    },
+    "rocketleague:Dignitas": {
+      "revids": [
+        "2012176"
+      ],
+      "size": 9487
+    },
+    "rocketleague:Esports World Cup/2026": {
+      "revids": [
+        "2075068"
+      ],
+      "size": 27158
+    },
+    "rocketleague:FIFAe World Cup/2026": {
+      "revids": [
+        "2074592"
+      ],
+      "size": 12573
+    },
+    "rocketleague:FURIA": {
+      "revids": [
+        "2054361"
+      ],
+      "size": 3906
+    },
+    "rocketleague:Gentle Mates": {
+      "revids": [
+        "2054310"
+      ],
+      "size": 3636
+    },
+    "rocketleague:NRG": {
+      "revids": [
+        "2029824"
+      ],
+      "size": 29842
+    },
+    "rocketleague:Spacestation Gaming": {
+      "revids": [
+        "2054315"
+      ],
+      "size": 10144
+    },
+    "mobilelegends:Blacklist International": {
+      "revids": [
+        "222035"
+      ],
+      "size": 4072
+    },
+    "mobilelegends:MSC/2026": {
+      "revids": [
+        "287908"
+      ],
+      "size": 25132
+    },
+    "honorofkings:Honor of Kings World Cup/2026": {
+      "revids": [
+        "377476"
+      ],
+      "size": 26404
+    },
+    "fighters:Capcom Cup/12": {
+      "revids": [
+        "407707"
+      ],
+      "size": 13570
+    },
+    "fighters:Esports World Cup/2026/SF6": {
+      "revids": [
+        "420374"
+      ],
+      "size": 6953
+    },
+    "fighters:Esports World Cup/2026/T8": {
+      "revids": [
+        "420373"
+      ],
+      "size": 6833
+    },
+    "fighters:Street Fighter 6": {
+      "revids": [
+        "339566"
+      ],
+      "size": 12502
+    },
+    "fighters:Tekken": {
+      "revids": [
+        "327437"
+      ],
+      "size": 4209
+    },
+    "fighters:Tekken World Tour/2026": {
+      "revids": [
+        "417397"
+      ],
+      "size": 5187
+    },
+    "easportsfc:EChampions League/2026": {
+      "revids": [
+        "280543"
+      ],
+      "size": 7605
+    },
+    "easportsfc:FC Pro 26/World Championship": {
+      "revids": [
+        "281674"
+      ],
+      "size": 8553
     }
   }
 }
