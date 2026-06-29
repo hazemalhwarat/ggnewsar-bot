@@ -15,6 +15,9 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 10  # safety net: force-kill the job if anything hangs,
+                         # so a stuck run can never block future scheduled runs
+                         # via the concurrency lock again
     steps:
       - name: Checkout
         uses: actions/checkout@v4
