@@ -914,7 +914,13 @@
     "https://racinggames.gg/article/fc-26-path-to-glory-upgrade-tracker-all-upgrades-explained",
     "https://racinggames.gg/article/fc-26-donovation-evolution-guide-best-players-is-it-worth-100k-coins",
     "https://racinggames.gg/article/fifa-world-cup-launch-edition-everything-we-know",
-    "https://racinggames.gg/article/fc-26-the-main-event-evolution-how-to-unlock-best-players"
+    "https://racinggames.gg/article/fc-26-the-main-event-evolution-how-to-unlock-best-players",
+    "https://esportsinsider.com/2026/06/hikari-interview-2xko-evo-vegas-2026",
+    "https://esports.gg/news/minecraft/minecraft-snapshot-26-3/",
+    "https://esports.gg/guides/mobile-legends-bang-bang/mobile-legends-popular-southeast-asia/",
+    "https://esports.gg/guides/roblox/hypno-bloom-grow-a-garden-2/",
+    "https://gameriv.com/lord-of-mysteries-looks-set-to-outclass-western-mmos-that-keep-getting-canceled/",
+    "https://gamingph.com/2026/06/cat-life-simulator-offers-a-realistic-look-at-a-cats-outdoor-adventures/"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -1831,7 +1837,13 @@
     "bff5d59e34a6044cf119d275d1714429",
     "d64572adc367c3d6747fd7ec4b678243",
     "7da5689d15dad1340e8994aec2e511c8",
-    "27ea968a9579f04ebd56bc5555a989ff"
+    "27ea968a9579f04ebd56bc5555a989ff",
+    "726c111fea4a28660be3e257f72c5e83",
+    "d093501384aa003d36b6b4ac8f289c01",
+    "be9dfa980594433381273beef78c9df1",
+    "1eadfa624a1e217ec256708634c1b69d",
+    "31fa50521da4786241d0b4d49ef2316e",
+    "3536b7bf3efa1bbab913f7d98b4fe1c9"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -1987,9 +1999,10 @@
     "valorant:Esports Nations Cup/2026": {
       "revids": [
         "1302923",
-        "1302943"
+        "1302943",
+        "1302967"
       ],
-      "size": 29927
+      "size": 30227
     },
     "valorant:Esports World Cup/2026": {
       "revids": [
@@ -2365,9 +2378,10 @@
     },
     "honorofkings:Honor of Kings World Cup/2026": {
       "revids": [
-        "377476"
+        "377476",
+        "377484"
       ],
-      "size": 26404
+      "size": 26495
     },
     "fighters:Capcom Cup/12": {
       "revids": [
@@ -2377,9 +2391,10 @@
     },
     "fighters:Esports World Cup/2026/SF6": {
       "revids": [
-        "420374"
+        "420374",
+        "420778"
       ],
-      "size": 6953
+      "size": 6964
     },
     "fighters:Esports World Cup/2026/T8": {
       "revids": [
@@ -2402,9 +2417,10 @@
     },
     "fighters:Tekken World Tour/2026": {
       "revids": [
-        "417397"
+        "417397",
+        "420734"
       ],
-      "size": 5187
+      "size": 5199
     },
     "easportsfc:EChampions League/2026": {
       "revids": [
