@@ -2,7 +2,7 @@ name: GGNewsAR Bot
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # every 30 minutes
+    - cron: "13 */4 * * *"  # every 4 hours, offset minute to avoid GitHub's high-load congestion times
   workflow_dispatch:
 
 permissions:
