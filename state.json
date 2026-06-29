@@ -1075,7 +1075,19 @@
     "https://nesthq.ca/how-to-look-more-professional-in-esports-before-youre-famous/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-look-more-professional-in-esports-before-youre-famous",
     "https://nesthq.ca/cost-of-becoming-an-esports-pro/?utm_source=rss&utm_medium=rss&utm_campaign=cost-of-becoming-an-esports-pro",
     "https://nesthq.ca/prize-pools-esports-events/?utm_source=rss&utm_medium=rss&utm_campaign=prize-pools-esports-events",
-    "https://nesthq.ca/the-complete-beginners-guide-to-hosting-an-esports-tournament/?utm_source=rss&utm_medium=rss&utm_campaign=the-complete-beginners-guide-to-hosting-an-esports-tournament"
+    "https://nesthq.ca/the-complete-beginners-guide-to-hosting-an-esports-tournament/?utm_source=rss&utm_medium=rss&utm_campaign=the-complete-beginners-guide-to-hosting-an-esports-tournament",
+    "https://dotesports.com/general/news/esports-world-cup-2026-france",
+    "https://esports-news.co.uk/2026/06/29/world-cup-r32-united-states-bosnia-herzegovina-predictions/",
+    "https://esports-news.co.uk/2026/06/29/jayce-and-mel-appear-at-msi-as-riftbounds-first-official-vendetta-spoilers/",
+    "https://insider-gaming.com/ewc-2026-valorant-groups/",
+    "https://insider-gaming.com/xbox-pausing-third-party-game-pass-deals-claim/",
+    "https://esportsradar.gg/uesf-bans-several-ukrainian-esports-players-over-playing-with-russian-teammates/",
+    "https://esports.gg/news/hikari-2xko-evo-vegas-2026-winner/",
+    "https://realsport101.com/article/fc-26-how-to-unlock-free-92-ovr-neymar-evolution-strategies",
+    "https://realsport101.com/article/fc-26-veni-vidi-vini-evolution-guide-best-player-is-it-worth-250k-coins",
+    "https://realsport101.com/article/fc-26-south-america-objective-fastest-way-to-complete-all-rewards",
+    "https://www.pcgamesn.com/lenovo/ram-prices-will-never-be-like-last-year-again",
+    "https://www.gamesindustry.biz/sk-hynix-samsung-and-micron-sued-over-allegations-of-concerted-anticompetitive-behaviour-in-dram-market"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -2151,7 +2163,19 @@
     "57766e28d4b2a8cf7fec6407b4d99d92",
     "6bccabbd845333f155c2110b508c8284",
     "64f79295b415e6e3e8a6910aba5f0698",
-    "e797f24154e59b3fe12b215ed3fce1da"
+    "e797f24154e59b3fe12b215ed3fce1da",
+    "0dec672d1ff321405144e8022a7edcec",
+    "b69be50eefc2159beae83274970c76bf",
+    "5de2e076313e875533b3f2f292b506ad",
+    "17c62751d5d94261984ed7e1e2074d4f",
+    "2c3801417de6e022cf7c3068e1bc3fa6",
+    "0aba89e37f0041da381456ed82296a3e",
+    "e6f8a53d5f5df00f594177839a1b6144",
+    "ff0dcb71e2f56d40697b61c98c342a42",
+    "59e5d277b8b080cb8429228af09feac8",
+    "1add1076bebddda6bbecd2c6d52e8c05",
+    "00590d63875defbf5b6a3536ecc6d47e",
+    "e1575ce9eca95e9f84a765a630ee9f59"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -2680,9 +2704,10 @@
     },
     "mobilelegends:MSC/2026": {
       "revids": [
-        "287908"
+        "287908",
+        "287951"
       ],
-      "size": 25132
+      "size": 25084
     },
     "honorofkings:Honor of Kings World Cup/2026": {
       "revids": [
