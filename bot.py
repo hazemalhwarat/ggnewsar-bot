@@ -196,7 +196,18 @@ def rss_phase(state: dict, first_run: bool, sent_budget: int) -> int:
         url = feed_info["url"]
 
         try:
-            d = feedparser.parse(url)
+            # feedparser.parse(url) has NO built-in timeout and can hang
+            # indefinitely if a server is slow or never closes the connection.
+            # Fetch via requests with an explicit timeout first, then hand the
+            # raw bytes to feedparser — this guarantees we never hang on a
+            # single dead/slow source.
+            resp = requests.get(
+                url,
+                timeout=15,
+                headers={"User-Agent": "Mozilla/5.0 (compatible; GGNewsARBot/1.0)"},
+            )
+            resp.raise_for_status()
+            d = feedparser.parse(resp.content)
             if d.bozo and not d.entries:
                 raise RuntimeError(f"bozo={d.bozo_exception or d.bozo}")
             if not d.entries:
