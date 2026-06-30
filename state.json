@@ -1143,7 +1143,27 @@
     "https://esports.gg/news/street-fighter-6/interview-daigo-umehara-evo-las-vegas-2026/",
     "https://esports.gg/news/call-of-duty/why-does-call-of-duty-release-so-many-games/",
     "https://www.dexerto.com/marvel-rivals/team-canada-implodes-at-300k-marvel-rivals-world-cup-after-streamer-refuses-to-switch-heroes-3380829/",
-    "https://www.techradar.com/gaming/consoles-pc/companion-cube-case-for-steam-machine-is-canceled-by-valve-after-dbrand-bafflingly-forgot-to-get-permission-to-make-the-thing"
+    "https://www.techradar.com/gaming/consoles-pc/companion-cube-case-for-steam-machine-is-canceled-by-valve-after-dbrand-bafflingly-forgot-to-get-permission-to-make-the-thing",
+    "https://www.vlr.gg/707785/akeman-leaves-dragon-ranger-gaming-joins-keepbest",
+    "https://dotesports.com/persona/news/persona-live-action-series-netflix",
+    "https://dotesports.com/league-of-legends/news/t1-peyz-interview-msi-2026",
+    "https://esportsradar.gg/gamesquare-renews-and-expands-partnership-with-riot-games/",
+    "https://esportsradar.gg/karmine-corp-names-ez-store-as-official-pc-supplier/",
+    "https://esports.gg/news/league-of-legends/msi-2026-skin-promotions/",
+    "https://esports.gg/guides/entertainment/what-is-the-big-brother-28-finale-date-bb28-runtime-revealed/",
+    "https://esports.gg/guides/entertainment/when-do-the-big-brother-28-live-feeds-start-answered/",
+    "https://esports.gg/guides/call-of-duty/best-mpc-25-loadout-in-black-ops-7-ranked-play/",
+    "https://esports.gg/guides/call-of-duty/how-to-get-all-win-streak-flames-in-black-ops-7-ranked-play/",
+    "https://mobilegaminghub.com/bring-back-the-sun-ancient-ruins-walkthrough-guide-roblox/",
+    "https://www.hotspawn.com/league-of-legends/news/soboro-joins-fnatic/",
+    "https://www.hotspawn.com/fortnite/news/when-is-the-next-fncs-major/",
+    "https://www.hotspawn.com/fortnite/news/old-fortnite-battle-pass-skins-back-in-the-item-shop/",
+    "https://www.hotspawn.com/counter-strike/news/best-lore-knife-glove-combos-in-cs2/",
+    "https://www.hotspawn.com/league-of-legends/news/tlaw-yeon-msi-interview/",
+    "https://www.hotspawn.com/counter-strike/news/best-freehand-knife-glove-combos-in-cs2/",
+    "https://www.hotspawn.com/counter-strike/news/best-forest-ddpat-knife-glove-combos-in-cs2/",
+    "https://www.hotspawn.com/valorant/news/enc-sportswashing-and-hypocrisy/",
+    "https://www.hotspawn.com/league-of-legends/news/t1-keria-msi-2026-interview/"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -2287,7 +2307,27 @@
     "8ccde4a3c694fd604b3de33ab41e0729",
     "f208da979dca14c8169279663212c85f",
     "c7c0cddad3836678794a20136561612e",
-    "6ac7c49082bb989cfacde4217ca06875"
+    "6ac7c49082bb989cfacde4217ca06875",
+    "f6f3dd4c0f4dd71479405af070a7699c",
+    "e638816ad2384b70503ca6d39607bba8",
+    "eb1840e4f382ac07eb1664467235790e",
+    "82f2b07361a3ecc511758edcae0856d4",
+    "abd716a5e7883e65cc9b765e9775202f",
+    "d245a57ba21cf526a7a0870cdb4646f7",
+    "2e90d6f752d8cf4e7c98d1cf253c6b0c",
+    "5a79dbe1c214df7cd7e5a1f6249b1f2c",
+    "7925210af9a84745f2220dd82b652237",
+    "e90f315025ac77f50bba481d7e78b976",
+    "6a93022042057495f4deb51fe2c8760a",
+    "6ae4f8737b26d6b3d6d998e29e101b9b",
+    "7275600c76195a949a09186b1cb60946",
+    "7381a965da40f037201eefee73ed49e9",
+    "fc6d0bd81f0c93bc86111ad1deb140df",
+    "6761bf9d84c39eed97a3e39f7c06b953",
+    "25000dfa2bca16d2fab7a355b1c18cce",
+    "e5d59cbc511e1c0144dd7eff677afb20",
+    "fdc4b253ab4222a5b72465cd6dc1e622",
+    "7fb51fb71b648cef676fff9d9a3ea87c"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -2346,9 +2386,10 @@
     },
     "counterstrike:Magisk": {
       "revids": [
-        "3407776"
+        "3407776",
+        "3408203"
       ],
-      "size": 16237
+      "size": 16236
     },
     "counterstrike:Natus Vincere": {
       "revids": [
@@ -2452,9 +2493,10 @@
     "valorant:Esports World Cup/2026": {
       "revids": [
         "1302924",
-        "1303170"
+        "1303170",
+        "1303254"
       ],
-      "size": 18724
+      "size": 18709
     },
     "valorant:Fnatic": {
       "revids": [
@@ -2542,7 +2584,8 @@
     },
     "leagueoflegends:LCK/2026": {
       "revids": [
-        "1030622"
+        "1030622",
+        "1031703"
       ],
       "size": 13043
     },
@@ -2736,9 +2779,10 @@
     "rainbowsix:Esports World Cup/2026": {
       "revids": [
         "873809",
-        "874036"
+        "874036",
+        "874052"
       ],
-      "size": 7832
+      "size": 7868
     },
     "rainbowsix:Ninjas in Pyjamas": {
       "revids": [
