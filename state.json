@@ -2571,7 +2571,9 @@
     "https://news.google.com/rss/articles/CBMidEFVX3lxTE1vYXR1MTRkZmViaWhqS3FTcVdhUXg0cVRaTnRYNjJCenFPZjBJRmMxLVdaUXVENHdYeWdPT2k0ZWhyODMwZ1o2aEVKUXoxX1lHcmowdFNlMEV3RTBkOWhKTHhTaGVzRUZyZ09lVS1yTjNkclR2?oc=5",
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBGaGNqYWJYeF9PTVRMSXBLOGhmYTd3VkN6THhXQlgzZ2hfd2p5T3dvMmNxRWpnWUxEems5c2E2VDN2UVdNOHNZcjRzMU5vZG80TjA2TGlhR2dYb2c0VDNmcVEzVzJhTzVX?oc=5",
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5kZzRiVDFuWHNWMklqS1N2d0J1RmtGblhzQlJJTVkyTjdiV2RJV1BHdFJDNVlqdWZ2UEhCemFBS2hFZkVHSTZjMmZPX1BmWEsyTnROSGZDNm9qOTkxUmxkZmRqZ2l6LVhw?oc=5",
-    "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVXNKTlZQeHdwWVo0NHo1TzdOSzVfZ0pjajhfOFRNRHNkaGxwWDZNdEJWYWdGZTFiQTJEVUpndnFuYTVvRkNoTkpIanBOUHpNakFPeC1ycTJtaUltSnE4SjBmb21YaWx4eVRrNEZXY2hwcTNPUWpHU1QxV05hUUs4T21rRmFNaGFLdVVzVW93aWZ2YU9wUE13b2xyTQ?oc=5"
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVXNKTlZQeHdwWVo0NHo1TzdOSzVfZ0pjajhfOFRNRHNkaGxwWDZNdEJWYWdGZTFiQTJEVUpndnFuYTVvRkNoTkpIanBOUHpNakFPeC1ycTJtaUltSnE4SjBmb21YaWx4eVRrNEZXY2hwcTNPUWpHU1QxV05hUUs4T21rRmFNaGFLdVVzVW93aWZ2YU9wUE13b2xyTQ?oc=5",
+    "https://www.hotspawn.com/league-of-legends/news/lyon-dhokla-msi-2026-interview/",
+    "https://www.hotspawn.com/league-of-legends/news/furia-tatu-msi-2026-interview/"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -5127,7 +5129,9 @@
     "11e93ced189c516d3afce0d65085f2df",
     "51964aa59b085527286b8519fa2d2b12",
     "91e3515fba77165961fb44cb8497426b",
-    "ade2b9d21c4615112690e98dc23ba72f"
+    "ade2b9d21c4615112690e98dc23ba72f",
+    "074baffafb6a216919bc5859e8086352",
+    "9ccec5519f3634528bfdfe6950ac94f9"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -5616,9 +5620,10 @@
         "874620",
         "874630",
         "874804",
-        "874940"
+        "874940",
+        "875091"
       ],
-      "size": 9627
+      "size": 9840
     },
     "rainbowsix:Ninjas in Pyjamas": {
       "revids": [
@@ -5706,7 +5711,6 @@
     },
     "mobilelegends:MSC/2026": {
       "revids": [
-        "287908",
         "287951",
         "287969",
         "287975",
@@ -5725,9 +5729,10 @@
         "288469",
         "288519",
         "288622",
-        "288626"
+        "288626",
+        "288628"
       ],
-      "size": 31321
+      "size": 31326
     },
     "honorofkings:Honor of Kings World Cup/2026": {
       "revids": [
