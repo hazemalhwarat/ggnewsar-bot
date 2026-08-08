@@ -4173,7 +4173,10 @@
     "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9WWVA2ek1HRTdSNHhVYUMyck1TekhBZHk2WEZGS1Z6Wi1XdGJzXzRMc0RGbkp4TmxDYjhmQVRCNlJFNlY2a1NiT0d1MXI?oc=5",
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ZR1ZPUHYxZjktaDRuTUJDQ3VSUW4wc0lPTGZMRTNLZ1JqNmpiLTNYMW56ZEZLOXBibXFqZUFyWmJ6bzVJOEp0YTd6aVRmaDRzcWFJc2NocWl5NkJsRHBVZVFWM1kwQVlh?oc=5",
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tc0w3WENxQ0hpMEJaVEpRUnNxMkJRZGU2SV9qeldPc0RKUkhhRVZwY0N6VzMzbFFWQ0JBeFNneDlkemR3bm1KX3pJYWFiekIwQk9QOGNHM3NtTmI3S2xtZllVa3Vhdnd6?oc=5",
-    "https://news.google.com/rss/articles/CBMiSkFVX3lxTE50bVFKeUdqM2tHYl9SbUQ4V1ctNjJ4cEdRME1UWHpfUU0wRkl3ZGp0Yy1TeWR0eHcwbDR5T0FBRzNuZFhnU1h3RTV3?oc=5"
+    "https://news.google.com/rss/articles/CBMiSkFVX3lxTE50bVFKeUdqM2tHYl9SbUQ4V1ctNjJ4cEdRME1UWHpfUU0wRkl3ZGp0Yy1TeWR0eHcwbDR5T0FBRzNuZFhnU1h3RTV3?oc=5",
+    "https://www.vlr.gg/732636/atakaptan-signs-off-retires-from-competitive-play",
+    "https://www.vlr.gg/732633/end-of-an-era-fut-esports-part-ways-with-longtime-core",
+    "https://www.vlr.gg/732634/visca-el-fluxo-la-masia-squad-finds-new-home-under-fluxo-w7m"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8305,7 +8308,10 @@
     "992bd83f1e4a7419652bfdaaa2e19284",
     "bee28d64aab356b750d6381b4aca399a",
     "bfe56d034289c9e22fb3a6bd067daea7",
-    "63dd1f5379cd5f05c6efdb4a6b498b1e"
+    "63dd1f5379cd5f05c6efdb4a6b498b1e",
+    "fc17d63c79054e721c49c37bb3f549f5",
+    "56780ba5338f6f25aefa70aeb600b8af",
+    "22db3b5565c509d5944d55a937a2c2ed"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -8481,9 +8487,10 @@
       "revids": [
         "1299141",
         "1303538",
-        "1308147"
+        "1308147",
+        "1314662"
       ],
-      "size": 7654
+      "size": 7572
     },
     "valorant:EDward Gaming": {
       "revids": [
