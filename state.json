@@ -4198,7 +4198,17 @@
     "https://www.hotspawn.com/league-of-legends/news/who-is-t1-painter",
     "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnWmFUUWFkLTBfTEVfVlExZURyQ1BvdTZic2hpN0NVNkFBTC00cjg0ZldtWHFFU0JYZk51UmsxbFRXZll2aUcwWWtkazlJckNsdEJV?oc=5",
     "https://news.google.com/rss/articles/CBMib0FVX3lxTE9JNHBrc0diZzdnMS1VUXNVQ1NPNndpM3BRVXM1cUh2UWp5UTBQeDJoQ3A0TUZqYXlVVm0zMkZ1Q1lQMmRwLVpNQ3hWY3AyN24tNGdIY2l2ZzFqZjZWUkw4dTBjcnJvMWQ1UW5tWUJoNA?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNVlJQSWhGRjJXRkFBS2xxZ0JuYTJIa29pZHJnX2kwdkx4TjhsZU1XRkdYd01zOFJuREVqblYzRTRuMzVVOGxBOWctQTQtNzVPc0E2bFpERFd0SkZnVE9KVDRMTWs5ZnJx?oc=5"
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNVlJQSWhGRjJXRkFBS2xxZ0JuYTJIa29pZHJnX2kwdkx4TjhsZU1XRkdYd01zOFJuREVqblYzRTRuMzVVOGxBOWctQTQtNzVPc0E2bFpERFd0SkZnVE9KVDRMTWs5ZnJx?oc=5",
+    "https://www.hltv.org/news/45252/sinners-sashi-among-next-teams-to-make-ewc-open-qualifier-playoffs",
+    "https://www.hltv.org/news/45250/gizmy-ill-only-be-happy-with-qualifying-for-ewc",
+    "https://www.hltv.org/news/45251/100-thieves-liquid-secure-ewc-open-qualifier-playoffs-spots",
+    "https://insider-gaming.com/escape-from-tarkov-surviving-slump-better-than-any/",
+    "https://gameriv.com/league-of-legends-classic-patch-26-16-preview/",
+    "https://www.hotspawn.com/league-of-legends/news/giantx-flakked-lec-summer",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9UZWMxUFVOYXQwVTQyWVk3WlU3aVdoSTU1MW9ZNTVkbnBpaC1va2llY09QMThDMUZvRDN6NktFSG5DY21NbDhJaTBNX2c0RjJhaWt3U1FwTEpuMDA5TF96c2kxaEpQa2hY?oc=5",
+    "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA1eFQ1YUlsSWJZU0RiVDQ2MnluRElNSjNBRVJOLVI2V1hicWlrd3hqZmx3SUtmblptdGM0a1BwQXROTTZ6blh6N01UU3RmbGhSMS1Xa0ZSYklNMGNKZlVXTmtSWQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VbXJHRldSTFpYN2ZtQndIQTc5ZXBtWEtMOG9KVFFvaW1KX0lQcURNX3pVLVJwdUwyOFowZGhQUW1HUDE4QzYtVkdIQWRBNnZuUUwweE9NYVdGNHNaRmF1YlpB?oc=5",
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaHJ5WWJnbE1Md094dGg0QVdWdzVGQlZXSWFPZ2V2OUlremlETFROdG5tRUdDdlR4SU5fU1g0U19EaEZ2dlVEZWh0U1BHQ29CYUIxLUlETDVMb2JvcDhubGgwU0owWHZ0SWJfS0xvOU5nVTZlVXplQVdJY3N5UUR6b3J2OTVpTlFnS3NzZEJvbW9MTlZ0?oc=5"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8355,7 +8365,17 @@
     "ca5a2eb6a4e71e386219d570b52c5954",
     "850d1d695ede7a8ff8904a779f7082ca",
     "c5fb183cf8deb7554f93fc703e4c3842",
-    "9f1b0826ed0f7ed8825f9212527355ff"
+    "9f1b0826ed0f7ed8825f9212527355ff",
+    "f7b8b475733b3762f10ec6d957da3a86",
+    "bfa8ac451ed4e8eec65b26f5d8d2e3df",
+    "8a41288b42c7883b4447492a30696f97",
+    "ea3d47a52570cdc1334a09ed81934501",
+    "ea58f6c4036816d830c337b3ff43ba52",
+    "82e1e12564a9f5d57fa338e94cac9fe5",
+    "a8f4476110f97171f02a1abc26ee6fc4",
+    "9827f490863603674bc635c4a4bea06c",
+    "0030fce0dae98f03b90a95fc200a0e85",
+    "c9b0568cabdc27291716ee6ad132d7bf"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -8907,7 +8927,6 @@
     },
     "rainbowsix:Esports World Cup/2026": {
       "revids": [
-        "880661",
         "880826",
         "880847",
         "880979",
@@ -8926,9 +8945,10 @@
         "881386",
         "881477",
         "881503",
-        "881522"
+        "881522",
+        "881633"
       ],
-      "size": 72174
+      "size": 73181
     },
     "rainbowsix:Ninjas in Pyjamas": {
       "revids": [
@@ -8978,9 +8998,10 @@
         "2076723",
         "2085932",
         "2086140",
-        "2086937"
+        "2086937",
+        "2087142"
       ],
-      "size": 34983
+      "size": 34992
     },
     "rocketleague:FIFAe World Cup/2026": {
       "revids": [
@@ -9049,7 +9070,6 @@
     },
     "honorofkings:Honor of Kings World Cup/2026": {
       "revids": [
-        "378011",
         "378417",
         "378453",
         "378544",
@@ -9068,9 +9088,10 @@
         "381934",
         "381939",
         "381972",
-        "382077"
+        "382077",
+        "382155"
       ],
-      "size": 31243
+      "size": 31239
     },
     "fighters:Capcom Cup/12": {
       "revids": [
@@ -9110,9 +9131,10 @@
         "426659",
         "426706",
         "426765",
-        "426805"
+        "426805",
+        "426866"
       ],
-      "size": 8091
+      "size": 8122
     },
     "fighters:Street Fighter 6": {
       "revids": [
