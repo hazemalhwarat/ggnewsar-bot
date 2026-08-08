@@ -4188,7 +4188,17 @@
     "https://news.google.com/rss/articles/CBMiakFVX3lxTE45RXh1R3dEMzhTOTRGT2ZUSnBTMXI4ZVRCRmNNZHBzamVGSTcyM29qQVRXUWloeE1mZV9ZZEtJQ0NhMXhod2xXTXhEOWxGWEdvekZPazFPdTg0RmVYTEhRWDZhTkdhSUhEN0E?oc=5",
     "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5VUW1nX1RrVkp2dHBwQzR3WkxYSlFxT0UwZVVSXy1qVVNZWEdSTlI3NGEya0ZOYVRsYUxFUDF5SV9Ddkd5V3lDbA?oc=5",
     "https://news.google.com/rss/articles/CBMic0FVX3lxTE85X1NTVEo4WlRkTjZIZEU4YXV1eUhYZzdiRWtZdVhzZkp0YnBfTEc0ZUVSSkVVa1FYTFppdE1ydmtEYmh5M19SdWdDMzNoQWRFLU9rRWkwcGNrYkcxZldwaS1CbC1oMEpCeGRqLXFNVVNwQms?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44MmFfN3FyVEVISTVHQ2pROTkzbVJUbGRUN2p0MXFRZmVEcGNtY0tBT1QxYUZ5YmxqNTF3X201Ui1keWZwMjd0SlVyX25xTExxWGxsemlaeDgza0MtNTJyNVljWi1aenp0?oc=5"
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE44MmFfN3FyVEVISTVHQ2pROTkzbVJUbGRUN2p0MXFRZmVEcGNtY0tBT1QxYUZ5YmxqNTF3X201Ui1keWZwMjd0SlVyX25xTExxWGxsemlaeDgza0MtNTJyNVljWi1aenp0?oc=5",
+    "https://www.hltv.org/news/45249/astra-announces-transition-to-valorant",
+    "https://www.dotabuff.com/blog/2026-08-08-the-international-2026-preview-the-underdogs",
+    "https://esports.gg/guides/betting/instant-withdrawal-bitcoin-casinos/",
+    "https://gameriv.com/call-of-duty-cheaters-hit-with-70000-hardware-bans-in-one-week/",
+    "https://www.nerfplz.com/2026/08/every-summoners-rift-objective.html",
+    "https://www.hotspawn.com/dota2/news/best-carry-players-at-ti15",
+    "https://www.hotspawn.com/league-of-legends/news/who-is-t1-painter",
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBnWmFUUWFkLTBfTEVfVlExZURyQ1BvdTZic2hpN0NVNkFBTC00cjg0ZldtWHFFU0JYZk51UmsxbFRXZll2aUcwWWtkazlJckNsdEJV?oc=5",
+    "https://news.google.com/rss/articles/CBMib0FVX3lxTE9JNHBrc0diZzdnMS1VUXNVQ1NPNndpM3BRVXM1cUh2UWp5UTBQeDJoQ3A0TUZqYXlVVm0zMkZ1Q1lQMmRwLVpNQ3hWY3AyN24tNGdIY2l2ZzFqZjZWUkw4dTBjcnJvMWQ1UW5tWUJoNA?oc=5",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBNVlJQSWhGRjJXRkFBS2xxZ0JuYTJIa29pZHJnX2kwdkx4TjhsZU1XRkdYd01zOFJuREVqblYzRTRuMzVVOGxBOWctQTQtNzVPc0E2bFpERFd0SkZnVE9KVDRMTWs5ZnJx?oc=5"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8335,7 +8345,17 @@
     "850d1d695ede7a8ff8904a779f7082ca",
     "850d1d695ede7a8ff8904a779f7082ca",
     "42c24d6cc494617e9b798f30030132e4",
-    "ec376ff9a781a4831f9556ef41d640bb"
+    "ec376ff9a781a4831f9556ef41d640bb",
+    "581f85206046ffbe21864725af257e50",
+    "3506dd1dcf27ea30d4cc93230a6cbad5",
+    "2fc36331d246d4ed542cf6c00deb4ea1",
+    "7df68e913d139584b0f7a47af9e0dcd4",
+    "9e33ae5a4993df083f73834ffa81cb59",
+    "48101dfb046934d1c02d4faadd5052a5",
+    "ca5a2eb6a4e71e386219d570b52c5954",
+    "850d1d695ede7a8ff8904a779f7082ca",
+    "c5fb183cf8deb7554f93fc703e4c3842",
+    "9f1b0826ed0f7ed8825f9212527355ff"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -9029,7 +9049,6 @@
     },
     "honorofkings:Honor of Kings World Cup/2026": {
       "revids": [
-        "377981",
         "378011",
         "378417",
         "378453",
@@ -9048,9 +9067,10 @@
         "381912",
         "381934",
         "381939",
-        "381972"
+        "381972",
+        "382077"
       ],
-      "size": 31045
+      "size": 31243
     },
     "fighters:Capcom Cup/12": {
       "revids": [
