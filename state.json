@@ -4231,7 +4231,8 @@
     "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYzdtTFdzYzJzUVg3RTVQbGx5a2ZmbmQ1RmF4WjVtcHQzNFJ5QXpMVWowYWJybnV2cHZUaVlvSVd6b01yUThPc0RGYmVRck9fMC1nZkRtQTlDWWN3ZHNUMXVtV0NxdExSQ0N6blVWQ1o1b3lHUnBpTGtOcWtxVW5lTWRLNTlfUmxfVS1TWFFvS2M4V3c0QWc?oc=5",
     "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Ld1lBVjFLVjd3NVpxVWZFc1d3RFpGMWxPUEtJVmtqRnZhdjF0d0U4Q1dXaUl4OGhxUEFUU2lzRV9qZkRaUnhhYTVfR2RSRGRaTm1YX2d5YTM0UlNy?oc=5",
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rQ1Vmd05IX1RKaDE1QjA2dzRYYmhaSTl4OWVUY1BENE1fNEF4MWY5WUhSeWxTRThBUk04Q2JOWDhkdlBUSEdYdER0YzZCRXZ6QkJoaGhKSW0tNmpLcXFzLVNQMkxrVFdTN3Vaek0wV3d1ck0tVHVaOE8yakd2QQ?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tb1VFRnFLaXVCNk9JV014Z2ZfajMxRF9tSXFJUEtSaTdWT2VxRXlRMHVzTzlseGM1R2FJb0NiNklMNFRLSWVwcnVSTnhQTXktNkhOS3dvcEYyOWJZMnp6VWRJNFZURzFp?oc=5"
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tb1VFRnFLaXVCNk9JV014Z2ZfajMxRF9tSXFJUEtSaTdWT2VxRXlRMHVzTzlseGM1R2FJb0NiNklMNFRLSWVwcnVSTnhQTXktNkhOS3dvcEYyOWJZMnp6VWRJNFZURzFp?oc=5",
+    "https://esports.gg/news/roblox/animal-hospital-roblox-lore-expansion-update/"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8421,7 +8422,8 @@
     "2f2c1546809a5f85d0dd7b52814797cb",
     "9827f490863603674bc635c4a4bea06c",
     "bb15c7281b448c95ae8a44994bbb86e0",
-    "777a302132624140d54e1840a8f3eee1"
+    "777a302132624140d54e1840a8f3eee1",
+    "3814e276149eba6f6fd5345f2864764c"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -9118,7 +9120,6 @@
     },
     "honorofkings:Honor of Kings World Cup/2026": {
       "revids": [
-        "378417",
         "378453",
         "378544",
         "381175",
@@ -9137,9 +9138,10 @@
         "381939",
         "381972",
         "382077",
-        "382155"
+        "382155",
+        "382171"
       ],
-      "size": 31239
+      "size": 31324
     },
     "fighters:Capcom Cup/12": {
       "revids": [
