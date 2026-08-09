@@ -4260,7 +4260,20 @@
     "https://gameriv.com/embark-tests-in-house-elytra-anti-cheat-arc-raiders-could-be-next/",
     "https://news.google.com/rss/articles/CBMic0FVX3lxTE1KNmlmRVRMLVJlYUJlU2doZmdjMGxlb19zenlnSmhERHNCeGNiaUpQR01ZX0dqX2hLVXZ1dlNJRW9tZU10blNnQVZKMXRTdHBwZDJUY2dvdHNhLU5TRHBHRlVBNUV4T3dmZ2FJeHR6NmhYWjQ?oc=5",
     "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PUkxFZGFOM1YtMUpPV3F4d0xRS2dlSGVsdGpvNFhWdnB6WWhOMV9JSTFNX1FQYlVKSnlFVXBGWEd6ekZONDFIZ3FPT2N4andZMVhVQU5TSkVtMHNFSEFuTw?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBzY0JOOVJRdE5ja2hobHJQSl9zc3plaTFXSU5IaUFvU3dwVE9VclBvWWdIc3Y2NkFQYl93TEc4ejI2U3JmaVd4dkdzR3MzamJkdjExWXd5ZmdUcW8wNmYzVU43aXZJYTNi?oc=5"
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBzY0JOOVJRdE5ja2hobHJQSl9zc3plaTFXSU5IaUFvU3dwVE9VclBvWWdIc3Y2NkFQYl93TEc4ejI2U3JmaVd4dkdzR3MzamJkdjExWXd5ZmdUcW8wNmYzVU43aXZJYTNi?oc=5",
+    "https://www.hltv.org/news/45264/awp-fans-come-here-ft-btrams",
+    "https://www.hltv.org/news/45263/jijiehao-complete-ewc-main-event-team-list",
+    "https://www.hltv.org/news/45262/big-k27-join-ewc-main-event",
+    "https://www.hltv.org/news/45261/100t-beat-1win-to-qualify-for-ewc-group-stage",
+    "https://insider-gaming.com/evercade-announces-new-doom-collection-cartridge/",
+    "https://insider-gaming.com/blizzard-is-reportedly-xboxs-top-performing-studio-in-fy26/",
+    "https://insider-gaming.com/nyt-connections-hints-solutions-august-10-1156/",
+    "https://gameriv.com/overwatch-delivers-its-strongest-quarter-since-2022-as-blizzard-tops-xbox-studios/",
+    "https://traxion.gg/sim-racing-star-rogers-takes-first-real-world-car-victory-then-triples-up/",
+    "https://www.hotspawn.com/counter-strike/news/esports-world-cup-2026-open-qualifier-day-3-review",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9IOWg0RW9BT3dwTjlsNFpxYS1CNjJXTTVhOGtqV0xxTVpJSjMxaVF6MWpJSWpLLXNCWWp0VGpJUFl6bTZTbWYzNk5TVTlNN1ktWkk4WGtNUy1YajQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE05NXlGdU9zTDZsYXY5X1lBaVJDdTVYYnIxU1o1VHZvSnoyMThKQ2ZJMWNLcmRvV2RuYVUzRlo3YlN1V2ZRbEJVc09iaGU0SWR4dG9iWlQwUi1JZmdJOHBsSGVmQnlhV2pX?oc=5",
+    "https://news.google.com/rss/articles/CBMiakFVX3lxTFBkRU1DYXJzYnVESVVaYWhmZlVnWDhHa2dHWTY5c2tiUU1keVY0WUVqR0ZRM0lEZWVObnhaYXJreTJHa3NYQWU5TXoyWnlZZGRwZFhsMHJlYUE5U1prSDhvNlNhMWp3czBydlE?oc=5"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8478,7 +8491,20 @@
     "3fad09c8f60fe88f8b7a005036e225af",
     "850d1d695ede7a8ff8904a779f7082ca",
     "9827f490863603674bc635c4a4bea06c",
-    "4ea311fedad48dcd610798c3b64796ba"
+    "4ea311fedad48dcd610798c3b64796ba",
+    "289f1a7866eb5a06ecadb13049fff3ed",
+    "dda83f8e41901a55715da22ad2f53eb7",
+    "3c8b7e51f3a6edf5f16d495e8adb1c5f",
+    "863d8d55fe533c11daea5f6bb6ade463",
+    "e968dca11ea81664658688bb5238e5b5",
+    "e9d922070ee79593df6cf178eea9fdd6",
+    "9bf98bd0d168a662c5c6e2103f1521fb",
+    "545ab9c664fcd5c1fc81765fb57e8596",
+    "46fceb243ed65c7ce3778dc7734bdcca",
+    "82f3d30948eded949f47732a551c55a1",
+    "850d1d695ede7a8ff8904a779f7082ca",
+    "0030fce0dae98f03b90a95fc200a0e85",
+    "3842d1b9fdefad78b71d9a60849886ca"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -8698,9 +8724,10 @@
         "1305222",
         "1305356",
         "1308414",
-        "1314174"
+        "1314174",
+        "1315062"
       ],
-      "size": 21067
+      "size": 21117
     },
     "valorant:Fnatic": {
       "revids": [
@@ -8729,9 +8756,10 @@
     "valorant:Team Heretics": {
       "revids": [
         "1267651",
-        "1306494"
+        "1306494",
+        "1315061"
       ],
-      "size": 8829
+      "size": 8803
     },
     "valorant:Team Liquid": {
       "revids": [
@@ -8881,9 +8909,10 @@
         "2411048",
         "2412582",
         "2412651",
-        "2412705"
+        "2412705",
+        "2412810"
       ],
-      "size": 22374
+      "size": 22658
     },
     "dota2:Tundra Esports": {
       "revids": [
@@ -9035,7 +9064,6 @@
     },
     "rainbowsix:Esports World Cup/2026": {
       "revids": [
-        "880979",
         "881007",
         "881029",
         "881066",
@@ -9054,9 +9082,10 @@
         "881522",
         "881633",
         "881673",
-        "881811"
+        "881811",
+        "881857"
       ],
-      "size": 74291
+      "size": 74860
     },
     "rainbowsix:Ninjas in Pyjamas": {
       "revids": [
