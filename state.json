@@ -4249,7 +4249,18 @@
     "https://www.nerfplz.com/2026/08/viktor-counters-best-counter-picks-and.html",
     "https://www.hotspawn.com/league-of-legends/news/zyb-esports-end",
     "https://www.hotspawn.com/dota2/news/best-mid-players-at-ti15",
-    "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAzYnJHa3dMVUpnR094N2JNRTF2ZC1Hd29PSXdmbS1sT3B2Vk9uN1I3TjM3YUkzNjdFMUNCT3hwZmp0ZEVyQWNta1lia0RCS05VS3dJdw?oc=5"
+    "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAzYnJHa3dMVUpnR094N2JNRTF2ZC1Hd29PSXdmbS1sT3B2Vk9uN1I3TjM3YUkzNjdFMUNCT3hwZmp0ZEVyQWNta1lia0RCS05VS3dJdw?oc=5",
+    "https://www.hltv.org/news/45260/taz-im-proud-of-the-guys-that-they-were-fighting-until-the-end-this-is-not-something-we-were-known-for-at-the-beginning-of-the-year",
+    "https://www.hltv.org/news/45259/100-thieves-knock-bcg-out-of-ewc",
+    "https://www.hltv.org/news/45258/fnatic-through-to-ewc-qualification-game-over-heroic",
+    "https://www.dotabuff.com/blog/2026-08-09-the-international-2026-preview-the-wildcards",
+    "https://dotesports.com/dota-2/news/lgd-tailung-banned-ti-2026-pgl-events",
+    "https://insider-gaming.com/todays-nyt-strands-889-hints-answers-and-spangram-for-august-9/",
+    "https://esports.gg/news/dota-2/tailung-gets-lifetime-ban-from-ti-and-pgl-events/",
+    "https://gameriv.com/embark-tests-in-house-elytra-anti-cheat-arc-raiders-could-be-next/",
+    "https://news.google.com/rss/articles/CBMic0FVX3lxTE1KNmlmRVRMLVJlYUJlU2doZmdjMGxlb19zenlnSmhERHNCeGNiaUpQR01ZX0dqX2hLVXZ1dlNJRW9tZU10blNnQVZKMXRTdHBwZDJUY2dvdHNhLU5TRHBHRlVBNUV4T3dmZ2FJeHR6NmhYWjQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PUkxFZGFOM1YtMUpPV3F4d0xRS2dlSGVsdGpvNFhWdnB6WWhOMV9JSTFNX1FQYlVKSnlFVXBGWEd6ekZONDFIZ3FPT2N4andZMVhVQU5TSkVtMHNFSEFuTw?oc=5",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBzY0JOOVJRdE5ja2hobHJQSl9zc3plaTFXSU5IaUFvU3dwVE9VclBvWWdIc3Y2NkFQYl93TEc4ejI2U3JmaVd4dkdzR3MzamJkdjExWXd5ZmdUcW8wNmYzVU43aXZJYTNi?oc=5"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8457,7 +8468,17 @@
     "df80830348762f0666cb2f481dd98e52",
     "0ea90954f54c633021c21c65d239da4e",
     "7cf9dd199f52fa54cc11d94abb92482e",
-    "3e10c6e2a08c447f8277a7cc06999d50"
+    "3e10c6e2a08c447f8277a7cc06999d50",
+    "4fb66eceaba78562cbbe0889a0e48697",
+    "73c6398bacd919ccc215c44b551e11b9",
+    "5e947f0b84499432dac20e91c174a5fe",
+    "0f756b832ee777e4d8b9f7a078b11e1b",
+    "87c873149cafc93378ee4ab6de583abf",
+    "6b2a7bdc8e2f3b2d14eef95eb24c0b8e",
+    "3fad09c8f60fe88f8b7a005036e225af",
+    "850d1d695ede7a8ff8904a779f7082ca",
+    "9827f490863603674bc635c4a4bea06c",
+    "4ea311fedad48dcd610798c3b64796ba"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -9014,7 +9035,6 @@
     },
     "rainbowsix:Esports World Cup/2026": {
       "revids": [
-        "880847",
         "880979",
         "881007",
         "881029",
@@ -9033,9 +9053,10 @@
         "881503",
         "881522",
         "881633",
-        "881673"
+        "881673",
+        "881811"
       ],
-      "size": 73460
+      "size": 74291
     },
     "rainbowsix:Ninjas in Pyjamas": {
       "revids": [
