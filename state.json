@@ -4232,7 +4232,14 @@
     "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9Ld1lBVjFLVjd3NVpxVWZFc1d3RFpGMWxPUEtJVmtqRnZhdjF0d0U4Q1dXaUl4OGhxUEFUU2lzRV9qZkRaUnhhYTVfR2RSRGRaTm1YX2d5YTM0UlNy?oc=5",
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE5rQ1Vmd05IX1RKaDE1QjA2dzRYYmhaSTl4OWVUY1BENE1fNEF4MWY5WUhSeWxTRThBUk04Q2JOWDhkdlBUSEdYdER0YzZCRXZ6QkJoaGhKSW0tNmpLcXFzLVNQMkxrVFdTN3Vaek0wV3d1ck0tVHVaOE8yakd2QQ?oc=5",
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tb1VFRnFLaXVCNk9JV014Z2ZfajMxRF9tSXFJUEtSaTdWT2VxRXlRMHVzTzlseGM1R2FJb0NiNklMNFRLSWVwcnVSTnhQTXktNkhOS3dvcEYyOWJZMnp6VWRJNFZURzFp?oc=5",
-    "https://esports.gg/news/roblox/animal-hospital-roblox-lore-expansion-update/"
+    "https://esports.gg/news/roblox/animal-hospital-roblox-lore-expansion-update/",
+    "https://www.hotspawn.com/dota2/news/tailung-banned-from-ti",
+    "https://www.hotspawn.com/valorant/news/ep-patitek-this-is-the-stage-where-i-belong",
+    "https://www.hotspawn.com/league-of-legends/news/flandre-joins-blg",
+    "https://europeangaming.eu/portal/interviews/2026/08/09/210660/michael-carlton-21com-interview/",
+    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb0tFNVRuRmNKUXllQ1IzRHpwT3FSUjJvcnhLMjE4ekcydGJJY2h6MkRwQ2VQZ2NtNXl2UURhbndscC0zT05QZ2dfODJsTmxFRlY2bXVOWE4weDVWMnlpZUhjVVhhN29CVlV6cnF4TGtLR1hZTlBXbERfd3ZobnB4RmdrYU9RbXlxZEtF?oc=5",
+    "https://news.google.com/rss/articles/CBMia0FVX3lxTE44aDZmX01CQnZmS0lFZnlpdFZlMWlGbld1NnBUemRVNFJ4LUstVjJOc2tTWHFKLVAtQllGMWozOUJWdDIwaEdEN3NzYXZwOWxxS3JQTloxcXhMQjRRcGh4N2MxeFFLQmhwYUp3?oc=5",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1KVVFyVDRaSjR0U2o1T3ZXYl9TcmNCbFV4R0FlY2dpOGxfdGQ2OWJXSllkWmJ1SGZNWUZ1LU55NDhhVjlTS2tUWmlkMGtzWXo3TWdwWnJRMGVMdm1OQUR3bzZaNndjNUhB?oc=5"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8423,7 +8430,14 @@
     "9827f490863603674bc635c4a4bea06c",
     "bb15c7281b448c95ae8a44994bbb86e0",
     "777a302132624140d54e1840a8f3eee1",
-    "3814e276149eba6f6fd5345f2864764c"
+    "3814e276149eba6f6fd5345f2864764c",
+    "354af4399bd0218a928b01977c2b26da",
+    "56cfa518fca4820b46c1db7c2e8c3215",
+    "bcb30ed5274e97b18d79237a597c8bfa",
+    "60d2be91209739f2095e2e2bfbe6aa83",
+    "73492d7b3009f59734164de9a09f2914",
+    "0513e17a28c6746abf518a99691f4496",
+    "ded79027bf123894732b236d5adf6280"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -8823,9 +8837,10 @@
         "2410014",
         "2410484",
         "2411048",
-        "2412582"
+        "2412582",
+        "2412651"
       ],
-      "size": 21770
+      "size": 22305
     },
     "dota2:Tundra Esports": {
       "revids": [
@@ -9120,7 +9135,6 @@
     },
     "honorofkings:Honor of Kings World Cup/2026": {
       "revids": [
-        "378453",
         "378544",
         "381175",
         "381278",
@@ -9139,9 +9153,10 @@
         "381972",
         "382077",
         "382155",
-        "382171"
+        "382171",
+        "382181"
       ],
-      "size": 31324
+      "size": 31396
     },
     "fighters:Capcom Cup/12": {
       "revids": [
