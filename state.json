@@ -4239,7 +4239,17 @@
     "https://europeangaming.eu/portal/interviews/2026/08/09/210660/michael-carlton-21com-interview/",
     "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb0tFNVRuRmNKUXllQ1IzRHpwT3FSUjJvcnhLMjE4ekcydGJJY2h6MkRwQ2VQZ2NtNXl2UURhbndscC0zT05QZ2dfODJsTmxFRlY2bXVOWE4weDVWMnlpZUhjVVhhN29CVlV6cnF4TGtLR1hZTlBXbERfd3ZobnB4RmdrYU9RbXlxZEtF?oc=5",
     "https://news.google.com/rss/articles/CBMia0FVX3lxTE44aDZmX01CQnZmS0lFZnlpdFZlMWlGbld1NnBUemRVNFJ4LUstVjJOc2tTWHFKLVAtQllGMWozOUJWdDIwaEdEN3NzYXZwOWxxS3JQTloxcXhMQjRRcGh4N2MxeFFLQmhwYUp3?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1KVVFyVDRaSjR0U2o1T3ZXYl9TcmNCbFV4R0FlY2dpOGxfdGQ2OWJXSllkWmJ1SGZNWUZ1LU55NDhhVjlTS2tUWmlkMGtzWXo3TWdwWnJRMGVMdm1OQUR3bzZaNndjNUhB?oc=5"
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1KVVFyVDRaSjR0U2o1T3ZXYl9TcmNCbFV4R0FlY2dpOGxfdGQ2OWJXSllkWmJ1SGZNWUZ1LU55NDhhVjlTS2tUWmlkMGtzWXo3TWdwWnJRMGVMdm1OQUR3bzZaNndjNUhB?oc=5",
+    "https://www.hltv.org/news/45257/1win-eliminate-liquid-100-thieves-face-bcgame",
+    "https://esports.gg/news/dota-2/tailung-lgd-gamings-carry-gets-lifetime-ban-from-ti-and-pgl-events/",
+    "https://esports.gg/news/roblox/animal-hospital-roblox-dr-harlows-new-interaction-and-complete-lore/",
+    "https://esports.gg/guides/league-of-legends/faker-net-worth/",
+    "https://gameriv.com/apex-legends-crypto-rework-leaked-for-season-31-alongside-prestige-skin/",
+    "https://gameriv.com/call-of-duty-cheat-provider-shuts-down-claims-activision-attacked-its-servers/",
+    "https://www.nerfplz.com/2026/08/viktor-counters-best-counter-picks-and.html",
+    "https://www.hotspawn.com/league-of-legends/news/zyb-esports-end",
+    "https://www.hotspawn.com/dota2/news/best-mid-players-at-ti15",
+    "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAzYnJHa3dMVUpnR094N2JNRTF2ZC1Hd29PSXdmbS1sT3B2Vk9uN1I3TjM3YUkzNjdFMUNCT3hwZmp0ZEVyQWNta1lia0RCS05VS3dJdw?oc=5"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8437,7 +8447,17 @@
     "60d2be91209739f2095e2e2bfbe6aa83",
     "73492d7b3009f59734164de9a09f2914",
     "0513e17a28c6746abf518a99691f4496",
-    "ded79027bf123894732b236d5adf6280"
+    "ded79027bf123894732b236d5adf6280",
+    "3b018b2eb33106ddd7b1f260a1f654ee",
+    "10ca72f124e317be088a02ebee33c4f1",
+    "6192bfab9bf3901555301cae0600973a",
+    "531bc229a801d7c1e754b10fb87593e0",
+    "2d75f842efa7db7f6221d62ff2596a25",
+    "05baadadb32d83aac2dbdb94376670ba",
+    "df80830348762f0666cb2f481dd98e52",
+    "0ea90954f54c633021c21c65d239da4e",
+    "7cf9dd199f52fa54cc11d94abb92482e",
+    "3e10c6e2a08c447f8277a7cc06999d50"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -8600,9 +8620,10 @@
         "3373551",
         "3419864",
         "3425210",
-        "3425311"
+        "3425311",
+        "3427944"
       ],
-      "size": 39189
+      "size": 39239
     },
     "valorant:100 Thieves": {
       "revids": [
@@ -8838,9 +8859,10 @@
         "2410484",
         "2411048",
         "2412582",
-        "2412651"
+        "2412651",
+        "2412705"
       ],
-      "size": 22305
+      "size": 22374
     },
     "dota2:Tundra Esports": {
       "revids": [
