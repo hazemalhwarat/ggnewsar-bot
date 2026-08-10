@@ -4289,7 +4289,19 @@
     "https://dotesports.com/dota-2/news/topson-lgd-ti-2026-tailung-ban",
     "https://esports.gg/news/roblox/oingit-in-animal-hospital-roblox/",
     "https://www.hotspawn.com/dota2/news/ti15-day-1-schedule",
-    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE55VWJwYTRQcWhqUV8xQ09hbDhFTDR3SDk2cm43ZU5VVkFnMGtTeTJicFFuTHgxMUYwZWlnaHl0RDVlWFVjX25WUWpEQ2g?oc=5"
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE55VWJwYTRQcWhqUV8xQ09hbDhFTDR3SDk2cm43ZU5VVkFnMGtTeTJicFFuTHgxMUYwZWlnaHl0RDVlWFVjX25WUWpEQ2g?oc=5",
+    "https://www.hltv.org/news/45266/jdc-this-is-hopefully-the-year-when-we-take-the-next-step",
+    "https://www.dotabuff.com/blog/2026-08-10-the-international-2026-preview-the-challengers",
+    "https://dotesports.com/gears-of-war/guides/all-gears-of-war-e-day-multiplayer-maps",
+    "https://insider-gaming.com/call-of-duty-esports-fans-need-to-shut-up-and-let-them-play/",
+    "https://insider-gaming.com/fortnite-chapter-7-season-4-story-moment-key-art-teases-tetris-crash-bandicoot/",
+    "https://www.gamesindustry.biz/sega-reports-173-rise-in-q3-net-sales-games-segment-exceeds-expectations",
+    "https://europeangaming.eu/portal/press-releases/2026/08/10/210697/playson-denys-koshel-vp-commercial-partnerships/",
+    "https://europeangaming.eu/portal/press-releases/2026/08/10/210691/gaming-corps-games-global-distribution-deal/",
+    "https://europeangaming.eu/portal/latest-news/2026/08/10/210679/gambling-stocks-weekly-3-7-august-european-market-analysis-trends/",
+    "https://europeangaming.eu/portal/latest-news/2026/08/10/210672/adm-blocks-190-unauthorised-gambling-sites-italy/",
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE04UzEwOWVWdGxtdkVKWldLUHZqdnlFel9Bei1ZLTduaHJ4ekdmeDlQRWczdkZKMGYzRUk5SWgxREJCdEpHN19aR1VfNkJVdDJHOEhxRDZGNVZCRzFTMzRzTW4wX2ZqWVU?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4xTUY3eXhsamNnU0JZZmhFRGY4bjBqbC1QNmJoY0pVaVl6UkFPeGpoYjhnUnBURERvZWQ4S2lIOGZwTTJmbDlhb0JyYkw?oc=5"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -8536,7 +8548,17 @@
     "a77a4824316fc1fe53e4a0cb569d3996",
     "9a979508008f56d95d8432bbf7f04565",
     "ecb5c9a48cf2ee0a4b3469d26cf09fec",
-    "786db50de6d83474f3edc038d3cfa32c"
+    "786db50de6d83474f3edc038d3cfa32c",
+    "2180b0ea4f74e10f373b6d8e1f9e0f67",
+    "8985de02fa96acae054dcf5e15da9ad1",
+    "ecf49593fd60c3108fa20699d462762b",
+    "ac7320e8e0b7ad2382868e4ec0909172",
+    "7a2a92c7aa6f57e3aa81754cd1cf696c",
+    "0f0750a39b2cdee9de2c968dd9975f55",
+    "3f2f59f887dd608a2c95331022de057d",
+    "f411b58a0694e4926ad92cf4220df410",
+    "799855594adc0f2bd7302c69d3234b5a",
+    "8274e161b1b57446ec5b1663bf1a71d7"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -9242,7 +9264,6 @@
     },
     "honorofkings:Honor of Kings World Cup/2026": {
       "revids": [
-        "378544",
         "381175",
         "381278",
         "381363",
@@ -9261,9 +9282,10 @@
         "382077",
         "382155",
         "382171",
-        "382181"
+        "382181",
+        "382273"
       ],
-      "size": 31396
+      "size": 31867
     },
     "fighters:Capcom Cup/12": {
       "revids": [
