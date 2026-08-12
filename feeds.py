@@ -23,6 +23,13 @@ Status from the live run on 2026-06-28 22:48 UTC (run #49):
 To manually fix a failing source: find the correct RSS path for that site
 and update its url here. To check current status: look at "Failed Sources"
 in the Actions log after any run.
+
+Batch added 2026-08-12: three Google News keyword bridges for titles that
+were newly added to watchlist.py but had no dedicated RSS coverage in this
+list yet — Overwatch, Fortnite, and Teamfight Tactics. Same bridge pattern
+already used above for the business/sponsorship and official-site sources
+(Google News RSS always returns valid XML, so these don't need live
+verification the way a random site's /feed path does).
 """
 
 RSS_FEEDS = [
@@ -188,6 +195,15 @@ RSS_FEEDS = [
     {"name": "ALGS - Apex Legends (official, via Google News)", "url": "https://news.google.com/rss/search?q=site:algs.com&hl=en&gl=US&ceid=US:en", "verified": False},
     {"name": "Call of Duty League (official, via Google News)", "url": "https://news.google.com/rss/search?q=site:callofdutyleague.com&hl=en&gl=US&ceid=US:en", "verified": False},
     {"name": "Esports Business & Sponsorships (Google News bridge)", "url": "https://news.google.com/rss/search?q=esports+(sponsorship+OR+partnership+OR+investment+OR+acquisition+OR+revenue)&hl=en&gl=US&ceid=US:en", "verified": False},
+
+    # ============================================================
+    # Added 2026-08-12 — coverage bridges for titles newly added to
+    # watchlist.py (Overwatch, Fortnite, Teamfight Tactics) that had no
+    # dedicated RSS source in this list yet.
+    # ============================================================
+    {"name": "Overwatch Esports (Google News bridge)", "url": "https://news.google.com/rss/search?q=%22Overwatch+Champions+Series%22+OR+%22Overwatch+World+Cup%22&hl=en&gl=US&ceid=US:en", "verified": False},
+    {"name": "Fortnite Competitive (Google News bridge)", "url": "https://news.google.com/rss/search?q=Fortnite+(esports+OR+FNCS+OR+%22Reload+Elite+Series%22)&hl=en&gl=US&ceid=US:en", "verified": False},
+    {"name": "Teamfight Tactics Esports (Google News bridge)", "url": "https://news.google.com/rss/search?q=%22Teamfight+Tactics%22+esports&hl=en&gl=US&ceid=US:en", "verified": False},
 ]
 
 
