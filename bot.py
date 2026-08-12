@@ -370,6 +370,8 @@ def format_liquipedia_message(rev: dict, reason: str) -> str:
         "dota2": "🐉", "rainbowsix": "🛡️", "rocketleague": "🚀",
         "mobilelegends": "📱", "honorofkings": "👑", "pubgmobile": "🪂",
         "fighters": "🥊", "easportsfc": "⚽",
+        "overwatch": "🧡", "pubg": "🪂", "apexlegends": "🅰️",
+        "fortnite": "🌀", "teamfighttactics": "♟️", "callofduty": "🎖️",
     }
     game_names = {
         "counterstrike": "Counter Strike 2", "valorant": "VALORANT",
@@ -378,6 +380,9 @@ def format_liquipedia_message(rev: dict, reason: str) -> str:
         "mobilelegends": "Mobile Legends", "honorofkings": "Honor of Kings",
         "pubgmobile": "PUBG Mobile", "fighters": "Fighting Games",
         "easportsfc": "EA Sports FC",
+        "overwatch": "Overwatch", "pubg": "PUBG: BATTLEGROUNDS",
+        "apexlegends": "Apex Legends", "fortnite": "Fortnite",
+        "teamfighttactics": "Teamfight Tactics", "callofduty": "Call of Duty",
     }
     wiki = rev["wiki"]
     emoji = game_emojis.get(wiki, "🎮")
@@ -424,6 +429,14 @@ def liquipedia_phase(state: dict, first_run: bool, sent_budget: int) -> int:
             page_key = f"{wiki}:{rev['page_title']}"
             revid = str(rev.get("revid"))
 
+            # A page never seen before (e.g. just added to watchlist.py) has
+            # no recorded size yet. Without this check, prev_size defaults to
+            # 0 below and the page's entire existing content gets treated as
+            # a fresh "edit" — flooding the channel with false updates the
+            # first time a new page is picked up. Treat it like first_run:
+            # record the baseline silently, don't send.
+            is_new_page = page_key not in lp_state
+
             page_state = lp_state.setdefault(page_key, {"revids": [], "size": 0})
 
             if revid in page_state["revids"]:
@@ -433,7 +446,7 @@ def liquipedia_phase(state: dict, first_run: bool, sent_budget: int) -> int:
             page_state["revids"].append(revid)
             page_state["revids"] = page_state["revids"][-SEEN_REVS_PER_PAGE:]
 
-            if first_run:
+            if first_run or is_new_page:
                 page_state["size"] = rev.get("size", 0)
                 stats["baseline_recorded"] += 1
                 continue
