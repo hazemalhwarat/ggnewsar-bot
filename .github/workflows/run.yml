@@ -2,7 +2,13 @@ name: GGNewsAR Bot
 
 on:
   schedule:
-    - cron: "13 */4 * * *"  # every 4 hours, offset minute to avoid GitHub's high-load congestion times
+    - cron: "13 */5 * * *"  # every 5 hours (00:13, 05:13, 10:13, 15:13, 20:13 UTC),
+                             # offset minute to avoid GitHub's high-load congestion times.
+                             # Note: the gap from 20:13 back to 00:13 is 4h, not 5h — 24
+                             # doesn't divide evenly by 5, so one gap per day is shorter.
+                             # This is a limitation of GitHub Actions' cron (fixed hour-of-
+                             # day slots), not a bug. workflow_dispatch below still allows
+                             # an on-demand run any time regardless of the schedule.
   workflow_dispatch:
 
 permissions:
