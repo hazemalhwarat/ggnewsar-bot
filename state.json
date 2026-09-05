@@ -1,22 +1,5 @@
 {
   "urls": [
-    "https://www.dotabuff.com/blog/2026-04-21-new-ideas-from-pro-play",
-    "https://www.dotabuff.com/blog/2026-04-14-the-rippling-effects-of-741",
-    "https://www.dotabuff.com/blog/2026-04-06-new-items-an-analysis",
-    "https://www.dotabuff.com/blog/2026-03-31-biggest-winners-of-741",
-    "https://www.dotabuff.com/blog/2026-03-25-741-first-impressions-spring-cleaning-gone-too-far",
-    "https://www.dotabuff.com/blog/2026-03-16-is-dota-2-worth-getting-into-in-2026",
-    "https://www.dotabuff.com/blog/2026-03-03-next-patch-wishilist-chaotic-version",
-    "https://dotesports.com/call-of-duty/guides/black-ops-7-warzone-season-4-week-4-challenges",
-    "https://dotesports.com/call-of-duty/guides/cdl-major-4-2026-schedule-results-bracket",
-    "https://dotesports.com/dota-2/guides/ti-2026-europe-qualifier-schedule-results",
-    "https://dotesports.com/dota-2/guides/ti-2026-north-america-qualifier-schedule-results",
-    "https://dotesports.com/general/guides/top-10-best-anime-songs",
-    "https://dotesports.com/call-of-duty/guides/best-an-94-loadout-warzone",
-    "https://dotesports.com/call-of-duty/guides/best-an-94-loadout-bo7",
-    "https://dotesports.com/warframe/guides/tennocon-2026-dates-start-time-rewards",
-    "https://dotesports.com/call-of-duty/news/bo7-warzone-camo-challenges",
-    "https://dotesports.com/call-of-duty/news/black-ops-7-zombies-camo-challenges",
     "https://esportsinsider.com/2026/06/menard-interview-evo-vegas-2026",
     "https://esportsinsider.com/2026/06/kingg-interview-rookies-dominate-vct-masters-london",
     "https://esportsinsider.com/2026/06/counter-strike-valorant-viewership-war",
@@ -7999,7 +7982,24 @@
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4wRjlIT1RxX0txRE9CRUNhVFYtN1lpNmVCdXE5RHRkSGwtTFRVcF9hdHVYTUVrWlFNU3M2c2MyODM4ek1Gb3kyTUZmZmN2cFpXbFhleTlkaklkNzQtaHlid25rNVNsVnNT?oc=5",
     "https://news.google.com/rss/articles/CBMiggJBVV95cUxPUFA5RDdzNVRtcnQ4WjRwclNSNllPV1RlZnhJLU04b2VJU01kYUZQbVIxTnZIWEVYTWYtNXp0YlV5RkdhbnR1c0xobG5JSHZGNTE0TDlnMGlWVW5kdnc1QUNMMkQ5NXRCUTY4MmNxYXAxY2RxOGE3ZkR1cUt1bFRWdGFCWDdhdVdPOFc2UGdpQWpvU2RTQmM4cG93d1QtSS1GZmRES283ejlTejIyaXgtbUxNcGVKdTNFMExUc1BOQVhXWDVWRlA0X25jeHBwYno1b1VLYjJQRWJDUi1WaUl5S3lvREZZaFZRNmstZ0FuTzMxNmY3MXUzVTBtUEREX25CY0E?oc=5",
     "https://news.google.com/rss/articles/CBMivAFBVV95cUxQdGZpUWlZRE1SdE9ubFFPcGYwaUt0dUVhZDFBMGpOVUJwVG8wQ29sTlIwdXFJUzJhZnJFMnhYX1FuRVlzMUtlZ1lqdm5uSGZyYmxBd09uMkNIMUZnVVdoYXNlRU1qMERBWWlyQmdaTWh5OHpaZTE3WF90dC1GWDJ0bm5CRGpHRU1KNzllWGhCUE1wTHFsWlFUNEh3bzVqQUVaSjFxZVUwaWlITHhsUldwcTFycndqRTZTZGx2cg?oc=5",
-    "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaDVZWGhicGFIVFNwS09VZDVDSVVidXlERV9mTlVwaDI2TUVqS1g0MWNSSGlJUzJscmdmejA2ZFZNN3BMZEZNVWowYVdaYVMzR090VkJDTEQyY0RISGY4eW9lZmxyUzNYQ05ZU2kzWWc3LV96V2RoZkVpQ2JMbFdhNkY5Q0JQQU5yY3FZWndFN2ItRmVLc2N0bU1rM3hPZURyMi1z?oc=5"
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaDVZWGhicGFIVFNwS09VZDVDSVVidXlERV9mTlVwaDI2TUVqS1g0MWNSSGlJUzJscmdmejA2ZFZNN3BMZEZNVWowYVdaYVMzR090VkJDTEQyY0RISGY4eW9lZmxyUzNYQ05ZU2kzWWc3LV96V2RoZkVpQ2JMbFdhNkY5Q0JQQU5yY3FZWndFN2ItRmVLc2N0bU1rM3hPZURyMi1z?oc=5",
+    "https://www.vlr.gg/750858/100-thieves-seizes-champions-berth-loud-takes-down-g2",
+    "https://insider-gaming.com/nyt-strands-915-hints-answers-september-4-2026/",
+    "https://insider-gaming.com/shawn-layden-disc-free-playstation-depressing/",
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVURxLVNEZk5CMjFXaTZuS1YxWjk0OEQ3b1BEbnpuV2NRNFdHbE1RdkVlWFV4TzVvb1hzZHAzV2l4YnBRbVBnOG5WSW5rZjhwU3BCcHJZbkZuNWdXUEc5SXpmekRId2FxUFBWVmdrX1ptT216RzNMQ0JUbjF0YUdLWTNsZEduVko4MGFpSkJn?oc=5",
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbHBFTVBTX0ZZdjgwVV9IRXdybkVZME4tdjczSEtjRmI4eHFaWWhyN1o1eFd3TVNPSm9mTFpXUmZfNG80RWdRZFBTMlg1T0ZXZ2VHZUNoZFJzSjB2TjJoSmpuTy1ZVWVrcDdzUkVHWUVIbmxLT0FEdWg1cWJvb29ydUZWOUFta2VQVWxtQVk4QzlKQjgyaDFMSXRBbDk2cFhVdmh3RzNWaEMta1V0Sm01Rm1DNzd6blU?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE40S2VTNXROZG5DVm9XenVrZThWcmJLWi1qcm5EdmdjQ19taExQRjFqbDM2ejBIa2o3dzd1SjNHb0JtR1AwUV83V1ByUXA?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBJakhDYXVYZjEwYll0aEFaNE1uUmIwV180dmxHWDlxeUdjY3V0SjJla3NncjNyQUgxRzlaSVIxYl9rd1FCYjlYMU5ScVo?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9Td3NvTG1zT1p2dnVwVmtGWFgyVjJHSTZNVGxzOUJiOWtKOUxMTV9XVVBwQlgxdEJrMWZoS3RRZ3FlYTUwRUpTZUNEVGE?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE8yU3h3V25rN3FIT1VwcUE0R0lVMXg5Y0xrTzdQQ0JfOHVBM2NGMVZjMXpvWVpzQ1BpVVRzbmFkYV8zODJncmRZUFFha20?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aSDNwREVvWHlMNmpmZTF1QUFsZElWSzhHN25Ibk5ETHpEUlNvNGtIeGhTYVk1TVp4dTROQTBSQ2dCakVsN0VoQmZYN0o?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1NV01HcjBkY1A3ZnA1Mzg3VUc5dHFYeXVtNFgxd2RtNmFfMEpnbjBqVWhYU0NzaGQzNUFTLURIaVRDUjI4TXJBMVZaS3c?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5LdWhGSHktNlEyRkFQUzhtRzh5VkhtWnN3QmZqdndWQUVsVVF6clY1Q3E4cEw4OWhaWGphVHpsRHlYRDcwOURsc29NdF8?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9NYXNmUUhMT3ZUSk50aEFSS2tfOXZtZTRHb2p3eWh5SWFsU1ZzVzdVY0F6VUV3U1dJMjBLYWtvTHZVU2pPSW9JWWktTGs?oc=5",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MMUptd0xlVU04WnZOSWkxQ2JzZTZLQlgxNXJ0YjlxdlF0bUdUQTI4cGVYbjJtVk5tWW0yc1p3QnhLSGlHVGNjenpKMVNUOHNqeENFYk1yZ1hzOU0?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTE4wWXdhVEVuaV85dlhTUnhLdDNIcnRRaTJrOHQxOUQzaVdSMGFOSnB0WDBBbmJLanJfN29zc3VuT1dvRjhUM1JYVlg5eUQ?oc=5",
+    "https://news.google.com/rss/articles/CBMicEFVX3lxTE4zaFVqdXVQS0MyN014V3BIMmoxRUQ2SFRCZ3ZIUWs0NmQ3T1hyR21qOFdzd3I1VEdmZnNQOVkyVVVNaGp2d3NMRGVQV1p3Ui1nU3dNYXZoOGJxblZtd0V1ZXZsMks4MXp2b2ZfNkpZVnI?oc=5",
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZXZQSTJQRnpzaEM0ZUZMTWNpbF8xdy0xNWMtSDg4WDUxak4tU0UtRllFbUx1cVpHNGNBTEwzWlhaNkVlSV83cTFEZWZKUlZkWFcyVHhzc0dtVFUxUW5KZ1Q0UmFRQnZHbDF6bjhsbTFGT1duZ29TZ1FZZURBemlMVg?oc=5"
   ],
   "title_hashes": [
     "b56ce8453a4825a6b4c02a0e604147ad",
@@ -15917,7 +15917,24 @@
     "bdf12694c3c98d4629ec0d944dacc079",
     "affc4124709fb143eadb90778acad8a1",
     "edad425c52aceb1a782c31fc82adeec8",
-    "18a3c72e5c48e6272960adaf0d9c830a"
+    "18a3c72e5c48e6272960adaf0d9c830a",
+    "eb64f30a898f2a81db9af4a9bf15e4c4",
+    "70f16fa1c2df3ea59b7886f8ba3d103d",
+    "0799594d4c057438273fdf3da751772c",
+    "850d1d695ede7a8ff8904a779f7082ca",
+    "cb3d1698eb89b33d3fd7ee14e3ea4199",
+    "df4033ee44f7e21eb6ed0ded18500efe",
+    "8d775584cfb1ffb28edbdcc142dadd40",
+    "af1152bcafa9e94549b6be830194a430",
+    "b51d72d7277be507d917442ef318927c",
+    "d5292821c5d72de3097859bb0cd22de3",
+    "e7b3304951475078bc5d805d871327d6",
+    "6743eed4a75e3522f70d466ed47ed0aa",
+    "5bfc6f27656787bc80724a809b1bdcc3",
+    "7f6f6f3228537be9869bdfe87deff530",
+    "7526271a89b70a8e74e82ee3299d347c",
+    "da13c3bc65ce3c990795b9bdc46d9b8f",
+    "37541a8b609484b0b6b47c1577a0280a"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -16219,7 +16236,6 @@
     },
     "valorant:VCT/2026/Champions": {
       "revids": [
-        "1317300",
         "1317423",
         "1317528",
         "1317546",
@@ -16238,9 +16254,10 @@
         "1319579",
         "1319750",
         "1320520",
-        "1320655"
+        "1320655",
+        "1320693"
       ],
-      "size": 11722
+      "size": 11864
     },
     "valorant:Gen.G Esports": {
       "revids": [
@@ -16483,18 +16500,20 @@
       "revids": [
         "2065887",
         "2088424",
-        "2094682"
+        "2094682",
+        "2099972"
       ],
-      "size": 16668
+      "size": 16649
     },
     "rocketleague:Twisted Minds": {
       "revids": [
         "2065886",
         "2090268",
         "2094657",
-        "2099579"
+        "2099579",
+        "2099971"
       ],
-      "size": 4454
+      "size": 4455
     },
     "rocketleague:Rocket League Championship Series/2026": {
       "revids": [
