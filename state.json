@@ -1,26 +1,5 @@
 {
   "urls": [
-    "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wNzFlamdTMTRWWlVZQUJwNm1Rblgwenp6QVg4VUFqR1B4dnBGVXRCVDNnV1lkRUY2VmVadmlVSzBJOFQ5ZEFxZEx4V0kwVXJJQ1gxRTRuN3d5S0VKWjE1N2JtQ1BKTVhXeGI4V2FnZGg?oc=5",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1NsUU9GYzlJalh2NDdSZFJuZDF3TE9idTcxX0dONWpYNElYRjZJaVZtWnAxUUpPeVNpejVZQ0tIaExjNXktNzZ3SEZPckNCSVJTbVE3blZhWEcxRjhjQ3JUTWVyZF9kRF9Xd3RhOGlPNF9hSERib192eHFFbDhEcA?oc=5",
-    "https://news.google.com/rss/articles/CBMijAFBVV95cUxNekpwTW5seF9zTmt2LWR5TFRNV3NHRk5jMHFBVUZoSFdsd25BMHBfZ3JuRWZuOTFZWFNsc2xoVzJOMnRWNkIxeFF2eVZpdU55eDlVNjU0N1pIWjhHZHM3QzViMlVGTmhDOHh1Nmx1TU1XY0g2NWFNN2VhTGlSY1JqN00weU90QzNLVFoxcg?oc=5",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1CellFZE54UG4xZlNFbVpEQTRNV1RUdTBSY1B5ZFlnbmJTX0pTN1VGbGtueEJrcHFRaFRlRkxKb2RkTi1zdVFzNUYzaFA1OEdHZDBSeE1qcmpsZ291M0FYUlN3?oc=5",
-    "https://news.google.com/rss/articles/CBMia0FVX3lxTE1EQU5sM3c2ZDl3Wmx1T2lmTmVFck43V3lFb3doMXBJM3FNSl9sdXVCU0czSVAtRmVVYmQ4Q2Z2eWVOc29JNlRWaGdYc0M2cURSVDF1ZDVzVS1LQmw2OEtieEIxREZjWnhMT2hN?oc=5",
-    "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IMXVmOVRsVmNHeElzcHFPbk5vQUZiQWlCYTZLYUZQeVZsV1JRTXAtQkJSOW9fNk5UcWhER0UxakwxVE1JRjFuMHNhcjZWeDFtNEE?oc=5",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE95Vkd5RGdMVTNyQTNNaTlmMnR6a0VoRzlxNkZ0aEFOYm8zdnIwN1N4LXEwODFOMVpjc1pXb3Z5MXdOdTA4S1BjVkQ4enlHLUs4SFZpc3VHaEQ0ZnJQVWc?oc=5",
-    "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQ2FTcjRodU1YVjlQcDdqVW1HVGF5MGQyMWJvNldVaUNnYi1BdWFQVUE5NXNMVnlwVDVKV2FmRG05OXhROGlGdnM0aEw5cmxrdGlJRW9paG5PdEc5dlhuR0lqd2lJTzFIZk5FczVkN1ZVamtTTTlxazcxckEzSkFlQmxnYw?oc=5",
-    "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OdURGNkhhdmRXczI5V2s0eVVWZTk4aHBUeDZzUm5xUnpkOG84RFNCejBDWEVMSTA4MFg3WVhHZkZNblRneGhwQnRvSDFmSVFXMzcxQTJ6aU9PMDJ6cDJNMF96aG5FNlRsN05LVjVfMnNHYXc?oc=5",
-    "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBSS05ScjZtbDVUWGRGNlZ1UzFnQmVBVTlCdHZjZFkzd1JCVUVpNUVLT2JIc0RBTUx5ZUlXZWdXbThsTmszLXY1eG9OLW9iLWdPODc2emF6WFh0UQ?oc=5",
-    "https://news.google.com/rss/articles/CBMib0FVX3lxTE42dTh1SF92bHVzWHZvREwwVm9laVB6LUkydldNU2xsWlFIdzVfRUJIOGlLM3pNcS1qZDVEcVlJUTVwSmw0RElWbUlqYXRXdEpZNFVwQ2hPbmgwUzBvUWtfdzhVTFhaZ19EbnI3d2Rqaw?oc=5",
-    "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BdW9tRE1PVWduaEgzMVg0UTEyM01DMWN1S3dyd0JaMWdyVkdXRjhSR25lak96cC03eDctVUVtWmsxREhLRmFoT0hldDFFQlQ4Y1NCZG5maVVEZGpzNlYyV1p6VVB3ZmRTMU9OY3JjNkI?oc=5",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1obEJPSllCZkpiTHFzX0t6a3k4aTEwWUs5bG91V3R4R0dVdmRhYnlocFRvZjZIQWU2anRpVXdSRjFUOTZ1eE8wMVhHQWN4S3hwQXZqdG5PZlp1eEpvWlRHb192WXZpY1k?oc=5",
-    "https://news.google.com/rss/articles/CBMiZEFVX3lxTE54WW9GLTdndjRxUzFLaXRieVR4elQydzNKUnRWUkNhZ1dmNXN2UXJ3WFlEZW9SdEVPN0x3U2t4R0VENDhJeDJXMmdGcVEzelY4ZnpJOHBpN1RkUHRCY2huZUNVM0s?oc=5",
-    "https://news.google.com/rss/articles/CBMiVEFVX3lxTE93RFhEVXBxajJYZU5XY190bkxfOUc4b1FUQzI2V2hrdUV4Mk1SMVRnNFU4a0Vud1gyNXQxQTRqWm1TMkxFS3NkZTNKYlNpQWVONmZpMg?oc=5",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5RV1N4TFJ5UktSV0ZVM2gyVXlsTEM2R21sX0lkR1lMYVlfWHhoNk4wUGZHbUQ1Y1BDNUNtT2NLeENLeW16Zm1Zd1BkN1NpZ0xFSjJKT3RKdW9KOWMyNDdiaFFKaXJxYi0zYlE?oc=5",
-    "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TTk9aNGlnSUxCOUtlbEpUR2o5SzZSb2tqRHFuQUpLUVdhdXNILUZNWTFtUDVoLWYxaTFqNTZtVjk2b0c2YnAtZXI3RHNkd1hBdWEyWG9FRm0yX084VktaLWFERmlwaFN0d0E?oc=5",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53WUpLYzFKcU9vNk9mRWpDS0dIbHlMelhxQVk1Vk5EZWlwcE5nRVdFVF9qdTdWTzl2dTJTNjRKd0hjNEdNRkdwWnlpdld1TzNyVXEtYWIzUkduQi1IazV0OURSV0s2NE0?oc=5",
-    "https://news.google.com/rss/articles/CBMif0FVX3lxTE9WQXlLWkJfcEVmbkI0aV9LWGJJeHhPMllqUnFUZnNIMzltNE5KeHdUZFAtUW5EVlNxWnpzQVo5Z2tfRnljUkNTd29kTm95VlpqR25IRWFZazNKX2dlWnZIZUJEXzFvRjEtUElXNElOdjlTVVdHUlN1RDJvNEZ6LVE?oc=5",
-    "https://news.google.com/rss/articles/CBMiS0FVX3lxTE13dDVNaUxKQ2FMU1dTZmd0aDRTQktLQkN1bHhDNThfZkoyVDk0cExMdEd6UjY1d0pZWTlLNXE2N0s3V0VkMUJKb0pTRQ?oc=5",
-    "https://news.google.com/rss/articles/CBMijgFBVV95cUxQc3I4X29zbzRMZnBBQlpOV1Uyb2ZmazYyOTN6d3VQYjFjRG5OSDV1ZGpEOFFCVU5PVWVqY2pYYkR6dDYzUDJqMmFkVDhvY1p3QmQ5M3Z4TDhWbTlUa3pwanZOWE5DSG9ISnM2VTFLT2V0eHVqTjI4SGJSRTdSYTdBdmpoZEkzNk5aRGJWSVl3?oc=5",
     "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOTBpVnZKVTJkYVZOLUpwSEVndmRnbHJQbXZlM1FLNnpaaXRBSlcxZjF6a21hdUZRV3AtLTAwS3NFTHFSVTJFdml6TC1oTEVHZGRMaXZkRDJ6cHoxSTN1Sm5Cc2FRQk41RE05OUl0T0dsNjh6N2VrX08wZ3BCWmxGRQ?oc=5",
     "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByTGtwdm1IRm9Qd0Z6YzFjMkxIUTVjSXZPd0o3TnZ3NDhmdk91dllZWGFwbTAyNkRseVhnZ0l2VExCTG82TVZqRHZnVTA2MVh2SWppZVoxUUpGa2xKWi00NUY0Zy10UG8?oc=5",
     "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMakxScXdyX1ZZXzBuRDlEeXFZZjljWTVzdjBMU0h3bnc0ZENlMGZMLWVwWlBhOG8tZ3AwcUhNYnBFWWx6c3ZCTG5jNVk5dzRmSVFJbTdmMTJGWm9iZkxFZ3RKS2JzM0N6M0RnM1FGaVlLa1NtcDI5RkRNckR4QQ?oc=5",
@@ -7999,30 +7978,30 @@
     "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPQUF0MXV3b3ZLcVhPZkVEV3Y2M1NGb3BZTlR0TjVLVlA3dUp4aGU4YUlsVnJISFFaTWRhdGZ2UkIxQXAxdEdqdWJON2dnbDRnM2Z6Q282S3VZbm8?oc=5",
     "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZ0U0amlIeWtPbmFhTDd3UGw3ZW1jZTlULTdNX0tLZGpxaTlfaVd6OEVSUTRPT2t6WnVETEgyQUxhbDVvQ3lpT3ZSSkdSTkR4RkdsSmJ6ZERTc2JiWTAzVXRfRHJwYW9WYTdpM1h1R1JEOGNDNHF1SGlPcEQwd3ZEMFFWQ0tJQjIyRV9SOW1iUU9RQUNWSTRJeVNuR0J1ZWFyamNkLWFUd04xQlE?oc=5",
     "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZGVrVWN5QTg4b2NkQk1nVGh0LUNPbEpjVzRDZ21Gd3dodHZXby1NbFZnZlUtdWlVMTFDM3JWdElFTDhtMmJrcGNVaFBvbjVtd0RqTFl1OG5ILUpsZ1J2cHNZR2d6VDBPdzZKLXNqYUItQXk2eXhYUFBBTTBqQmtvdWtoV2FOM3djTmtkck50YUZlUXcxQ3lVLUY4VzZNTmpHU1lqamx1a1c?oc=5",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbktDQTRZS0w0dElCWndNWnk0bmRkcjdQQ1RlNE13cGxkandXZjRURzBNbTBXZkZKYnN5dmctOXNDZU95Tmd4VTgzeHp6YlA1aGtVY2REVmVhWWloZzMyTlg3NF9qQWFOYXFTWFJ4S0RCc1R0RDVLamxCSjM1RWdnUXl5TTBQeFRFaHlSRXZDLVNIOHloT0d0N3JRX0JNNllEUnhyVG5yaTIxTVNwYll0ZE9zZDc?oc=5"
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbktDQTRZS0w0dElCWndNWnk0bmRkcjdQQ1RlNE13cGxkandXZjRURzBNbTBXZkZKYnN5dmctOXNDZU95Tmd4VTgzeHp6YlA1aGtVY2REVmVhWWloZzMyTlg3NF9qQWFOYXFTWFJ4S0RCc1R0RDVLamxCSjM1RWdnUXl5TTBQeFRFaHlSRXZDLVNIOHloT0d0N3JRX0JNNllEUnhyVG5yaTIxTVNwYll0ZE9zZDc?oc=5",
+    "https://www.hltv.org/news/45515/m80-win-roman-imperium-cup-viii",
+    "https://www.hltv.org/news/45514/virtuspro-enter-top-30-of-vrs-with-thunderpick-world-championship-qualification",
+    "https://www.vlr.gg/755697/enterprise-esports-allows-magnum-to-explore-options",
+    "https://insider-gaming.com/nyt-strands-924-hints-answers-september-13-2026/",
+    "https://insider-gaming.com/nyt-connections-hints-solutions-september-14-1191/",
+    "https://insider-gaming.com/resident-evil-director-leon-kennedy-backlash/",
+    "https://insider-gaming.com/saber-north-american-game-development-costs/",
+    "https://insider-gaming.com/blizzard-promises-diablo-5-and-starcraft-will-ship-on-time/",
+    "https://esports.gg/news/fortnite/kingdom-hearts-fortnite-skins-confirmed/",
+    "https://esports.gg/interviews/overwatch/talking-owwc-2026-at-blizzcon-with-imoh97-and-tvnt-we-are-here-to-bring-it-back-again/",
+    "https://www.hotspawn.com/dota2/news/state-of-south-american-dota-2-2026",
+    "https://www.hotspawn.com/counter-strike/news/virtus-pro-qualify-for-thunderpick-wc-2026-after-closed-qualifier-victory",
+    "https://news.google.com/rss/articles/CBMiR0FVX3lxTE4zaVctNERLd1dSMUNhUkpqaFdvYmJWb0RSbEJFS19GSVVZelczdVptZWtGTkVQc2JBQ2RqR0JwSjk4eEo1NHlz?oc=5",
+    "https://news.google.com/rss/articles/CBMiREFVX3lxTE9GRmRYUUpvX2twQ2E2U1cxZWcyVTBaT2MxdlM5cm9xcV8wV2VLcnhuMFNmbUFxTzZnWjhkY0FnQ0hfRGZJ?oc=5",
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTFA3OEpJTUJ1X2lmdVFObHV3ZFJNYlVJaUNZbW00WURhbVVXZHloTHhERUVzV2ZCeG80NThWcGplVGlUNVNWM0tvU2xNMEh2Qy1xZnR1QjN2UHdaOXBuWjJBWmUxN3JYTFlsODdzYkxhNk5BSExwaVE?oc=5",
+    "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1OS0pHNWNISWE0OWM5Z2J1d1otbFkyTjVlY1ZtbjR5YzRSb1Itc2JsZ2hxZ0NIUDdueDNaWGs1Z2g?oc=5",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5fMXlSejk0T2FMbWZLUW12WTBjXy0wazlET0pVVDYwTkI2WXpzV21JcFNKUkRVOGdRYnl2b0ozdnY4VXEwanBGazJ5aThYSHM4MGE1WVJXc24zNkJkMGtMSmp3?oc=5",
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peHdrREZkZWlxVmZUY1lHT3BiN2d1QjdLalVrb05oeEpLOXBKVnNyVGpyb1AyNjNROGlwaUlvSXRuMHB6UlVfTGpwMVZNUTgxU250bEZ2WGRQZ0owbnBreGJR?oc=5",
+    "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpaWhldl95bHl0NEhrMk9wd1IyRnItVTVlZVdROEhDcFlmSUxOQnhCazAzbGVVWUN3QTRIVmdtYTJuOTRTSFJ3cW9kNnJoaC16YW4tWFR6WlZlRHNLSnRBWG4zQ0pha2xydWhxag?oc=5",
+    "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBkdzFoMG5LU3pWNEZocy1ZZFd2dXo4VmRMYVNGLUs1ekF1dHlnLXFWTUNRTkNqTDVnSm9tREx1YUY4bFFhZkdpUFhuemg?oc=5",
+    "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTzZyRUlhS2p5bTVDZHFjS09EN1NpbTBtRS1UakVmR09SSFJVVmxWMmdlMmJXUWpidWUxdHB5UTMyN1JOMGFuRjJaZUw3X3k3N05SSVNGYkhtZEdjc0hUVmVWWlI2SnFOak5KdlRHbndGNVJHOXVyZWlrNWJOTUZKN3NsQUxMYl9UMXVXMW5ack1yUk5GbmpGNklnUWZsUzlVdFlFVHBYV29sbE1ycmhOQVhIb3p5ckREXzNoMlRtcWkwRDdkbDNqam5Jd29EaldEaWJHLTFVU0JhalNZaWNVX3VB0gHnAUFVX3lxTE1NUjkzaUM5T3pUS2NvWVFMbVdnVkZ5V0FGVFhGbjhmeTJvbVpQVy1UMEFTVXAyUjEtVHM2OUxGVmZuZldwTEY3QzdOTXRxVVBJdVB5dm05eTBvOWlueUh4bXE3QkVUbG5HbDNaTEF4VThsclRkbUNRNGpWdUNpOS00UXFUNUFIN0dOdFlLVFBNZ1U3UDdhSU0xdUlnNXZ0X1c3VmU2VmNiaTJYOFl0VlZITlhXSWhMdXpIMDdEVkVQSWF3V0NOcXhmSFMxYXpjdWdrd0VSdjN2ZUJxdTVtclVFbEthUC1zdw?oc=5"
   ],
   "title_hashes": [
-    "fcf66c2b6d33defb003589045c0f501f",
-    "2fc602ba1d072963c59528d52cb7fad3",
-    "c3d1d73daf87b911a0555258c314dd03",
-    "66753a9a1f486a9fcd1b661479ad8c0c",
-    "b8aac51b3d419d3b62a7373ff2fd193e",
-    "9b4c377dbd3d348fdf25c7b34220c598",
-    "8a6b8425b67212517f7c15df40e4ec1f",
-    "428f2df44f28ac7998eb7b5222450fe2",
-    "12a34b9f9a7168867b08dc8ad1cb159c",
-    "c63864bc159e4c700c298db11de50a07",
-    "776f5173fa2ffc4cb64126d2fd15a3ec",
-    "388d90ced7baaf929f15d4daa9e1c7a7",
-    "f2eb39ef014f8213f4503aaf6dec1a39",
-    "eada3166759bb78f89c01a145c97681d",
-    "860cd9617958b21c418bf4a334b5afef",
-    "7eb0b0f9cc6135879f9700edf4bf95a3",
-    "1a52cc00e1b5b969ed4a4c1cfd08e9aa",
-    "8fbf3aa354fdc8a46ff4c7e21f6cdc94",
-    "f07b64259756cfec603b973b71d50aaa",
-    "184f9702a65d0cd517d12e9aa481c901",
-    "c66a334b19efd3690ca7f7464469a735",
     "923355643190119bc4c785dc4fa17004",
     "433406b49fcc0c761123f2c7dd2905a6",
     "5c29e34f37236299de6d8280317a4bff",
@@ -16001,7 +15980,28 @@
     "850d1d695ede7a8ff8904a779f7082ca",
     "799855594adc0f2bd7302c69d3234b5a",
     "a19c2b23a70dcd5d65b99cbd724a854e",
-    "64a9b2a24f57ffe5fc826a0498602739"
+    "64a9b2a24f57ffe5fc826a0498602739",
+    "126d5b33321c3b7624324609447a8279",
+    "e2306c1d51b340be7947042319bfa4cf",
+    "85bf4d71847ac673397888b111e55b80",
+    "ece9db94feeca945f6405e949b67ec19",
+    "b1dee33f0c4144774226d9361994b2d9",
+    "7f9c2084843635837ae2d52ee60d8ef9",
+    "c6b76c740254d33d1b7eee5ebc037ba3",
+    "c420436ec2aa363933bbd468380e51e0",
+    "af1a5a7f782f8cf4964b7ccfb8b23d49",
+    "14e08c5fd6ba27469317522b17fb2edf",
+    "0fcc42f09d71ab6179ce091c58c66536",
+    "92d41d4ab36fcb0e3c74ea8510ac3ca2",
+    "cd00d50d0eac02a1e188013d0c828fd2",
+    "7210449248c3ccd4c1f7053c4141394e",
+    "a31766084133beedeefacf37c151b714",
+    "508c75c8507a2ae5223dfd2faeb98122",
+    "a31766084133beedeefacf37c151b714",
+    "850d1d695ede7a8ff8904a779f7082ca",
+    "874766323ff4465dd70f7a98c3fa26af",
+    "f40bfa9c7c9c017d2fa50282e4a59a68",
+    "1e49292a560473f51f7d574e03b3db75"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -16316,7 +16316,6 @@
     },
     "valorant:VCT/2026/Champions": {
       "revids": [
-        "1318757",
         "1318952",
         "1319107",
         "1319118",
@@ -16335,9 +16334,10 @@
         "1321267",
         "1321801",
         "1321828",
-        "1322120"
+        "1322120",
+        "1322791"
       ],
-      "size": 16387
+      "size": 21014
     },
     "valorant:Gen.G Esports": {
       "revids": [
@@ -16622,9 +16622,10 @@
         "2100485",
         "2100753",
         "2100762",
-        "2100765"
+        "2100765",
+        "2101329"
       ],
-      "size": 47534
+      "size": 47569
     },
     "rocketleague:Team Vitality": {
       "revids": [
@@ -17014,7 +17015,6 @@
     },
     "overwatch:Overwatch World Cup/2026": {
       "revids": [
-        "1144059",
         "1144177",
         "1144215",
         "1144227",
@@ -17033,9 +17033,10 @@
         "1146486",
         "1146597",
         "1146709",
-        "1146760"
+        "1146760",
+        "1146775"
       ],
-      "size": 40874
+      "size": 41011
     },
     "overwatch:Spacestation Gaming": {
       "revids": [
