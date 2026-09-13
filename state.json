@@ -1,31 +1,5 @@
 {
   "urls": [
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peHdrREZkZWlxVmZUY1lHT3BiN2d1QjdLalVrb05oeEpLOXBKVnNyVGpyb1AyNjNROGlwaUlvSXRuMHB6UlVfTGpwMVZNUTgxU250bEZ2WGRQZ0owbnBreGJR?oc=5",
-    "https://news.google.com/rss/articles/CBMiREFVX3lxTE9GRmRYUUpvX2twQ2E2U1cxZWcyVTBaT2MxdlM5cm9xcV8wV2VLcnhuMFNmbUFxTzZnWjhkY0FnQ0hfRGZJ?oc=5",
-    "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5BTHNGajUwLVVieUVocF9uREVMeno5V1RCRnkxVWp6dnh1UEoyOEtFRm8yVHFRODB0c0t1TGxCRm5kQQ?oc=5",
-    "https://news.google.com/rss/articles/CBMiREFVX3lxTE1zcm4zYll2UFBBbU1MLVgzRU1ZY2Q4RWh0Q3h1SnJVUXIyZmJrQnZHY3R3QjhoSWZJTk12VFUtRG1lZmN3?oc=5",
-    "https://news.google.com/rss/articles/CBMiQEFVX3lxTE1OS0pHNWNISWE0OWM5Z2J1d1otbFkyTjVlY1ZtbjR5YzRSb1Itc2JsZ2hxZ0NIUDdueDNaWGs1Z2g?oc=5",
-    "https://news.google.com/rss/articles/CBMiR0FVX3lxTE4zaVctNERLd1dSMUNhUkpqaFdvYmJWb0RSbEJFS19GSVVZelczdVptZWtGTkVQc2JBQ2RqR0JwSjk4eEo1NHlz?oc=5",
-    "https://news.google.com/rss/articles/CBMicEFVX3lxTE5WSURSY2doTkxpWlZEMUFGNDVSNWRGeTNZbWllTFV1ai1NZDNKVk5xcmtWUkxWTnZTRUtwRkR0cm5MVjJyejJmRE44S2szNFpieGJMYlgtaVEzYnQ4OExGVkY4VUdOdDJKQXBlVVdmMlU?oc=5",
-    "https://news.google.com/rss/articles/CBMicEFVX3lxTE5HcGNHMnhZb19lWm1mZ1VmdjBCNkdBS3VGWDdRUlUydTRpRFpXLTRwT05LTWcwbXFwQmxEbnhJZzZSMzZRS2hjVldGS0xTQ3llTlZHbnluVXdQT2NMak93TEp1cjM4S19XRmZzZHRVYUU?oc=5",
-    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE14UkJlZmdtUFVneEJEMWJkTXpadkF3YklmYUFPcUo3WGNEZXhISkVsSXRvRnhWVnJVWkhRS25tczQyNC1vQlZhdm1OdVVvdFhDZEVV?oc=5",
-    "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1MS2YtM215VWNSdHAzemJvQl8xd0VuYS1mYWJ6cmJiXzBKbTE3YlYxLTYtbk5QT05fOHFsZlIyNHlQcXBUOHc?oc=5",
-    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5SSFdEVVo2YUM2QmstbnVqcUExMEZpWGM0dEZaQ0pkb3J2Yk91MVoyTTJYbmNybUN3UGRYUE41em9kY3RneWR0bGFXNHNOUk5HdUY4?oc=5",
-    "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XS2NHa1BReXhqZUszRUFRRTNvOUNtajM5Y28zSi14S2xhRk5IWDBJTzBSRFBNa2xRSUExV1FnTHE1eXdTSUU3QXBR?oc=5",
-    "https://news.google.com/rss/articles/CBMia0FVX3lxTE82OURzVnBPVVBxYzBBRE1oLVVUVmVDN215V1k2aUtrckVsRUg2eVRLQ1lXM0lSV01JQ2pQMlRiaXQ4QUhYb3pTeTRpazAtXzl2MDd2Y1FXek5qc3BmTVAweWxmTV9DSE41aVZr?oc=5",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5fMXlSejk0T2FMbWZLUW12WTBjXy0wazlET0pVVDYwTkI2WXpzV21JcFNKUkRVOGdRYnl2b0ozdnY4VXEwanBGazJ5aThYSHM4MGE1WVJXc24zNkJkMGtMSmp3?oc=5",
-    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTmlYVXktNHhIMy1sVTRIVkhqd2tUMUJFWFdSMjhVQXozYTZaMDJnejlHWE5JdjhGOS1sTDYwWmFhRHFfRkxrcnhIVGVEUWdlLTBuZnlhck4wcW0xRzhMMTF4X0Q0MW9KTmEwTlVYN0l4NGhOV2RyOGpNT1EzZDR3U0JpUWE1dnQ4NUtJ?oc=5",
-    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE94c1lKaEJkQUdETkcxNmhIVFhyNFpzNnpicVZmOFZMRzFVYVdaRlZzTWJIbzhUVlpvY1JyNkZfZFd2TkF1R1NaeFpLRWczNE84XzE5V1VsWkk4WElFTWc?oc=5",
-    "https://news.google.com/rss/articles/CBMidkFVX3lxTFA3OEpJTUJ1X2lmdVFObHV3ZFJNYlVJaUNZbW00WURhbVVXZHloTHhERUVzV2ZCeG80NThWcGplVGlUNVNWM0tvU2xNMEh2Qy1xZnR1QjN2UHdaOXBuWjJBWmUxN3JYTFlsODdzYkxhNk5BSExwaVE?oc=5",
-    "https://news.google.com/rss/articles/CBMifEFVX3lxTE9LLWMwb3IwYS1UX0FPLVJLbmlvamRTa2tOUFVMQ21aWUdoUF9jcGRCUEZuV0s2dTE5REl3c1dXQTB0akZpMmRNdktmaVpPNDhnNGpMLURVSTlvSHJXTjJUWXU3dVlDWXo4Ykh2amw3b2Y0VVhrX2lIdlFlT1E?oc=5",
-    "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9jb0hoUnR1MnZxazlkQ3U3eWh4VDNtOTV3Z09rcVlJenpJUWdJQ1llQUJMZC0xcFM3NVZEdEF2ZGVzUjdwMXVR?oc=5",
-    "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1naXltSjBaNXlNd1BXeXFJYmV1LVo0eWxfQi00Nm5oN2xkVG5pTlVhckpSY1RiOV8zeWtLaWE1WGVFa1A4Mml0eGZXazdjVmp3bmkyYWk0dzFTMkl3M0J4LU4yN2pnZw?oc=5",
-    "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KN2E5WXhNejl4ZElUUXV3a05QWDVieHNIYjd5X182bnEtZDhJc2F0WHRucjFoVDB6SkRYZ2VlckQ3VGJDZl96SjNzcFRrVDJqOTFsbnl2bHVMT2dxMnh3YnhvRHpNbmNGSFlV?oc=5",
-    "https://news.google.com/rss/articles/CBMifkFVX3lxTE9WRU1UT0lwVDdmenlpYlBmbkREWi1tRHItV25qdTgtZ3VfMkhwZFZrWmFaZlhEakYzMzFvTjFkcHliOWo3cGszSzR2ckhGNE03OUk4SFN1WV9oWk5TbGo2dXlpQnRNbV8wNUItbzJBeFpfWHhWMEgyTjRDMFZzQQ?oc=5",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUmxqR2dmekRMSV9LT3lVM3Jnd25PdzVySkVmUDFiZW14ZmFNTnpnQno4WXlpWmVWUG13RUVoOWk0WFRZd3Jzc0loSkxjV09KeGp1VnpLRWp5Nmc0YU9rb2NsMHJmMWdmUWgzN0NubXhfMm9LN29yTENEMTNZazI3eA?oc=5",
-    "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZGh6Z2F6TWtnN1hCN1pVeGt2OFVLVTdVcTZpOUpGNnRvcjJQOFo4RkhzY2FzSks0bTRVYWh2cmQ5SVRIdHRHeGxCNk1uZTN2c2p6ZEVCcVRhNm5GaVVGRWxob0t2NUYzb3RXcjhyOFU3YkRwLWVYcWpNUExZQ1oyejJ0dG0?oc=5",
-    "https://news.google.com/rss/articles/CBMidkFVX3lxTFBjaTBDdXhSYU1xcG9QRWhJZHlpNGw1X1k1bkk5TVNCX1NPRmhFWDlJS0htX0h6T0JzZFJTQ0dRYnZxRkxqYzgyVU1lYXhHY096TTl1SDc0Ylp4VDdiWUt1eVBpYVEweEprbFRMVm05T0pjRmY0MGc?oc=5",
-    "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9kNW1vLTV6SVZDdUZfR0JZeGZIZ25UY3NSS29LQnBqcFJZZ1NZTVl5RTdWRzVwYzlxcVZvUUt6TGVjYzBXTTMzaVFBZ3Q5MjhE?oc=5",
     "https://news.google.com/rss/articles/CBMicEFVX3lxTE5wNzFlamdTMTRWWlVZQUJwNm1Rblgwenp6QVg4VUFqR1B4dnBGVXRCVDNnV1lkRUY2VmVadmlVSzBJOFQ5ZEFxZEx4V0kwVXJJQ1gxRTRuN3d5S0VKWjE1N2JtQ1BKTVhXeGI4V2FnZGg?oc=5",
     "https://news.google.com/rss/articles/CBMigAFBVV95cUxPM1NsUU9GYzlJalh2NDdSZFJuZDF3TE9idTcxX0dONWpYNElYRjZJaVZtWnAxUUpPeVNpejVZQ0tIaExjNXktNzZ3SEZPckNCSVJTbVE3blZhWEcxRjhjQ3JUTWVyZF9kRF9Xd3RhOGlPNF9hSERib192eHFFbDhEcA?oc=5",
     "https://news.google.com/rss/articles/CBMijAFBVV95cUxNekpwTW5seF9zTmt2LWR5TFRNV3NHRk5jMHFBVUZoSFdsd25BMHBfZ3JuRWZuOTFZWFNsc2xoVzJOMnRWNkIxeFF2eVZpdU55eDlVNjU0N1pIWjhHZHM3QzViMlVGTmhDOHh1Nmx1TU1XY0g2NWFNN2VhTGlSY1JqN00weU90QzNLVFoxcg?oc=5",
@@ -7999,33 +7973,35 @@
     "https://europeangaming.eu/portal/interviews/2026/09/13/214021/allan-stone-intelitics-interview/",
     "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aQ2g4QjBkUk1hOFkwSEpXMmNOQ0VsYk56dWRxclpocVMzQjNpckpJXzliU194T0FaSlBzbkNFX3hma2NuNElUcDhhVk5CVTNwLVJkUm5COW9RcERDM2VEZEdrTEw?oc=5",
     "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBjU3FRTDFBWlhYS0hHRXNIU192dkNlSzBYbFB0dnRYTDBaNFVCTEllOEVLYWU1Q1R2LWRVcGpEbkczMVBtNkY4OEJn?oc=5",
-    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc2RjQUNEZGdpWEJPeG9Fd1k3dDE4Vkp2STVoQ2dyN3lGX2dOejU3WFk4bENINHRxQjJGUlRLSnJOR2VZNTE2WFdEWGNndTJiMHR1VGQ0M1dUejdFVlhMcTgwN2F0SUZDNXgwWEFjbHZ6dWt3eVo2NUM1ZFhNM0RPSDd6U2Vtb1Mw?oc=5"
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc2RjQUNEZGdpWEJPeG9Fd1k3dDE4Vkp2STVoQ2dyN3lGX2dOejU3WFk4bENINHRxQjJGUlRLSnJOR2VZNTE2WFdEWGNndTJiMHR1VGQ0M1dUejdFVlhMcTgwN2F0SUZDNXgwWEFjbHZ6dWt3eVo2NUM1ZFhNM0RPSDd6U2Vtb1Mw?oc=5",
+    "https://www.hltv.org/news/45513/liquid-tyloo-dendele-and-nemiga-qualify-for-pgl-masters-bucharest",
+    "https://www.hltv.org/news/45511/latto-after-third-mvp-in-china-its-china-magic-i-think",
+    "https://www.hltv.org/news/45510/latto-strikes-gold-again-in-china-as-fpg-3-mvp",
+    "https://www.hltv.org/news/45509/legacy-sweep-g2-to-lift-fissure-playground-3-trophy",
+    "https://esports.gg/interviews/overwatch/team-sweden-owwc-2026-interview-with-scyle-and-willys07-as-a-kid-i-wouldnt-have-ever-dreamed-of-this-but-now-we-are-here/",
+    "https://esports.gg/news/counter-strike-2/schedule-cs2-events-2026/",
+    "https://esports.gg/news/fortnite/fortnite-collab-leaks-2026-fnaf-one-piece/",
+    "https://esports.gg/guides/rocket-league/twitch-tiktok-drops-rlcs-2026-finals-lte/",
+    "https://esports.gg/interviews/overwatch/team-france-interview-with-kroxz-and-dip-at-owwc-2026-were-the-crazy-team-were-the-dark-horses-were-gonna-take-the-win/",
+    "https://thegamehaus.com/college-football/5-things-to-watch-in-college-football-week-3/2026/09/13/",
+    "https://thegamehaus.com/college-football/college-football-playoff-bracketology-september-13/2026/09/13/",
+    "https://thegamehaus.com/nfl-draft/nfl-draft-prospects-to-watch-in-college-football-week-2-recap/2026/09/13/",
+    "https://thegamehaus.com/college-football/5-things-learned-from-college-football-week-2/2026/09/13/",
+    "https://gameriv.com/blood-of-dawnwalker-modders-have-already-added-split-screen-multiplayer/",
+    "https://gameriv.com/valorant-warden-new-2x-scope-rifle-leaked-stats-and-price-revealed/",
+    "https://www.nerfplz.com/2026/11/surrendering-explained-10-rules-of-ff.html",
+    "https://www.nerfplz.com/2026/09/best-lol-skins-of-all-time-10-riot-has.html",
+    "https://www.hotspawn.com/counter-strike/news/quake-cs2-workshop-map",
+    "https://www.hotspawn.com/counter-strike/news/legacy-demolish-g2-to-win-fissure-playground-3",
+    "https://news.google.com/rss/articles/CBMiO0FVX3lxTE55SlJYdmwyY2xUaFF4dGJVcVlWdU0zRTg0QnhLUUw5UUJKdmFXZ2twXzdoMlBsdUIyYUh3?oc=5",
+    "https://news.google.com/rss/articles/CBMiREFVX3lxTE16UHFRS3ZuUDJDNWRlWGNwZldTRXBMdVRxU0JPaFg3YmVyTGtQTU5oZnVfdjFRUlBYeUhHRjRhcjc3SFEx?oc=5",
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ES1Jlc2ZaUzBqM3pDWER4M3dXNU1RUmwyOVF6Mm4zUml1UDRiQ1NGMnZOY2c5b1E3cmd3RVVkdUZoY3cxV3Z2OTlKbnBVQUhadkFuR0R3?oc=5",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPQUF0MXV3b3ZLcVhPZkVEV3Y2M1NGb3BZTlR0TjVLVlA3dUp4aGU4YUlsVnJISFFaTWRhdGZ2UkIxQXAxdEdqdWJON2dnbDRnM2Z6Q282S3VZbm8?oc=5",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZ0U0amlIeWtPbmFhTDd3UGw3ZW1jZTlULTdNX0tLZGpxaTlfaVd6OEVSUTRPT2t6WnVETEgyQUxhbDVvQ3lpT3ZSSkdSTkR4RkdsSmJ6ZERTc2JiWTAzVXRfRHJwYW9WYTdpM1h1R1JEOGNDNHF1SGlPcEQwd3ZEMFFWQ0tJQjIyRV9SOW1iUU9RQUNWSTRJeVNuR0J1ZWFyamNkLWFUd04xQlE?oc=5",
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZGVrVWN5QTg4b2NkQk1nVGh0LUNPbEpjVzRDZ21Gd3dodHZXby1NbFZnZlUtdWlVMTFDM3JWdElFTDhtMmJrcGNVaFBvbjVtd0RqTFl1OG5ILUpsZ1J2cHNZR2d6VDBPdzZKLXNqYUItQXk2eXhYUFBBTTBqQmtvdWtoV2FOM3djTmtkck50YUZlUXcxQ3lVLUY4VzZNTmpHU1lqamx1a1c?oc=5",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbktDQTRZS0w0dElCWndNWnk0bmRkcjdQQ1RlNE13cGxkandXZjRURzBNbTBXZkZKYnN5dmctOXNDZU95Tmd4VTgzeHp6YlA1aGtVY2REVmVhWWloZzMyTlg3NF9qQWFOYXFTWFJ4S0RCc1R0RDVLamxCSjM1RWdnUXl5TTBQeFRFaHlSRXZDLVNIOHloT0d0N3JRX0JNNllEUnhyVG5yaTIxTVNwYll0ZE9zZDc?oc=5"
   ],
   "title_hashes": [
-    "8e78288d7eadea03f82f6e4479d43635",
-    "3fa443aa7fa240bc9ef4bd019e1ea81f",
-    "745e082b1c592a4063d0e21b452d3cb6",
-    "cc87135fe49ca4d7210425bb64eec2ba",
-    "ec3f529502c7528147da031cade5fbe3",
-    "c056d0ce178698c36775f8423ffed46d",
-    "f2a9fcbb7fb807e8425284e9a5760e5d",
-    "97bf94c7cf28d66136fc4a57b9e8d66a",
-    "74e2c368a176fcbf653002359f55e971",
-    "595d89fc7979a83a24fe61fc3df9f807",
-    "3a1da25381a80168b1d42a276647542a",
-    "3282cbc765c682b407d9dfd6450aca8e",
-    "f7f4265b836e63b5a27c1de674598324",
-    "652bcedb4d5398926578bb2e7419a341",
-    "20f55a956c4601906a41335ed6cc4b86",
-    "87b7e104648ce5fba25e7d76c50b228c",
-    "224ebf494704b00114d4a0019b0b89f5",
-    "a2dc3d5f04dca0e8aa47793f40456584",
-    "09d8e24fccb2eae9b089e88ace9fed76",
-    "2ba22da83e379643da64efcf805ead6d",
-    "286e930b86236c0d22c7c56419ba4f7c",
-    "ba97dd312bf8fb317c95f78c6763badb",
-    "f1605c0b466d56e0176e2b8b313c371c",
-    "cd092fbaefd4ebc2a347a59d79876549",
     "fcf66c2b6d33defb003589045c0f501f",
     "2fc602ba1d072963c59528d52cb7fad3",
     "c3d1d73daf87b911a0555258c314dd03",
@@ -16001,7 +15977,31 @@
     "453b92db8a47cd4f82a058a96aa8c6fa",
     "b016f48d898c745be5ef382254224582",
     "b00ea5967541eb7ee52d928203c4bb3a",
-    "1ee6fe62d4e25f9de44662db272aa38c"
+    "1ee6fe62d4e25f9de44662db272aa38c",
+    "846390379921bdef3891504e0faaa830",
+    "93f46b0f5e51626c0f9291b3ceb0a01a",
+    "d945b6e4dc78db3b6ca9bbcaec82d624",
+    "a08727a5e7284d83a3bd777f3b4775f4",
+    "6807f44ae0139bf9a4f3409af0fbb49f",
+    "5392f0b6563d0fbdf6fb78de4808e3f6",
+    "a42bc6265d8ab2223b910368d0b4c8cc",
+    "65c082f1103fd8ece68166ed789fe7c9",
+    "aaf7dea60a2d62b923a399b61d5bff6d",
+    "38c03ecf7bc5af29a1aed5636ef6df76",
+    "4fd6cbebd8bf1e42a808fd19fa0a51ee",
+    "14bb68fb6234e86e97b701b83cec53d1",
+    "d3bf91876bc62fd25d8fa6d28a593fa9",
+    "8594931591708531f9780b99dd85ecb7",
+    "f2da558e600529ecf801a46852101f3e",
+    "8569d152cdcae46ca7c8deb38ed3f280",
+    "eca27987c0c5b9143ffce8db8f885a69",
+    "773722e9c75b46ce76326bbac6026a70",
+    "7a16d47523ad398e38d1fd9715c5e987",
+    "850d1d695ede7a8ff8904a779f7082ca",
+    "850d1d695ede7a8ff8904a779f7082ca",
+    "799855594adc0f2bd7302c69d3234b5a",
+    "a19c2b23a70dcd5d65b99cbd724a854e",
+    "64a9b2a24f57ffe5fc826a0498602739"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -16385,7 +16385,6 @@
     },
     "leagueoflegends:LCK/2026": {
       "revids": [
-        "1039098",
         "1039148",
         "1039531",
         "1040290",
@@ -16404,9 +16403,10 @@
         "1044444",
         "1045259",
         "1045278",
-        "1045861"
+        "1045861",
+        "1047521"
       ],
-      "size": 16571
+      "size": 16656
     },
     "leagueoflegends:T1": {
       "revids": [
@@ -16458,9 +16458,10 @@
         "2398962",
         "2402733",
         "2418917",
-        "2422456"
+        "2422456",
+        "2427337"
       ],
-      "size": 68113
+      "size": 68358
     },
     "dota2:Team Spirit": {
       "revids": [
@@ -17013,7 +17014,6 @@
     },
     "overwatch:Overwatch World Cup/2026": {
       "revids": [
-        "1144047",
         "1144059",
         "1144177",
         "1144215",
@@ -17032,9 +17032,10 @@
         "1146478",
         "1146486",
         "1146597",
-        "1146709"
+        "1146709",
+        "1146760"
       ],
-      "size": 40846
+      "size": 40874
     },
     "overwatch:Spacestation Gaming": {
       "revids": [
