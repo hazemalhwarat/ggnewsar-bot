@@ -1,13 +1,5 @@
 {
   "urls": [
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOTBpVnZKVTJkYVZOLUpwSEVndmRnbHJQbXZlM1FLNnpaaXRBSlcxZjF6a21hdUZRV3AtLTAwS3NFTHFSVTJFdml6TC1oTEVHZGRMaXZkRDJ6cHoxSTN1Sm5Cc2FRQk41RE05OUl0T0dsNjh6N2VrX08wZ3BCWmxGRQ?oc=5",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFByTGtwdm1IRm9Qd0Z6YzFjMkxIUTVjSXZPd0o3TnZ3NDhmdk91dllZWGFwbTAyNkRseVhnZ0l2VExCTG82TVZqRHZnVTA2MVh2SWppZVoxUUpGa2xKWi00NUY0Zy10UG8?oc=5",
-    "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMakxScXdyX1ZZXzBuRDlEeXFZZjljWTVzdjBMU0h3bnc0ZENlMGZMLWVwWlBhOG8tZ3AwcUhNYnBFWWx6c3ZCTG5jNVk5dzRmSVFJbTdmMTJGWm9iZkxFZ3RKS2JzM0N6M0RnM1FGaVlLa1NtcDI5RkRNckR4QQ?oc=5",
-    "https://news.google.com/rss/articles/CBMieEFVX3lxTE93aDhfdVVlYUVzVUJQTnlNQWFMaXlFY1p1dFlXYU51cjJtc2VGd2FYTUszcFJSOTRLRGlGZks3WVktNERsMzUtc1JsVjdBNmttX00tdHhYVzEwTnR6X0REN1NZWEJycncyRXNJeWNjdnU0Q2oxUU1KVA?oc=5",
-    "https://news.google.com/rss/articles/CBMif0FVX3lxTE01RnRSSFd0Z3JoX1BSRWJpZUtCRDltNjBoeC1kbjg0clJ1TDc4cHplM2ZNQWplWWd3TEJtZmRySXlXcTVmQjExWVR5djc4UDM4Z2xmdmt0UUlhbXFzTlctYWNoZnRxZk83Skl2S3lraW9icUZlMHliMnJBcHNDTXc?oc=5",
-    "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBhRVJKSktyMlpTRDM4T01UY1dHVVRHSnQwNDFmYk95ZUhqb0c2aV9CNXhFaDBieV8xNjhvWVlMV0MyODNPNEE?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Ed08ycXJxRi02bk5ZUXBaYUJWNURHd3R6T09rM19RdnNDR3paT1p6SVpZRVEyVEVnamJwS0oyWGZZV05rYXdNT3M2VkV2bkkyQ0RFSHM3Zm9JNWkzTjQ5bS1Nb3p1WFVW?oc=5",
-    "https://news.google.com/rss/articles/CBMifkFVX3lxTE9SSWdIY3RqT3RLSDBKWk5ib1J4MmRsTG1fU3dOOVhpQnBrZWNYQWhZX2k0SExsZUk3TmljeUJiem1nQlhmdFR0bFZNUkF0WWNPUjltUU1MMWppTkU0M241TXdxY01tY0FMRm5pc1l3ZTFCMC1RcEZ5R1FDdTV2UQ?oc=5",
     "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ScEpGMU56X1I5S1V2QW52djRxSjBHMjdOVEl4U29adTg5Qi1GZk9XMjdsUFpPcHRmRzg0WnExNUZ6T2RDQ0pDeGVrU2FfWmFLSnlLZ2oyeEhONzEyNUpKTTFleDRRUDNwTlZweXl1Rzg0Q19qSXJWYmMyWQ?oc=5",
     "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBPSTZFQVd6STQzSVRhOTVRaTBjUG5Vd1FuZFpENWN3VlN4LWdrSHFnN0VQUjZ1RXFMMDk0NnExekFBWkptcmNuRDBhZ1AwX1RzRDY4bXNfODB4ZW8?oc=5",
     "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOanJaTnUyQzhuOEcwYzQzSDlQSTBYRUZzYlg2Mm1BMFRnU2VjYm9OcDUwa1dfVkRTbXlQbHRKMDZ2bjdmMGQ3NTdwaGlYY1dYV3Q4V1NtbHFPZFNqR3hFeG1md0h0NWZud2pQZkpwazZkMTBnVWJZN0kyUXNYMWdMSHktZThGSkdFZE1J?oc=5",
@@ -7999,17 +7991,17 @@
     "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9peHdrREZkZWlxVmZUY1lHT3BiN2d1QjdLalVrb05oeEpLOXBKVnNyVGpyb1AyNjNROGlwaUlvSXRuMHB6UlVfTGpwMVZNUTgxU250bEZ2WGRQZ0owbnBreGJR?oc=5",
     "https://news.google.com/rss/articles/CBMibEFVX3lxTFBpaWhldl95bHl0NEhrMk9wd1IyRnItVTVlZVdROEhDcFlmSUxOQnhCazAzbGVVWUN3QTRIVmdtYTJuOTRTSFJ3cW9kNnJoaC16YW4tWFR6WlZlRHNLSnRBWG4zQ0pha2xydWhxag?oc=5",
     "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBkdzFoMG5LU3pWNEZocy1ZZFd2dXo4VmRMYVNGLUs1ekF1dHlnLXFWTUNRTkNqTDVnSm9tREx1YUY4bFFhZkdpUFhuemg?oc=5",
-    "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTzZyRUlhS2p5bTVDZHFjS09EN1NpbTBtRS1UakVmR09SSFJVVmxWMmdlMmJXUWpidWUxdHB5UTMyN1JOMGFuRjJaZUw3X3k3N05SSVNGYkhtZEdjc0hUVmVWWlI2SnFOak5KdlRHbndGNVJHOXVyZWlrNWJOTUZKN3NsQUxMYl9UMXVXMW5ack1yUk5GbmpGNklnUWZsUzlVdFlFVHBYV29sbE1ycmhOQVhIb3p5ckREXzNoMlRtcWkwRDdkbDNqam5Jd29EaldEaWJHLTFVU0JhalNZaWNVX3VB0gHnAUFVX3lxTE1NUjkzaUM5T3pUS2NvWVFMbVdnVkZ5V0FGVFhGbjhmeTJvbVpQVy1UMEFTVXAyUjEtVHM2OUxGVmZuZldwTEY3QzdOTXRxVVBJdVB5dm05eTBvOWlueUh4bXE3QkVUbG5HbDNaTEF4VThsclRkbUNRNGpWdUNpOS00UXFUNUFIN0dOdFlLVFBNZ1U3UDdhSU0xdUlnNXZ0X1c3VmU2VmNiaTJYOFl0VlZITlhXSWhMdXpIMDdEVkVQSWF3V0NOcXhmSFMxYXpjdWdrd0VSdjN2ZUJxdTVtclVFbEthUC1zdw?oc=5"
+    "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPTzZyRUlhS2p5bTVDZHFjS09EN1NpbTBtRS1UakVmR09SSFJVVmxWMmdlMmJXUWpidWUxdHB5UTMyN1JOMGFuRjJaZUw3X3k3N05SSVNGYkhtZEdjc0hUVmVWWlI2SnFOak5KdlRHbndGNVJHOXVyZWlrNWJOTUZKN3NsQUxMYl9UMXVXMW5ack1yUk5GbmpGNklnUWZsUzlVdFlFVHBYV29sbE1ycmhOQVhIb3p5ckREXzNoMlRtcWkwRDdkbDNqam5Jd29EaldEaWJHLTFVU0JhalNZaWNVX3VB0gHnAUFVX3lxTE1NUjkzaUM5T3pUS2NvWVFMbVdnVkZ5V0FGVFhGbjhmeTJvbVpQVy1UMEFTVXAyUjEtVHM2OUxGVmZuZldwTEY3QzdOTXRxVVBJdVB5dm05eTBvOWlueUh4bXE3QkVUbG5HbDNaTEF4VThsclRkbUNRNGpWdUNpOS00UXFUNUFIN0dOdFlLVFBNZ1U3UDdhSU0xdUlnNXZ0X1c3VmU2VmNiaTJYOFl0VlZITlhXSWhMdXpIMDdEVkVQSWF3V0NOcXhmSFMxYXpjdWdrd0VSdjN2ZUJxdTVtclVFbEthUC1zdw?oc=5",
+    "https://dotesports.com/league-of-legends/news/geng-beat-hle-lck-2026",
+    "https://dotesports.com/league-of-legends/news/al-beat-blg-lpl-2026",
+    "https://dotesports.com/dota-2/news/team-liquid-ace-exit-atf-rumors",
+    "https://dotesports.com/goddess-of-victory-nikke/news/nikke-bunny-guilty-sin-sugar-release",
+    "https://dotesports.com/fortnite/news/start-end-dates-for-all-fortnite-seasons",
+    "https://esports.gg/news/dota-2/team-liquid-bids-farewell-to-ace/",
+    "https://esports.gg/interviews/overwatch/the-team-south-korea-vs-saudi-arabia-rivalry-at-owwc-2026-we-will-win-it-again/",
+    "https://gameriv.com/sony-reportedly-shuts-down-fan-made-the-last-of-us-part-ii-multiplayer-mod/"
   ],
   "title_hashes": [
-    "923355643190119bc4c785dc4fa17004",
-    "433406b49fcc0c761123f2c7dd2905a6",
-    "5c29e34f37236299de6d8280317a4bff",
-    "6c2850de90492ae0e11fefbc4cfcb9eb",
-    "65acd45f24f4daf9ba1b2e3ca1f03873",
-    "91df46bb7d2068e969733c44cde54980",
-    "55c33ef4fa4c41bb5dfa162c4cc0c06b",
-    "37dc111314a8dc97b9b69545169a4f27",
     "7f93892f9c5610605d406137b4c3a35c",
     "2f1543d6c5c5836c6d8c6bbca0b307cf",
     "8a8ad9bed7edfa773a2d1db97557a435",
@@ -16001,7 +15993,15 @@
     "850d1d695ede7a8ff8904a779f7082ca",
     "874766323ff4465dd70f7a98c3fa26af",
     "f40bfa9c7c9c017d2fa50282e4a59a68",
-    "1e49292a560473f51f7d574e03b3db75"
+    "1e49292a560473f51f7d574e03b3db75",
+    "f6e64a02b1f6b4ee6c52cc9d420965a7",
+    "44c0542412f69424b1ca1209fc414ddb",
+    "e368394d01e54d7abecd73d1d9851531",
+    "16e36c69c5d451bf50499da0a939461b",
+    "81f3c7237996db5c33b86cb49076641b",
+    "20a552926eb014d9a0c3adab0568c1c4",
+    "f098daee973bb3cf37267d273fcd0648",
+    "c3bfdf8181075f5919852ad3b86b3360"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -17015,7 +17015,6 @@
     },
     "overwatch:Overwatch World Cup/2026": {
       "revids": [
-        "1144177",
         "1144215",
         "1144227",
         "1144251",
@@ -17034,9 +17033,10 @@
         "1146597",
         "1146709",
         "1146760",
-        "1146775"
+        "1146775",
+        "1146789"
       ],
-      "size": 41011
+      "size": 41391
     },
     "overwatch:Spacestation Gaming": {
       "revids": [
