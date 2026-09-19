@@ -1,21 +1,5 @@
 {
   "urls": [
-    "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9vMVpIWjJ3VE1QbmpZbDZEOEwtSTQwaU1iZVltRnpSdGhQVkQ4SU9MY3VaaEdnejdmRURoQjZMOEZqM0UydHl3N3o2R0liSTdVdkpfZDB1NGVhWHhyM0daOTk5MA?oc=5",
-    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1FS1RaSHdtWFprbXNkMmUzcGw5SVFVZEIzZFRiYUlRWVZ1dW9td1dHM2hPZFZfblpuMTR1bWZjVDA0ZFl3Z29OX1JCM0J1Z1FYSWpZdWJkUGJ2TDlm?oc=5",
-    "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNTgySElFajhkVVRQQXhrODdlcHlTallYWEpnSUN3TGNrZzFDd2NpVWZWb2l1djc3bERqTEZnYkNmSUJxS3JaRU1YVWRuUjZ4V0dyc1pmTklGeTh0dUJ6OVlVaWxUNmFuOXRGcW5lXzU2cVZsZ2d0TXNLZTJ1VVRaR1pjMk85WU5qd0c3QkVoRzg2Zm8?oc=5",
-    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQeUZST0dzeWs2M1ZQX1hsRmpRRjV5NURUVVoxN2NxeVlJTlg5VGRrclpNZ0Q0Tm0xc0VHVWoyT0R4dVhuRTZjZ0Q4VjQ1QVhLNXBmN3RqWElKSmQwclBDeVpITHAyeDc1UVAwN0x6VVpncmlrZDFiRUlXMWJ5amVicUNaMGk2X2FPZ1A4?oc=5",
-    "https://news.google.com/rss/articles/CBMickFVX3lxTFBUR19mZDExdDR2UmN1S1hRNnFtaW9WQUhnejlEazE3VG9LVW5ScS1zYWYtb3ZLMzhCTkR0NUZJZDd2NlVUcTRiVVZhOWRpRm5DU2F4a0NNY3ptcFZIYUg3ckhKdkVEMkFVR2paN0ZHcmRaZw?oc=5",
-    "https://news.google.com/rss/articles/CBMifkFVX3lxTE9EZ1J4VnVINWxMUzM2bHFHUS1rOTZPaXM1bUt5MnoxdVExM04wLWtGaWdwQjl3MkZaSUVnZjRCVmg4dWQyMmxydVhQc0U5T2JpNktnRE00YjNVTkhiYm1acE5FYlVzQy1FYndCakoxOXNIWlZZMWo5Q19rMmdjdw?oc=5",
-    "https://news.google.com/rss/articles/CBMiXEFVX3lxTE13bFNhN29QeDZhREk3S3dpY0JCd19zT25BZnJ2cUo0REs5Q3dzZlFMX1dsdWM1RkhkcWNYblEwdUp5SGtuZ2JwYkRuNFg0d3pjUjB1NUJBS0U4YUF2?oc=5",
-    "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNmRHLVZxTm5SWXNlV2F3QlJ4VHpaRFhQQi1CUWlFTDVtbWhGcjNrcGNkWEZ4ZldGVnFPc2FwQ08wak1ZYmt5Ykp6TVRXaG5kbTdTS2pSbjFpN1dFLTB3Sm5iQTFnazhTeS1fdUhLVDJmMzFuX3lGSE5vN2JhdF9zSGlpdXhVcmo1OXN4cnpaR21rc3otSjZn?oc=5",
-    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPYWJvWTZtZHJGaFdXd01hc0xmTDJrX3g3RWp4QmRPNEFKdm82eDc0VUM3RkItWHVvN292c0RuOV80Y25XT1UzMmt4MUxySjMtYl9EVmVKT1AyaWllSnZuc0R1RWJSSjRtdWVNb0FDZUtVRUFVZVZOY2tzWEE3cWc2SkhLNHlIZ3g4V09N?oc=5",
-    "https://news.google.com/rss/articles/CBMidEFVX3lxTFB1ODgwTHhaVUJSZ2VtSHZlWVV0VkMzb2RSaWEzTld4SmR3R1o0R3piM1pjcl8yYW5JMFZDbGdRNFJ5UWxTcW9laURTYk0tNjFMQ1kzNVdSbkVlLWZrMkVCS3lOempnVWU4bTVfSDYwanVZTGhK?oc=5",
-    "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQUZUTHIwZ3Noei1XRERJYlpqNVpJQ0VYQXoycnZnX25GWXFzbk11Z2pUMEtyV3cycEZ6TFlzZ18tWVpXak4tdUhZWTgyY0tNNEpSeDhwYWZfN2N4eFNzaWVrU0h4YktJM3d0Z0VRTHVwLXIyZFdpU0pyUk5zeFR0ZFF6NlRLWWJVQTFrMmE0LVFvUzQ0U29B?oc=5",
-    "https://news.google.com/rss/articles/CBMijgFBVV95cUxQLUhKMU8xUWVraHdSd1JBTF9wM0RxRzc4MTE1RkVxRUp2MzczUzVvSHlCSmNBZmtMNlBMa2E5TmpTYWQ0cExlTENfZ01nQWxGNUJjRmpLMFd1c01mR2xSVTktSW40NGEwU185ZjZHY2lnQXRWYThKUF9EQzcxUFN3X2hPdlRZcUFLZVFnZEhR?oc=5",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRk8yVEx2VmplZG05UVN1Umx2VmdPck1NdVlqWWU5MG1zRFhVUEpwNXFaQ01ERHVJeE43bnJ6Y2RSWGRjdXhDalNzX1JScGxBVHBCenAwczdUQ2FwVmRYajl5bzZKS0p0dmZvd2k3emRDeG1EM1NQS0JoYnFoT1RRTFJhb3Jyb2JnNHNzNWxfdl96Q1V4RzBxa19PejhKWDNZdWdicjFKSlNoUVNnOGdz0gG8AUFVX3lxTFAyX1lBeHpGeDlBeDAtUmNMZWUxU1FEZGZFdVdWdG9NZnBRbmgwbkREQ0VPWFp5TDE1N2ZiU3VCa2FZdG83Q2dPXzRLTk9JTUZoeWtMX1k4SzBOMU15TUQwWUhXNmdUWktueWlmUFNYM2pNckY3TUcyR1BNYXdRcWtnaWx5X19fMk1kRURvbEVFV19hbnY3UFlwZ3ZCaDhMZ2tLZXdvMHZkaERrV0lsQkVzLUFJRFVpSlpSYlBC?oc=5",
-    "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZWFRRHdHVExqWmk2UkpxdVF4STB0enROdDJpbjE5R2tRRWk5ZWNWa3VZWmlLWmtxQldLaWp0cHhldk5vOHFZdG9ka1dzXzF5ZFFGcEw2UnFqQUNzdDhYTC1TUUVMZFZueUN5dFFoWEZoczNxNDJMNXdJb19SblliLWZtcGY0dmFMWFdqRFBTTFluSktZUUE?oc=5",
-    "https://news.google.com/rss/articles/CBMickFVX3lxTFBvTzhpOVJQOEFiTFpiM2xuOXRuNnVXVnM2MnBFVG44YklwZWN1T2I3cUlaS0ZXR05VQjdXMEpicXJoSFU5Z2V2ZWZhQ2EzV2QxdllnbkNIUEhDdC1FUU5pTE0zYVU2ZFVZNFplN0FKYjBzUQ?oc=5",
-    "https://news.google.com/rss/articles/CBMigwFBVV95cUxONXZrakxqUGJZd1hSX3pQcEx2c1kxOVJ4UmVBa1VoN0J1cXF5cWdCbWxLRjZyeVBURTdXZE1mdkZhTVo0amdVOTVPVnNIdVNxajRTWXpzX3luWTBSTDBKZldOb0RsVDh6UVZRX280VFc2dnpPY0c1WTh3VHdfVU1ZcV83bw?oc=5",
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVmw0dGpaLWJLTXozN1M3YS1qUXNLZzVVektPVmFrRjlfandJWjhDRFR5d2NtYWQ3X29Eb2FDME9kQzNidDlkdUUzYk9ZMHhnYnBpN3Rrc0dpTXBUdjFQdzM0RzNOUlEwVjNnNjZmdFIwazRGSTdhdm0ybjZ2QmlsZ1BWM2txQ3czSFdNWVBxN1E2N0hOMGVJek8zRWYtTmllRVd3RGtTX3pEUElieDBpSDVmY1VnT0JSRWc?oc=5",
     "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTzdhYml0a3hTSU5LdERsRXp5dy0xOVM2NnBVUjRCMUVURm5VM1BNMWdIeU9kSEpQTEhBR2xkQTRBUlYteHA5NFd4QW0ya01vaURWNTBQeDBDdjZ1ZFVOM2Y3MGNRTUpoNDExLVU4QTVNRkpQcXlxaTRPZmtzWWwwNjZR?oc=5",
     "https://www.hltv.org/news/45052/nip-and-faze-on-brink-of-early-elimination-after-xse-pro-league-day-two",
@@ -7999,24 +7983,25 @@
     "https://www.hotspawn.com/rocket-league/news/rlcs-2027-break-unreal-engine-6",
     "https://news.google.com/rss/articles/CBMiREFVX3lxTE9KRWVRZXdGOTJudW9kaUx1UktzZjNYTmo1Zjd4VnB6c01FaGlTaElEYjFGQ1h3cEZwMThUdUxmWFRrb21H?oc=5",
     "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nQnRQLXRhOGZSRU16MDYxcUQzZndaMWZRalNoVUZlSDdOclY1RFltS3prVW5ydm53R0l3VjBCc1dreS1XOG14bElOV2RHR3dMOWpwQWs5Z21XNnB6a2ZiTQ?oc=5",
-    "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJUlJ1UVdhVi1RSDVEWmk5Snhka3VGaTAxSlJmUERKcEd2WkFoWm41V3E2OFVaUWVnM2g5TFl3NmZmYUpHUEZKVGtYZWNpYXlKNWM0akVn?oc=5"
+    "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJUlJ1UVdhVi1RSDVEWmk5Snhka3VGaTAxSlJmUERKcEd2WkFoWm41V3E2OFVaUWVnM2g5TFl3NmZmYUpHUEZKVGtYZWNpYXlKNWM0akVn?oc=5",
+    "https://www.vlr.gg/757396/coach-joe-quot-shopify-has-been-the-team-to-beat-in-game-changers-quot",
+    "https://insider-gaming.com/fareidolia-hands-on-preview-tokyo-game-show-nexon/",
+    "https://insider-gaming.com/last-of-us-director-apologizes-god-of-war-laufey/",
+    "https://insider-gaming.com/the-finals-new-chapter-october-20/",
+    "https://insider-gaming.com/arc-raiders-frozen-trail-trailer-september-23/",
+    "https://gameriv.com/apex-legends-bans-258-predator-players-for-account-sharing/",
+    "https://www.nerfplz.com/2026/09/riot-bans-296416-accounts-for-boosting.html",
+    "https://www.hotspawn.com/counter-strike/news/complete-competitive-counter-strike-map-pool-history",
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9seUxWUzJ3WXktQUhNX1NxWS1IQ3k0U3dUOWhmVnhKRUFoeHJYYzJzS3ZnUkhzYWFoTkJpMmNRUEFsZVVQWW1IMVhTSmU4TlU?oc=5",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53a1l5bC16SFVHajJiaDFKUWt5c3p5UEF5RU9zOURyNzk5Y05Vc0NNc2Q4LVJ2bEpkWEZwbDJGVkhzLXUyQzJwbDlYeTMyUlBMTDNLUF9QMExCT1U?oc=5",
+    "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5Wb2FsbHFJMjRwWnhOT3JkTFlubHJNd194U0wyQVc0TWxsNGlfMFdrWkhYZVFiRk44MGtvVWRJNy1NUldZNzZsR1JYVm1PUQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiTkFVX3lxTE15dHBrSmI3cnhKcjNGMTFwUmQzMlZ1ZjZnbXdSRGVoUWNfYkpKSE5Xb3RjNWZzVURGVExvUHUxeG5kdkUyZ3pTSWg0bFlfQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00bnFMQ0tLcS1wWGVHQ2dta3BDM1QteTNSR2lkNHpDZ2hVdndLNDY1TkRpcG1XTUNwZ19vWjJ3UGszMVdlVjVQVzRJV200MnJmNkNlenpiSVkwT21YNExHVnM2dFh2dkU?oc=5",
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQUFRCSVVXT3hCTm9WeGU5bkp3NGhTS3MwNTA4eUhxb2NTTk1GSU1MYVE3aVgxcVd0M1BZWUtabWVnaFFVUElRUUJ0WGpDMi10SWQwU1prY3ZWM1BlQlg2S3E2eTBSemlPOGhTOVg2a0haaG9uTHdqS05DRzdodjVIM3JvTVhlWTdhNEswVkJ0WUNwbENqUXQ4UTBYT3Z0NDkzUXhUb2FkZlYzcFpxemt3WFRCaU0?oc=5",
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTE5NVmNxazl3UFJFYkhRSnhIX1FFN3NZOHFQTmFSQ25mazZzS1lFZ1NYVVFvdnFieUNZcmRZZmEwUkNoXzJKSVFkWTdoYlU2WV9WUEYwZ3U2Q25nMTFKUWdQcXI3Y0FOaHVIY0d2X0MtVTVYN19w?oc=5",
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObHB1cGVad1ZsZHpLc2hWbFdlYk5EVTM4Wk84Y2ZfWWlpeVNiYTR4ZVpxbjd1T3RZS3hUUlBHZHBRcHlCcllZUjRmOE1LdnY4Y3VsM1JZdHNpV3ZydEFDOGg2a29EYkFnZ2NaOFRsbm5zaU81MzVyYjhKMVZQTXVtRjc4UUJlVE40NFc5dWwzcV9jMVFTT3VPQU43Z3BndFMwSmdlOUJweE14dThUMDVkUjk5bW5UOGt4Qlo2Vk1DbnNiQQ?oc=5"
   ],
   "title_hashes": [
-    "c1a4e5f1258b3ad84052e80f333a0bec",
-    "9bd33bf8166d5f9c94638cccdefe4b3d",
-    "799855594adc0f2bd7302c69d3234b5a",
-    "850d1d695ede7a8ff8904a779f7082ca",
-    "850d1d695ede7a8ff8904a779f7082ca",
-    "850d1d695ede7a8ff8904a779f7082ca",
-    "c843b35e7339472eb5d987143a4ac379",
-    "40743848a034b3652c4d8951fc093025",
-    "3edef337e57a711a16c836666620bfad",
-    "f00a32a9fb4153a6f5ab252ab073fe9d",
-    "c093374aa66f4d1c4b2e795c552dbc2f",
-    "03011f38578d990bb2ce281f4a964a62",
-    "7e9e5e12e5d23ccb3c03d11cb07ed286",
-    "baac7dc58e492c2153b3c63813000f3f",
-    "458d52470e6faa3c7dbe70cb892c4058",
     "79a26b3e127fc9d9391af80897e4d1e3",
     "8771e4719e29132986b867e0ad727759",
     "790d2defb3e0661c8289ca984e6b6f4f",
@@ -16001,7 +15986,22 @@
     "a9e2033eebe413842b5f1810bfe4a560",
     "850d1d695ede7a8ff8904a779f7082ca",
     "b23a882887feaea8ea43b892555f0ab7",
-    "a3ba218e818b79a0a1c1f7bb431bd603"
+    "a3ba218e818b79a0a1c1f7bb431bd603",
+    "2bfb5cc28b1b6dde43c67c6b278c9b66",
+    "65683057032a39c02ed808866152ebb1",
+    "2cb6290e57eca512e8e1b07b31f6108a",
+    "fd31a84df5a1aeb7962d7a5359ca5c8f",
+    "2cd2e55e8dc9cc113fccf21d570f7383",
+    "2bbf0651dc0db2d11e363cd9004c293e",
+    "a691e024d3be334a1a1605a57d95e327",
+    "d176e48848c593bb68e84b288ab8d7bb",
+    "850d1d695ede7a8ff8904a779f7082ca",
+    "8fd3b753f975be669c0315ba0690cf02",
+    "b4999d1367f4e3b2455bc523013475d5",
+    "f5abaadcf68a75307fe8e4e7be6351fa",
+    "517dce057e04d2ead25e96d4b879cdd5",
+    "12f20238e114856b13eda9d2e29fced3",
+    "5684132e497cf3777655833b93e2a2d2"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -16618,7 +16618,6 @@
     },
     "rocketleague:Rocket League Championship Series/2026": {
       "revids": [
-        "2100485",
         "2100753",
         "2100762",
         "2100765",
@@ -16637,9 +16636,10 @@
         "2102525",
         "2102565",
         "2102711",
-        "2102836"
+        "2102836",
+        "2102851"
       ],
-      "size": 60261
+      "size": 59940
     },
     "rocketleague:Team Vitality": {
       "revids": [
