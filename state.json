@@ -1,17 +1,5 @@
 {
   "urls": [
-    "https://insider-gaming.com/steam-machine-user-reports-first-red-line-of-death-gpu-failure/",
-    "https://esportsradar.gg/riot-games-expected-to-generate-10-million-in-sales-from-riftbound-x-t1-trading-cards/",
-    "https://esportsradar.gg/navers-chzzk-to-exclusively-livestream-esports-world-cup-2026-in-korean/",
-    "https://esportsradar.gg/dignitas-launches-mob-psycho-merchandise-line-with-times-square-billboard/",
-    "https://esports.gg/guides/genshin-impact/odette-kit/",
-    "https://esports.gg/guides/betting/california-online-casinos/",
-    "https://gameriv.com/marathons-cyberacme-prime-time-iii-contract-temporarily-disabled-for-being-too-rewarding/",
-    "https://www.hotspawn.com/league-of-legends/news/blg-viper-msi-2026-interview/",
-    "https://www.gamesindustry.biz/where-did-all-the-uk-game-events-go",
-    "https://www.gamesindustry.biz/industry-veteran-robert-bowling-launches-new-developer-18bravo",
-    "https://www.gamesindustry.biz/we-are-profoundly-disappointed-by-sonys-decision-game-companies-express-dismay-at-the-end-of-playstation-disc-production",
-    "https://europeangaming.eu/portal/press-releases/2026/07/03/208816/iconic-21-marks-americas-250th-anniversary-with-new-buffalo-slot/",
     "https://europeangaming.eu/portal/press-releases/2026/07/03/208809/gaming-in-the-nordics-launch-event-in-copenhagen-key-highlights/",
     "https://europeangaming.eu/portal/interviews/2026/07/03/208803/yoni-sidi-wiztech-group-interview/",
     "https://esportsafricanews.com/the-community-economy-what-africas-esports-industry-can-learn-from-free-fires-remarkable-rise/",
@@ -7999,18 +7987,21 @@
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUEMxdnFFek5OUjBtNUtMMXQzcUVUWTdFZFNSMWlBd0hFOEdWWklDN0FLNGItMTZOZTRINTNVVlpQWHlvRE9BSHVRZmdKQnRQMTdfSk5IWm9RR21iZHA2SlpFRXJTQ3htWWRrdkZkVktCcnNpS0ZheWdwRFlHN01IUldCTkFGLWpxb1hwU0tXYWxyMHVYYmhtNkFhTHcyZDM4WERFYnlkdE81OUh0b0JGcnNoWDBPaEpINUE?oc=5",
     "https://news.google.com/rss/articles/CBMia0FVX3lxTE5scnR5TUR3WG1WLWJCMnc4QlBZSVNkMFZwaGstdGZrWnctZDhEWlFkTzNuMnhZdDA5LUFyU2lsUFZDTjlyOG9TcHNZVlBOeGpsR3RyQUp6Rko0N2VPamRYanRCY3VaWW5RRGtN?oc=5",
     "https://news.google.com/rss/articles/CBMidkFVX3lxTE52OHRIVjk3Zjg3UkFIYTcxRzQxeHU1MGt6eFJFNVBjM3RGRmZoT1JSekVYRkpxaktLWHFKSEtiTm01bnpua1g3STZnbWpWYVI1VmZwcFYxUzlpOGNVU3kyNkdoSHlQaVpNTjJsRlBzZVR6My1Ic3c?oc=5",
-    "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOGlOc0t3amdoS1d0aHYzWmZMa3NlaVB6U0VmcEpvYnlTcUVVSWYxc3FLdTM1VnhFWFVwYWhrc2dBcXV2bXFPUlpFTVJEUXNLbGVDb2F5dWZwOXUxaVhMTFFzRUFQMzVfUElvaEZSWW4yLXBOUDBsMzA3X0ItOFNocXpObUFPZw?oc=5"
+    "https://news.google.com/rss/articles/CBMihgFBVV95cUxPOGlOc0t3amdoS1d0aHYzWmZMa3NlaVB6U0VmcEpvYnlTcUVVSWYxc3FLdTM1VnhFWFVwYWhrc2dBcXV2bXFPUlpFTVJEUXNLbGVDb2F5dWZwOXUxaVhMTFFzRUFQMzVfUElvaEZSWW4yLXBOUDBsMzA3X0ItOFNocXpObUFPZw?oc=5",
+    "https://www.hotspawn.com/league-of-legends/news/mkoi-vs-g2-preview",
+    "https://europeangaming.eu/portal/interviews/2026/09/20/214440/aarti-carl-eeze-interview/",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9RRldZejUxaklDYzNDMF9xazVlalN0b1JVWU54aGRwNnRObmNEc29GMWlIRFZ3dHZuWjZqNXpmcEdaNUdWVkRIc1UyUll5SkhfRUcwM3UyWGowWG8?oc=5",
+    "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBid0FfZU11b0JlLV96ZXdhY3FsQ0pHQUxWckpUQnJaOWtUWjRaYlZnWUhlaHRhNl9WMVJGbVBoSFRhUmwtQ2V2cThIQWtJNDhUaWc?oc=5",
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE52WlI0WDNXXzZvc2kyNk45T2pqdUIzajlqN0pBYTQ1bk1uLW9VRUE5OEFEemI4M1F4R0p6UWpsUUlRN2hUa01HZkFmRlhrYlY3YTFR?oc=5",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9QVlV5d1AzaWpVeWhGR25iYVBFZVZZbXFtcExGWnVidWNKNXhMSGlVSFRiY1E5bHV0RnNRZnZjVlF0b1IwMUlOTlVTOFhCdzBJV2drYUw4R3gyRndmblZpU0t1SE5obVhV?oc=5",
+    "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9vMVpIWjJ3VE1QbmpZbDZEOEwtSTQwaU1iZVltRnpSdGhQVkQ4SU9MY3VaaEdnejdmRURoQjZMOEZqM0UydHl3N3o2R0liSTdVdkpfZDB1NGVhWHhyM0daOTk5MA?oc=5",
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbU5VcVRUbEkxOTM1SVNCNTVTVWlHMlJZOC1JcDUxWklJV1RjTFlxSUtSdDkzd0tKNE1INWF2UHJieGZSSm9wV0hHbGppS2ZueHBiR01GbVdKZVNfQ0RyNTNwR1RZZGpfZlI5Z2t5YXRJRHYzbGxTNTNVTVJmaVA0Qi03cktnd0lVSU1RSHZHRkpQVDZnMjI2cVc2NktMaGJndWhybE9MdkpwTzBvNEZZNUctWGkxbHhkczFKTWFwSVJBbjlVT1N1UjV3cw?oc=5",
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVmw0dGpaLWJLTXozN1M3YS1qUXNLZzVVektPVmFrRjlfandJWjhDRFR5d2NtYWQ3X29Eb2FDME9kQzNidDlkdUUzYk9ZMHhnYnBpN3Rrc0dpTXBUdjFQdzM0RzNOUlEwVjNnNjZmdFIwazRGSTdhdm0ybjZ2QmlsZ1BWM2txQ3czSFdNWVBxN1E2N0hOMGVJek8zRWYtTmllRVd3RGtTX3pEUElieDBpSDVmY1VnT0JSRWc?oc=5",
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0tak9qeHBKcFFmRDF4Snk3blhqYmRUYURuWlZMV1R3ZkhjcGxBanVGcjI5VXRlWjJLTGltYm9tZkxIOTlkeGFpTjA2LXRVbDNOYlBhRExXRzJFbzB6elhvanJlTldCcTg?oc=5",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWVBSYzJza2xpTTdyaUxhTWJQdjBvVnBwUkhQNmFXcGV2YWw1U185T3g1QnpSYWhaVG0zVk5IRGtacGJkbm53WERJemZjWG9ETVJ1bXFzSkNzNEQ4UUtONmpXSEpOZ0Z0UWtxeUNxUEMxOU1oOVhDMDVQaTZFVU9Rd2h2V0NhZVIyZWQ1NG9hNE1Hc0VDTjA1N0xrckFBaENiUzdLLTBSUWpOUGRIcS1BOXJLOFBtdw?oc=5",
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHJ2SHVXR1l3b1VCb08yWVQ4RnNYblk1MzI0RW01a01EaWhHMThaMl9oN0RYeVRUaUZhNU54WmlyUlBoREtQY25QMUdBSHdhZVB3eUQ5OEVacVoyY0ZYaU5MQjc4ay0taXM1SGhjYTZqUU5Dejh5MEhlWmhBVFlmWENKMHFjOXBDTjZfMHdROTdiaC04UlJ4SjFPRGVIVW4tOE9LSWpuSDhxTjJmdU9HZzF2NjV2QlNOT3h6RUZR?oc=5"
   ],
   "title_hashes": [
-    "532118e8ea7bb7097915a1575ed84a2b",
-    "f96aa4917a7fcfd8103b06cafac4a511",
-    "92fb515284321fa16f766e17ab63aa88",
-    "30334f16c2ff631b2c1c59060d49308c",
-    "635b6fc572167ceba6e33d0d949d2b85",
-    "e65f0f7356662395420df255b48830aa",
-    "3371c53db9bb54b429fc93ce2c8e7d14",
-    "9b165bb851f85935dcd33f047d3c8783",
-    "69d063687ee8791486bf40072486de6f",
     "c1c0bf7a8918eb883b943115213061a7",
     "fec761280a616b81c7adf8e261162d3e",
     "842a34c13e1bdd74c501c7a3a3f6564b",
@@ -16001,7 +15992,16 @@
     "c4ee08700a030419a56f75dbb2836557",
     "33bde9aaaa9031ceb0288b6235e6747b",
     "c680c792b90e37d32bb606fe45695a74",
-    "f1e03fafa15a6043b47f252cae6a2aa2"
+    "f1e03fafa15a6043b47f252cae6a2aa2",
+    "7aaff6466bd668093ba8680b78e3eb52",
+    "807213e9dec75e68886101e37ffa7708",
+    "7ec955171b5d52e54aca6012675054b6",
+    "ff83c09963f41ecbe17ed9d356684dcb",
+    "ca61354e1481e17addec635585e8f10e",
+    "fcc9d83b94cba580db3454bf24958905",
+    "b5a1b7f7e41f25dcb06236b7b8638177",
+    "b785d71fd002c54481e54ad477a1bc6c",
+    "d9adbc63651d4e24c46290c1afa51214"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -16469,9 +16469,10 @@
         "2402733",
         "2418917",
         "2422456",
-        "2427337"
+        "2427337",
+        "2429781"
       ],
-      "size": 68358
+      "size": 68686
     },
     "dota2:Team Spirit": {
       "revids": [
@@ -16618,7 +16619,6 @@
     },
     "rocketleague:Rocket League Championship Series/2026": {
       "revids": [
-        "2101329",
         "2101564",
         "2101609",
         "2101699",
@@ -16637,9 +16637,10 @@
         "2102851",
         "2102890",
         "2102944",
-        "2103129"
+        "2103129",
+        "2103190"
       ],
-      "size": 61443
+      "size": 61556
     },
     "rocketleague:Team Vitality": {
       "revids": [
