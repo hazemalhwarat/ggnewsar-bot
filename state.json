@@ -1,11 +1,5 @@
 {
   "urls": [
-    "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GOHg4WVN6TE55aGxidTUtOXloM0NpM1l5dUc2eVNMRGllU2xjM2NBT1BlVlF3NGhVRG4zZTE4bjZiSnhrblJaTjZUYTRKNE0zV0lPSm5DOXJNODdDa3MyTw?oc=5",
-    "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13ckhOVDR6YklOT3hFZ2VSa0N4YmMtMmxicjgzdVJNZUZEWkdfa0tTSWpQci0yY2psUlFySTQ0V3Y3djg1bDdWdklBRm0zN2Y4QXIyWVhJWDRyTHZUYy00aTBMNl9GUQ?oc=5",
-    "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBNZzdWSlVMM0tsYnJta2s5UFU5YkhJMzVkSUNwVEFQZmdKTnVhMTZkN0FiVWpteHd3UXRsZkYzNWt5aDB1NzVHWmlMN3ZsZE00OUdSOHRGTXRaREdES2xnakF1QlpTZw?oc=5",
-    "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9NdTBZQ1VhZ1pxeXdHY0pKSUc5VTQ0a3dXZzhoZUtOOUQ1YXNnZGpWQ09zekFJVUNYNE5ndV9weWkwR0xKbXBtSG1GRQ?oc=5",
-    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kZThDT05ieGo5alhOOVpfMlNxS3lsNl80aGRFcmQ4VjduNFhZSW9NTFkyUkhSbjdMelg2cll1RVpwXzdNaUJ3SG9lMlVfU2VLVnR5eHNqdXV0bWx3NERQalFra2E3dlk?oc=5",
-    "https://news.google.com/rss/articles/CBMib0FVX3lxTE1QWUdrbW00ZG9MdndhV3pKdE1OME1ndl95WGVEeU94Q190M2NXME96aDJPbTJqdWtTZXdMR011ZXh4TVdyY2QtUWZRM3F2cUdKa0hWZ1QyaGh3MFc1YzVMVkFaZkUxWWFvVXVqRGUwcw?oc=5",
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBFSldMSGNLZGJ4MUNmNEtXRTlSRU9ONTlVWnpSaHMydDlyczZKcFV6QXJSMi1fVlc4b1ZRd2lpWUo2Q1VfcllTY0pUbXFoWDVpdmowYTZSM3JXd0FacW12M0hUUlh3c0Rl?oc=5",
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTOXFLZjFvRzdYaGhGRlpFNV94RFh3M0dUanZremxjS2tnVkUtV3dDaFplZlBGbmZEWTU4dzcyMmtTOFhZVDhaZ0puR0dVdTZPV0NiQjlMZllSbzYzeHdnajROeXAwa29v?oc=5",
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8tUFhVZXZ1U3pxTmdhTnNNMWhMaTN4NUEtMHhmNHZDY253TFdwRVNSdkxnLU0ybldSX0QzU2hPUHFIWVJ3YnpDX3A1a0w4bDEyOGJLMDI3bVFBZlRIcWNvZV9qT01rdWtC?oc=5",
@@ -7999,15 +7993,15 @@
     "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNT3NfaDhCck5UNExDYU5LWnJyLWp3ME14Y3A1OWN6R1BKUklCRmMwZjI5WWlqVWhibjRnLWd4WEJkNV95RTBhc2xIekNfQWo2SG10b29DWWJ6REJnazZnRlZicFVGSzVtdUZZY0NQZGJQTmxVamFSdmNMWHNEN2VVNERfb0ZwTDdWcWFiLTB0bWJ5ZHktYTF5NGlaOGk0R09tZW1DQWpkQlZiSHM?oc=5",
     "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMGRpTVZQWU1weC01UmtpTUxXVzJnM09uQnQyTU9yRThRSzZERENNdkd6QjN3YTN4VUVpMmpOVnBIcDFubWV0UWl1OFp1Q0J0X1JJTDRDYV81aGt0bWJUb2NiZXMzaHJVRDZBcFFUbDRDSkQybGh6SlZGOGxIRkYtRDQ1NktPY1ZRVGp4ZkROZ0FBVi00T01sV3VlZHpIVnVaMmM1OTZUVDRlaXkyYlBLaHdUc3dZZGpCUXZWRjdR?oc=5",
     "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcWFuNWUxeHczVTN2ZnNVVzREdlNYM2pQY3NFd0ZWYVhBUkZjM1NLWDVuTi1leXBRWTFpamNWemdVY2hFWnJLZVBBN0NIR1AzLTFxZ2M4R1NCTTBraW9sQVp3N3R0WFZVTU12Z0JabTBibWhvbDFHbEpTd1VqYWtibTB6UG5faV82LUN1bFVmb3YtNy1KN1E?oc=5",
-    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TTVJxTnExc2JlUDVramVNNm43SERRMVh2aUExQUZsOXVVU1M2SU5KT0l1N0l5bXRZX21kd0JTVXBLdE9xSTV4bTAzYmowNmphaW44SXMxcUI3Sm1SbXZldk1n?oc=5"
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TTVJxTnExc2JlUDVramVNNm43SERRMVh2aUExQUZsOXVVU1M2SU5KT0l1N0l5bXRZX21kd0JTVXBLdE9xSTV4bTAzYmowNmphaW44SXMxcUI3Sm1SbXZldk1n?oc=5",
+    "https://dotesports.com/fgc/news/maximilian-dood-fgc-twitter-drama",
+    "https://dotesports.com/league-of-legends/news/red-bull-league-of-its-own-spain",
+    "https://www.hotspawn.com/dota2/news/team-spirit-roster-shuffle-2026",
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZFB3MGptSjVTRXNTSFZZYnlvQzR5MW94SnZYaERpNU1NMm5oeEduMnB2YW9ZczQwZXAzZC1CT2JVdE5tbkduNXRwUEVXOWtONDljSDNDMHNkcVJySzJwYmRtbVh6TzBkWDkwS2Q3cWd3NkY2alZqQUdOZDBROGJTck41R2M3UU9YZUJ5eW1QNWxGRDNBQUtxWDNVQ2ZXWFdSLVlHd0hKTWctRW9aQm80RkhMd0tEQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTFB3YWF6YUd1THZrU2lhUm9mNnlpRE4yOGdQS0lvaHNPeVlBRnFZWmttVnRjU1hjUFhCOVRYbTJZYTNzcXRxVW9DWGVFRzR0V05FZHcwR1Y4Sk5uTlpwUUNkMmVIVm5CM05iWWQzRm4zd3JTZ3YzTmc?oc=5",
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcng1a0hSZldaU2FPZ1B2LXBTa2xjMmlrbmt3VDRIaXBsR1NzOXZKbnhVOGZSMDk2WTN2SzRGUncxTV9oc3FSOE9LSUN1cFNxNlFjeWpfMG1XTDFQNnBkT0tEMzRfTm84bFdTSEhqOFFWQU9jNkNKeW5hdU5qMUlSeVRHTXI1NGZSZXZvLV9kQkRZaDRPWWlUYnpZUTlpdXlZSGNfTA?oc=5"
   ],
   "title_hashes": [
-    "c28fb1a15d9a6973434d66167b60c77b",
-    "4f1a33bcf867f282d97570ee307e4d04",
-    "29d4b05b24a39bd435f4fcff8b624a8e",
-    "fd2e461569b3335a088fe47082b8deb6",
-    "8fbefb38bc374e53ef718aac5ed4a95c",
-    "6d828a0443b051dedcc13edf226956e2",
     "e80681579198f21036c1e9c09dc74327",
     "cd9a28fefb0b278ea0f2ab9f05fd9f4c",
     "175b0127012408274ce776e0bc61a91c",
@@ -16001,7 +15995,13 @@
     "ad01779955bd7b8515c070dc6aaac3b2",
     "c08690801cb9d1fca03b07db8a3e202f",
     "60c00ca985e57b208b07be8009139436",
-    "c4c9b8dd7ec6283f0d5b4f09d79776af"
+    "c4c9b8dd7ec6283f0d5b4f09d79776af",
+    "8c0d999964cd3aad3d643e5f43bf4e4c",
+    "5f2222f5572ca498af1d1b648d976249",
+    "defc34a70225846b56e75204a1f48d53",
+    "edfa0ac8391c4c4b824fc4e4bc98b02c",
+    "d82414d179c12d4f5c01348347aa2719",
+    "cb4b37ed9751c128ee7af4ac10e02343"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -16627,7 +16627,6 @@
     },
     "rocketleague:Rocket League Championship Series/2026": {
       "revids": [
-        "2101753",
         "2101801",
         "2101842",
         "2101962",
@@ -16646,7 +16645,8 @@
         "2103190",
         "2103336",
         "2103461",
-        "2103520"
+        "2103520",
+        "2103632"
       ],
       "size": 61939
     },
