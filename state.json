@@ -1,16 +1,5 @@
 {
   "urls": [
-    "https://www.gamesindustry.biz/the-market-is-becoming-much-more-diverse-will-the-proliferation-of-football-video-games-last",
-    "https://www.gamesindustry.biz/netflix-playground-drives-600-surge-in-kids-games-engagement",
-    "https://www.gamesindustry.biz/there-has-to-be-a-reason-for-people-to-buy-an-xbox-senior-leadership-reinforces-commitment-to-console-exclusivity",
-    "https://www.gamesindustry.biz/32-workers-at-zaum-laid-off-following-release-of-zero-parades-for-dead-spies",
-    "https://www.gamesindustry.biz/sky-high-prices-risk-disaster-for-a-console-market-struggling-to-grow-opinion",
-    "https://www.gamesindustry.biz/bethesda-reveals-plans-for-fallout-5-the-elder-scrolls-6-and-more",
-    "https://www.gamesindustry.biz/ukie-22-of-uk-games-industry-workforce-affected-by-job-losses-in-last-three-years",
-    "https://www.gamesindustry.biz/gamecity-hamburg-announces-second-round-of-prototype-funding",
-    "https://www.gamesindustry.biz/developbrighton-showed-the-uk-games-industry-is-done-with-hand-wringing-and-is-determined-to-save-itself-opinion",
-    "https://www.gamesindustry.biz/newzoo-gta-6-pre-orders-generate-260m-globally-during-first-week-of-campaign",
-    "https://www.gamesindustry.biz/why-releasing-games-on-the-web-could-be-right-for-your-studio-in-2026",
     "https://www.gamesindustry.biz/london-games-festival-moves-to-central-venue-for-2027-showcase",
     "https://www.gamesindustry.biz/if-i-work-on-that-my-kids-will-think-im-gandalf-blackbird-interactive-on-the-highs-and-lows-of-external-development",
     "https://www.gamesindustry.biz/clair-obscur-expedition-33-wins-best-game-at-developstar-awards-2026",
@@ -7999,19 +7988,20 @@
     "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTkdmc3gtZHQxdUtMZkVjd3pPWjdqLTJHdE9IeDd4YW9jczFsODRlb2JOWlZCY2dhOE9lX2M2bVVmVElWRG82Y3czMDJIVG5jTEpOc3NJNlRpUm5MUDhRaG02Y1RtMlF2QlZNTlctWnVKUTF0dzJNenBvZVQ5d0xyVXJLTHFnTktIOTlLZF9XaFM3Q1pJdm1NZDBjdnVvYXBQUnZhNEJFWVZjMU5iVmNrRFZHajFJQQ?oc=5",
     "https://news.google.com/rss/articles/CBMiekFVX3lxTE5mdzk1RTNwQXE2YkxVSUFxQmJIWlFNUTlEUElFSHdEOW1tN0VzTV84SFhFN0FZTnNpS0RWTldBMXpVcXdKUm1HRGNIQW5obzFxaV9tZkFkbTB5a21TejY3Tl81R2pSdlVqVEcwWEYtc1BvZWNGb19VR0lR?oc=5",
     "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTktla01XM2FVd2xhQ2VSdTROd1lzUWhPQ0lETU5CV1ZxOFhGbG5GRWVhdEF5b0dZbXZxMC1wakpSY3FmV0JMclA3T095emlZakFRb1hxeUZLa2E2Vm5QM1pXQU9DUHZrMHJXdG9mdHliQkRab2RaaTBUQzkySXVfbWZB?oc=5",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcHpwdHZ2d01lYXdOY3hFSXh4TnNnd2tmY0dXYmIzZ3pNMFV6Y3RPb1BwMEpybmxSbzA2RnVpM1RLdE5lMlVkMjR4bWkyMFFYZ2ZNMXRNbDhKQjcxQ3lGTG9jUXQ1ZzJ3c3dhVVBJUGtRUVJjTEtsRjRoaEs5MkItSg?oc=5"
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcHpwdHZ2d01lYXdOY3hFSXh4TnNnd2tmY0dXYmIzZ3pNMFV6Y3RPb1BwMEpybmxSbzA2RnVpM1RLdE5lMlVkMjR4bWkyMFFYZ2ZNMXRNbDhKQjcxQ3lGTG9jUXQ1ZzJ3c3dhVVBJUGtRUVJjTEtsRjRoaEs5MkItSg?oc=5",
+    "https://dotesports.com/fortnite/news/fortnite-madison-beer-skin-collab",
+    "https://dotesports.com/counter-strike/news/complexity-shuts-down-operations",
+    "https://dotesports.com/general/news/xbox-mythic-achievement-platinum-trophy",
+    "https://insider-gaming.com/nyt-strands-934-hints-and-answers-for-september-23/",
+    "https://www.hotspawn.com/league-of-legends/news/lcp-wild-card-tournament-organizers",
+    "https://news.google.com/rss/articles/CBMieEFVX3lxTE10MjRTaUNrc1V5TWhYbVVtbURwUE1vb1d3ZXdua2owMDhqMnFwbGlsOHROYkQ0RGQ5UDhNYW01emRwY1p3cDFJTWo0NjR6UnQxYUZnYWY2Zks4dHgzWGNpM1pfNWowaV9BZ3Y3U1dsWkt6dGZMbTRwYQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9DMk1oRzhaUzdyNGRJejdRd0dRX1F1RDI1WVczdUdvRW4yOUM5WFlieEJfcmwwNmd0Mkpja2YtcEhER3d1WXRaWEEtWE9tU04xZWFPclhWRWZXS1E0Y0ZYUVZELXBTTXVu?oc=5",
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxPVjZZVmtCRTNQZlppQTZpR2MxVG1RRDB6ZVZBMUtCUjBCaGdBRnpwRnIxZEFNRWdxeXctZF9ndXk1S1RLSUFURDVKWS0wZmFGWjlkR2E4UmJPTFNHSThvNU90c3k2M01jbkVIdGoxR04xNFJoTE1tN0V1ZTM4Z0t3b0d2bFJfTkMzbmNmLVRkbnZ1N0JJVzUySF9B?oc=5",
+    "https://news.google.com/rss/articles/CBMitwJBVV95cUxNZ3NlRDByYUxJQkt6bGZYdHVTV0JtVGRBZjFVWnJDaDlHSnlPcWNJZFVndzBnVzJxTjB6OGxvaEFVUkFrMnB4cWZpWWdBLU5QOV9UMVJNbDZTYkFZWXhLZGU4Rkc4QWQyd25BTEpVTTVubnlSZU9kcnVzMnRhNm1DY3FrWWZmdW9NamdLd2VwMlhfX2pEaDZJX05OSTU0LVJ5SDNkOWlDcGhsWFg2eWVjTFoxNmVzdjBub0pBaDdVRTNXRlpROWotZXhrWGo4RnNxcFhYMmFraV9CdDFvUEoxWG5nLXl4RllsSGpQWDQtLUN0dVREOWRRa3JzaFpFUnBmclF1VktqN1pfaVNSVnl6LW00V0gtVVhtN0V4b3ozU01xeXNIWjU1N01mTDZnc0J5S2RaRVJfQQ?oc=5",
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT2VqSnB3Mll1alk3bXdmbGR4SXZlUllidkNEanRUN05mbXNQby01S3JrMHpOVWhpX1RYeTMzdEhSd3g0aTVWU25ZR19BRloxRWlpOU83dXlsVUFucWlycllJRE4ybE1JRWR4YjRreDFmOEZWVmE5ekpTQXBsTFdfM0Y2MXVxUXJkVXdLYkhPVW9zUzlwNVBFSTd3ZGtpSmJLcVc4TzNDNi1aTzFSQndjSzJNRHprZkhRTldj?oc=5",
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYk1URmZmelVHUkFMN1ZtSUJKcFBZUUxISFZVLXNxdXpvVkcwb05ZMlc2eUlCQU9la1N4T3ZsSU5nOVYtanN1MVZ0RlVvWnF0V05jSU9Gck1rQnNudDBkcl9RZXRhSWFhYU5mNzdUQ3hYOUZwYVlTN1Juam9Wam9aQThteHZ3SXdidHc?oc=5"
   ],
   "title_hashes": [
-    "3f45967a8262142bf2a23ed2f756cec8",
-    "3713f371dbc478dfb12dae64cf592331",
-    "ae5d69a046e6a587070b449347fbde7a",
-    "3d040055c38815ff40de099249597833",
-    "728b892e0ae97356834f4b8f97fd4b6d",
-    "20675dcc58e99e2652df0d2f0bd7f30a",
-    "c6faf22072e944272ab2bf543c596a6e",
-    "fe07d809fe19578deadaaaab02cdff00",
-    "a7bc0af86a19a6768f0dcb2e107f1618",
-    "c5e53cf2dc79da849447b7698c0e26d3",
     "5a3db2ea0dc90bb663b5ba1dc811d8de",
     "fbe07a610219d234019cdef1abc89ac0",
     "9f6923d8f71e4d8266657f566d7085bf",
@@ -16001,7 +15991,17 @@
     "9aea71993eed82ef683916a8db7a936b",
     "443c59d8fc5a94cbb41add3a316e03ec",
     "c7155e3431c3dc9d4d8bb0f09d71178f",
-    "24044ef5336338902599465644da6458"
+    "24044ef5336338902599465644da6458",
+    "e35ec45a0579fb8017ac646ca242835c",
+    "4f8fb4a480b957b5fd1e6bc900bbddc8",
+    "ca6ac6c19c6aa97c93ef0b2e1e571c9d",
+    "6ac3606dc24f81598f500c875fc7fd5a",
+    "a808b039eca44301cbe92e71133e47fa",
+    "799855594adc0f2bd7302c69d3234b5a",
+    "5aa7c0719ea0b8dd26ecf57fd4763495",
+    "bc7e3a2e2e590b256f9343113422beeb",
+    "555e23db069a609faf25fd835d485f56",
+    "bce9256977acb4515703160342e4107e"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -16329,7 +16329,6 @@
     },
     "valorant:VCT/2026/Champions": {
       "revids": [
-        "1320655",
         "1320693",
         "1320697",
         "1320734",
@@ -16348,9 +16347,10 @@
         "1324570",
         "1324934",
         "1325017",
-        "1325341"
+        "1325341",
+        "1325536"
       ],
-      "size": 21505
+      "size": 21394
     },
     "valorant:Gen.G Esports": {
       "revids": [
