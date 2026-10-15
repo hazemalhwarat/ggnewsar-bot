@@ -1,31 +1,5 @@
 {
   "urls": [
-    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPTUFVcDh5Wmgwd3A4VjVXcWpHZmlwRG15Y3g5TU1qa3BaQmhlMGlCZndnb1F2N0ZLX3Fnb3E2Y19zMVJ0djdjODl2WEVua05OakRCVmt5cDVidDNFUXd2NUdPZi00R0wzbTJCX29RV2VQeVcyal9JTHZ4dkd4ZHRuSEp1aWg2T09PNmhBZlFDTXlfaXFJNzUzTkNOQ0QxX2kxMTNneVVpVmJmdw?oc=5",
-    "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZXpONnROcTJUdlRVYWc2Q3l3U2VSUXpRUGdNdGI2bmcxX1RlaGd4YlFhV0NCaXpHY2ZMWkhzZzYtU1lnMURlMVVjd1Z1MHBta2hRVW5KRW1oalRsWkNQUXhSYXVjM3lyOGpmazNXb2Q4VEpPeW55S0dPTHRMa3d2RmlTWXZPbDFDVUQ1S1ZWYWpTN0NPLWJUOEVPbGtYdVE?oc=5",
-    "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdmRnSDlTN19pMkI5dXJpUEx4VDdpTlJrVlNWSUtQZU1maTFtNUFSQjFyZ0s2Z01haUNLRENBNFNQelRqdTNLWTdNT2R0c3FPQzh5TjVrVnpHZ1hUSTk2aUhUZFpvaXJJb09CTVZ3eHczWjFEUUE1VlhBa2JsclRPYjdiSkZIUWc?oc=5",
-    "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sYnJFNHpla1c0XzlwYmZERm9fR1NSUHRDeUZybVl3NlFscXRBSnd4UHFLTTFURFNsc0xFNERtVGF3YmNWaEs2amRwdzkteXNMN1pnaHVXS2tKYnRBM1RhZjBWZXZFN1ZqZ205TW5EbWpPc2s?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBTaXJNOGFuQmdVVjJ5Y3FtR2Y5VUJnbkNtcUZOZzhwejR4TDI1dlJDMU1uTWVmUGpUbHRNNWtGRFdYUVVGd1pFUEVfWm1vYVNDTkl3NTJBRjVfRG1TNVpBX0ZxUFMxNmdB?oc=5",
-    "https://news.google.com/rss/articles/CBMiggFBVV95cUxQQ3JNYTJkRml4aXRYM1d0TThDbnZ6MVVveHNsR2NJLTh1dDBlOGZ5MjNvRWtibXNnd3VfMGQ3RUJPblhKa3JYUWE4UFJoRXlRR0UzOThpWHBIcno5WFhaeVlha2c5RnROR2VXdEVCekw4VDJOZURnM2g0RW1kUzlsdWFR?oc=5",
-    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUUkzdjhKWjJIZllVa3l5QnM3dl9KWjBJc3RnZzBxN2J1bjU0SHdSVXAwbTlxcUxLYnFkM3ZQX0NpOE41SlUwSTRTTmt5RVpRSWRGUHZUOGNhQkNteUJTSnNWVV9uSHZ2RzYxN05xTWtQemRSTnowdzJkdUN6c0R6U1dvd0VDMUVlNzJB?oc=5",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxONDRZWWtfRTdMeURwQ2hOeWVjQ29PRThTNTBYS0ZvRDgzR1EtMlg5U3B6aWdPQ2dZLXZ4dmxnQlE1REZSNE1JdUJWOWp0RE05ajZsUi0tSGNmclVHV1VtalFpa1pCbTRGZ082S245YnNLNW9jRGZHZUdBYkNJcWRMNg?oc=5",
-    "https://news.google.com/rss/articles/CBMif0FVX3lxTE1NMG13YnJMc0tWMWdaeG8wOHBscF9xSWZTTG02a1hFdjlablhUWWRiX3JuQWVfUkRhLU9KWVlnN1VwOGZhUWwzRVEyZzNyNkxrRnhYQVFBVjhqYWt2U21aQTZZU3UyZWZqUC1HT2R3VU1kdlBvNzZLYXNlS0UzZ28?oc=5",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQThXc3VLSll4Q1J4TmVVSWtDNDRIUXFueGZzd2hRajhRNlZGd2hVVTlCcl8yOGFCVmp2UkFNM0R1eUVjQ2RoWUxBdHBYWHpHYkZJRWthUUEyTnVLOEJQWFpiSllpQXJzUTY1SXlnQVVkeERjbndCUG9MRjQ2U3JNVw?oc=5",
-    "https://news.google.com/rss/articles/CBMifkFVX3lxTE9pRldVbjZuMEU3NWxqaklQUGMwa1IzQ2R2NFk5ZzhsSG5LZWxtTnRiNzZmaEJmd2h6OHk2eDJqZHUzZUFsY1ZUZmNpbmJhWXZSUEhzbDIwdVFCWDY4Ykx5M3ZrZ3BWQnJ2eGRPeUVOVkxza0FmMGxtamcwTTdGZw?oc=5",
-    "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMi15cDNFTjNjQ3VPa2t0cHZZS2ZCTFpIa0dOREljaUo2ZjdLc2RiVU1ybkhVMEt2cmxqZ1hLTkZNU0NYWGlPb2RPZnRKUEpfU0lQVldKWnNYbk9DZUVmNmxOYXBCRWNnYWxNa0FkbGNFcTI2M01sQVd0Y0JHdkpvaA?oc=5",
-    "https://news.google.com/rss/articles/CBMijAJBVV95cUxOclZtRms1ZEtrSmhLdEVtRndGWTV5aHNmVUpsRkJwUkdXOGVCcTZzMzVFTDBlN3BHTXd3NVhJMHA1Nnd6QXotbFlEMkNqX0Vuc1lvbEpQTUh3MGRMUURWT0ZoOU5MTTJJSjFqT05aSmpRaDZkVHByam1OT0M0anpIUlFreDFGeFMyUW1Hak9xWF9rQk9zWXpQeVo5eWFIZlJaaEJScWswN3V3YkVJUThqSHNBVXZwemZjT2ctZzZjYS1UcGdGNjZUS1B4QTlGS3R5UjJ6dnFhLTFYdGxxQjhnNmhoOExTYTFKVzZma0cyQThjMFZfZmZTWjNmU3NtWnlGMTlrV1VucFB1dTJM0gGYAUFVX3lxTE5kRktkZUJxNVdhZUNlcUJJMnlfSU9vbVhCaVdJVGs4bTFsSmJzaFF0ZzBHajFkZ1ZCMHp4SnVWUmoza0hHTVM0ZUtaWC1ueEJycDdxdkRNQXFRcDVZenliQkt5RUFYUzFQV2FXRHJaY2RXc3E4Sl9WXzE5N2RrU2tpR1JvUUttdmRjM19oLWhkZFk5N1FEcmhF?oc=5",
-    "https://www.hltv.org/news/45334/ewc-playoffs-fantasy-open-to-play",
-    "https://www.hltv.org/news/45296/saw-we-needed-someone-more-aggressive",
-    "https://dotesports.com/general/news/s1mple-bcgame-cs2-contender",
-    "https://esports-news.co.uk/2026/08/18/esports-nations-cup-postponed-2027-team-gb/",
-    "https://esports-news.co.uk/2026/08/18/coinpoker-daily-dollar-tournament-5000-sunday-guarantee/",
-    "https://insider-gaming.com/control-resonant-goes-gold-but-physical-edition-delayed/",
-    "https://insider-gaming.com/the-blood-of-dawnwalker-game-length-hours/",
-    "https://insider-gaming.com/exclusive-star-wars-galactic-racer-dev-confident-of-living-up-to-prestige-of-the-franchise/",
-    "https://insider-gaming.com/exclusive-why-rewarding-failure-is-crucial-to-star-wars-galactic-racer/",
-    "https://insider-gaming.com/mcdonalds-offering-fallout-themed-food-promo-side-missions/",
-    "https://insider-gaming.com/game-devs-plan-to-launch-games-china-most-dont-understand/",
-    "https://insider-gaming.com/how-to-get-redeem-modern-warfare-4-beta-code-obtain-a-free-beta-key/",
-    "https://insider-gaming.com/blood-of-dawnwalkers-final-boss-can-be-beaten-almost-immediately/",
     "https://insider-gaming.com/when-fallout-season-3-coming-out-explained-date/",
     "https://insider-gaming.com/xbox-game-pass-august-2026-wave-2-titles-revealed/",
     "https://esportsradar.gg/lorem-ipsum-dolor-sit-amet-5/",
@@ -7999,35 +7973,35 @@
     "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yVGN0U1d5SGFtT0hNR2R6RmxreVV5RU5nX1N1V2phVDI3V2NobmNyRkZxdUlaa2stRTFtVjE1ZmNaZEd0S3Vla2MtbEZYNUZqVl95X1d4X25XS3JRNGFIeEtyWDZoOGJoTWhsQnZWUQ?oc=5",
     "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNURnOFMxVHg4RU1lMUVIeGhRRnY1S2JrVnh5NEVNb291WWd3enlPc00zZkN2UFlZT3l0WGs0dF94VjhGQUltSXpfRkREWnNHWnpOaHhPMElKMVZDZDQ0ZTFaNWVpcHFCRXFiUlBaUkZWZXh3eVBYQVVGNDZSdm8yUkZ2Q213dEZjVjdUMkRUT3hmMDNwdEFrRFJ0SzNMQ3dFRzlyVVpTcXh1QQ?oc=5",
     "https://news.google.com/rss/articles/CBMibkFVX3lxTE9XUW8zdktUU2xEengwMUw0QmRNMHN4X1pNYmlyd280Q25xUW9KNnl1d0pELWtQTzBMSmQ2aVNqSzN0b29GamdwaXlZamtEM3pEdjVyaUs4aFJGNFNCaDE1bmt3Sk9hWE5GMVNQU2pn?oc=5",
-    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQlIyNnRXNnBrUEdBQmZkWUNlbEd3ZVl2NWgyaWVyazZIZ25zMjl4dWZ4d2tHSHo1RVdBWC1Oa05hWWx1MDN4ZUdaUXJLTWNUdXNXYm1KMDkxX3p1WWo3TldDQ2VhWTdwbGZhY3EtRWNwUnRkUl9PeDdNdV9pY3Q2V2dGblB1bFVDYk42Y0VJazNZLWwwbTd6T1BVbkVELUNxU0VZS2ZEc3h5Tm93Tk5mc2VpOFjSAcIBQVVfeXFMTWtXeUpjWVRYUkNNVTZneHIxZ2g0dEFqSWptaTJidTlqR0hGanlvSmpUYUY0cGttTGVBamtSVjROWF8yaDBtTlJBYW9wRUFPcDVwSl9wMEh5Z0RvY09rZEJkeU5wdldPN1ZuSG1SSm5IQXJ0Y1ljY1pmVW9lVU10ZEE5cUFtTWRrNGRGeXR2bTlBUVNVTUJ0Z0Q3NllNbGxDQ0R1WVB4cTBVb0Qyd3E3bGNSdnYxcTdXZUNOem1zeEpaa3c?oc=5"
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPQlIyNnRXNnBrUEdBQmZkWUNlbEd3ZVl2NWgyaWVyazZIZ25zMjl4dWZ4d2tHSHo1RVdBWC1Oa05hWWx1MDN4ZUdaUXJLTWNUdXNXYm1KMDkxX3p1WWo3TldDQ2VhWTdwbGZhY3EtRWNwUnRkUl9PeDdNdV9pY3Q2V2dGblB1bFVDYk42Y0VJazNZLWwwbTd6T1BVbkVELUNxU0VZS2ZEc3h5Tm93Tk5mc2VpOFjSAcIBQVVfeXFMTWtXeUpjWVRYUkNNVTZneHIxZ2g0dEFqSWptaTJidTlqR0hGanlvSmpUYUY0cGttTGVBamtSVjROWF8yaDBtTlJBYW9wRUFPcDVwSl9wMEh5Z0RvY09rZEJkeU5wdldPN1ZuSG1SSm5IQXJ0Y1ljY1pmVW9lVU10ZEE5cUFtTWRrNGRGeXR2bTlBUVNVTUJ0Z0Q3NllNbGxDQ0R1WVB4cTBVb0Qyd3E3bGNSdnYxcTdXZUNOem1zeEpaa3c?oc=5",
+    "https://www.hltv.org/news/45729/betboom-eliminate-parivision-from-twc",
+    "https://www.vlr.gg/773166/emea-kickoff-qualifiers-format-revealed",
+    "https://insider-gaming.com/cdpr-has-taken-several-years-to-give-project-hadar-a-coherent-vision/",
+    "https://insider-gaming.com/peak-console-release-date-revealed-for-ps5-xbox-and-switch-2/",
+    "https://insider-gaming.com/wordle-hints-answer-october-16-2026-1945/",
+    "https://insider-gaming.com/preview-the-expanse-osiris-reborn-is-a-game-you-shouldnt-sleep-on/",
+    "https://insider-gaming.com/riot-games-and-louis-vuitton-publish-k-da-travel-book-tempo-point/",
+    "https://insider-gaming.com/vct-2027-emea-kickoff-qualifiers-outline/",
+    "https://insider-gaming.com/former-twitch-director-geoff-keighley-game-awards/",
+    "https://insider-gaming.com/gta-6-and-modern-warfare-4-are-the-biggest-games-of-the-year-says-activision-cmo/",
+    "https://insider-gaming.com/dying-light-scarier-new-audio-partnership/",
+    "https://esportsradar.gg/2026-valorant-champions-bundle-raises-over-50-million-for-esports-teams/",
+    "https://www.nerfplz.com/2026/10/reading-team-comps-in-lol-questions-to.html",
+    "https://esportsadvocate.net/2026/10/fifa-postpones-fifae-finals-2026-jeddah/",
+    "https://esportsadvocate.net/2026/10/esports-government-france-ewc-national-pride/",
+    "https://traxion.gg/track-titan-partners-with-fia-for-sim-racing-and-esports-driver-development/",
+    "https://www.hotspawn.com/league-of-legends/news/esports-become-sport-brazil",
+    "https://www.hotspawn.com/league-of-legends/news/louis-vuitton-tempo-point",
+    "https://www.hotspawn.com/valorant/news/americas-valorant-champions-shanghai",
+    "https://www.hotspawn.com/valorant/news/vct-emea-kickoff-open-qualifiers",
+    "https://esportsafricanews.com/beyond-the-arena-what-a-decade-of-ufa-reveals-about-africas-fighting-game-future/",
+    "https://news.google.com/rss/articles/CBMicEFVX3lxTE41R3IzVzZpZ2x0X0hkaWxCVjhPYURoeTR3QXZZR2pzbVNONXZSaTBGZGU0RC1yVGkxVlRaUE1QMkRmdWEwSjZ5cnlfc3NtREVFcUNjUjJsNU5ZOUFkVl9DdVd6UzVzMzdVMDNDODZnX2k?oc=5",
+    "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92Mk5aS3NwemsyZlRodW0wNlRFME1YQ0NwLS04ME44VFc0SGVTMnBXYU5WSUFma1hDcTdmN0JVeWk3c1JDWlVjM2VSY0syd1pnS0ZHaHlSMjA2X3NjV0ZhdA?oc=5",
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxOcjdMYjVyaVJzcG04S0FmRzhVazNudVcyWklTWWV2SHFXSzNhODdiZHhCVER1SE9uak5jWEZiNW1tRktQeURMcVc4VE1oMFBPUTVFRHFPXzhkWDg2enRVQnhicWxLVi1pUXRDdHFQYk1rc05BOU5SQWV0SE4zU3Y3b3dSNFVMSlZKeGg4bDJjUQ?oc=5",
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeG9lZjkxNzcxcEZMTTdod0U1Z240aWtXTDVkU1FvdnRaNU9sVmwtRUFNX09POS0xdGZTSGRweDItZ1BSamZHVUJLeEhXbkZzX3FqVGcyMTlvY3I2QkFKYWZFSmxGNG9oTWtUdkxkVTV2SFJ2WlFDVnU1YXZEdlBtWDE1NWs3M0lYdmdjSkNtZTU2WjBMaWVSc3oyVjhVaS1J?oc=5",
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQWtqMk1NX1FxXzI5VWpfMGxoOVFKREFheEMySDV6M3laMVRWS05tQWY5eEZ6NkU0MHZCQzh1dG8yaGo2bV8zYWRTN0Z2Y3h6WlVQbjFzeEN6ZEQzbWxKdGZMV3VNaWZ0eFB3UWpmSG1hc0d6a05qclgwaWtGNjlyZ2xva3llcW15emVBMzZKV0JqMEJZTmxvNmFFdEd4UUd5THNOSllWSzgzTkJkU3JUN2tyNnVSanh3N0NJ?oc=5"
   ],
   "title_hashes": [
-    "b76bc2ef32608e58d0d11d59452253b4",
-    "b7f7d19c2669b1630bd5801cb3ab120b",
-    "aafd40bfe813f07c2032bdceb04dadc8",
-    "12759b236b67a0e1316b2bd227958410",
-    "9b1a886173b8227c86cc0a821c49ffff",
-    "5c007ad4d7c56f9f27e0b0ca5e8ba2a9",
-    "0f49256bb0c1fae6b90c8e4f307179bc",
-    "b0dc470bff5684335498a9ef57fb4325",
-    "66d08b857964dfd11320942ae58861ca",
-    "6d41926b5850ced8f27d15fe5d9f3c44",
-    "da01353d5f88030110338bd4547406b6",
-    "c91915b582774e49e2e6fbca8433073d",
-    "ed9632ca85e62d66f117fc184d039c6c",
-    "d72c89994134a89aab689ab0219dfec8",
-    "1421e55d24aaa9ac807c4274cd3932b4",
-    "35370fe56e4ff8d849cef307a546bf2c",
-    "cb2b9ae63f1ab438f31572f23fa14c96",
-    "ad99bcd3d879812164b8400e5ddb7623",
-    "1cdac0bd7677e4bf506d96803a2f311f",
-    "04295cea3e421f0beb7adab32c152aaa",
-    "03d76ac2396bb86c2afa10c2956dc665",
-    "5275751e1e29375e69b8aae819153fa4",
-    "a7dc8eed64df710afbbc0d1fa3e0e586",
-    "a0f7373c66b9ef9e3e31b598359a1d0d",
-    "0e5cdef17fcfacb7732abc527fb9bc50",
-    "0e67550618c8ba45690206aa2b91bcd4",
     "67c1f60e15b8c55b99d2532a953dfedc",
     "53d5b24c71a59232d88272c48151b411",
     "683bf09261188c2169cbd301513662c9",
@@ -16001,7 +15975,33 @@
     "eeb5cfe614ad6317e4254031afe95224",
     "ca2929c676ccff416ad52b4c82ced405",
     "3293599e7f3f69fd20e0076f05c4aa99",
-    "3cdb4ccd82847a73a6d1a25262e030aa"
+    "3cdb4ccd82847a73a6d1a25262e030aa",
+    "ac4512f216d097b4acd54f04fb6d34b7",
+    "a9a28e840047dd054e1f35dc5b17990f",
+    "479a6178686a43e7ad545aae524d6168",
+    "930ca8c56d6695909cc0331f4e844b2d",
+    "650646890e0b372c3b51334796fdccbb",
+    "e3beca2ab3591acec1aa233fd25b3d13",
+    "677f398c23e2c3d23471b6b38af22f96",
+    "aae3f14c648c06ff06621ee8b1f55706",
+    "b6693b4ec0a6b5c17164d09fb4dce681",
+    "c2543c3c09074727775638b1433f807c",
+    "5d3cd928d94ca538d663ab32426e5f26",
+    "017b3ee450d90ca53854852f31b8c829",
+    "dcae296c9cdd78e2c3ce71f0a9d285c9",
+    "ef7b3b9a868f04189161d7923a7a7a5f",
+    "c22034189499b073169992ef0586a226",
+    "f701253e64f4c873ee5afaacf4622382",
+    "d00fc9b68d82cee7ca9291da2f7a9508",
+    "505d7815056dce29da937d2a2e3253eb",
+    "9fc8dbbf2792813f2301fa81d6b2fdb2",
+    "cd6c718380bf89cb9ee8b84a3da5bc09",
+    "9b2ee2bce2cb5eb71d806ecc06541060",
+    "4a6bc09bc190b903ffb220d0eb3adb53",
+    "799855594adc0f2bd7302c69d3234b5a",
+    "83264ab9700889bd0a1d1c0b1530d9b6",
+    "fc14225d0ac6bebc6254c6e74b5cee84",
+    "9b93b5b2dd63b1eb8bdc99b7494efdab"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -16201,7 +16201,8 @@
         "3449384",
         "3449698",
         "3458571",
-        "3459662"
+        "3459662",
+        "3459784"
       ],
       "size": 36997
     },
@@ -16509,7 +16510,8 @@
         "2432051",
         "2432606",
         "2433122",
-        "2433663"
+        "2433663",
+        "2439595"
       ],
       "size": 69398
     },
@@ -16533,7 +16535,6 @@
     },
     "dota2:The International/2026": {
       "revids": [
-        "2415345",
         "2415785",
         "2415933",
         "2416006",
@@ -16552,9 +16553,10 @@
         "2420338",
         "2420793",
         "2421982",
-        "2428048"
+        "2428048",
+        "2439711"
       ],
-      "size": 30398
+      "size": 30411
     },
     "dota2:Tundra Esports": {
       "revids": [
@@ -17216,9 +17218,10 @@
     },
     "apexlegends:NRG": {
       "revids": [
-        "596369"
+        "596369",
+        "624656"
       ],
-      "size": 21038
+      "size": 22064
     },
     "fortnite:Team Falcons": {
       "revids": [
