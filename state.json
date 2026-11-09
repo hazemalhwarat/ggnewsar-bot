@@ -1,18 +1,5 @@
 {
   "urls": [
-    "https://www.hotspawn.com/league-of-legends/news/tatu-fined-for-next-series",
-    "https://www.gamesindustry.biz/almost-1900-blizzard-workers-ratify-first-union-contract-with-microsoft",
-    "https://www.gamesindustry.biz/lego-digital-play-acquires-mobile-studio-offroad-games",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE91MHFUeHh0LTJHZVlQMUo3RHBod0RFSkJaRG11QkNKV1F1LUxBYjBRSGVfNEZEQ25KZEFxLU55NnJFV0lRVERNd2dDNTN4OG9RdWY2SktNaGFsQmZ2cFFkaGw1VFdIYW91?oc=5",
-    "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sS1RmTEQ3U1kxT25IOWJERk9MclVuWWJ5cUdOSTVITm5hcDNTcWt4Q01LQUFGeXpQSHBSNmo1NHBFdUdHX3JFeTBQaTFTNmg5STloc0liMDZQcWt1NkJCR29ZYw?oc=5",
-    "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5QZUY1dHYzZWlXMXM2WmlIV1Y5bnI0Q3UwcFJSenA5VVlvQ1dfVUxLVXZtemRJUTR3REo4UW1Pb3otZ21mXzRJUFd0Y01UT0c3SWxlb3BTTTRaTWNNdGk5SUFyS2lCdDct?oc=5",
-    "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcmFzYS1ISk1oeGhlZmJCM1dSSFByOFhLQVV5dXAwSjNIQ1FVZDJGcDhOSS05eG44R2RCQnpDUHFFck03RnNjLVdrMkFxNF9HbTB4bDVXWkJOSlJ5TV9fRV8wQWxnRkJOMWlXVFMzdUNIQWRTWlVqTWtBZGZpVGplWE42bFZCS2F1QzJGd0w4dGlybHBZYl95RmJpUXJXazY4RmdxcVBnaF90ZXlVUmpZ?oc=5",
-    "https://insider-gaming.com/neogeo-aes-plus-delayed-september-2027/",
-    "https://insider-gaming.com/gta-6-development-since-2015/",
-    "https://insider-gaming.com/sonic-pico-park-november-12-release/",
-    "https://esports.gg/news/teamfight-tactics/tft-patch-18-2-notes-and-release-date/",
-    "https://gameriv.com/sony-drops-hideo-kojimas-physint-xbox-takes-over-publishing/",
-    "https://gameriv.com/arc-raiders-upgrades-to-unreal-engine-5-7-to-improve-performance-and-stability/",
     "https://gameriv.com/league-of-legends-patch-26-18-notes/",
     "https://esportsadvocate.net/2026/09/gamesquare-fanengine-30-percent-equity/",
     "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcVZLakZueFFwRHNFeHhjLVlSdUR1TUpudUdFY2FUX1dBUXBSdGdhRE5Xam1EOEhIOUFFR3I0b19nRFk5ZU5TQUJ4TEZLTUd1WFNyMkNnek9UbmNWZ1RfZlo1cElId1l3VnZiX2tNbkpFUDdwbFB2QzJJR1kwZnl6RDV3VGFhYlBpRnVGYTBMM1ZENHR6dmQ4azlXMV9RNWRodzRETEU4R2dfZi01?oc=5",
@@ -7999,21 +7986,22 @@
     "https://www.hotspawn.com/valorant/news/vct-emea-open-qualifiers-bonk",
     "https://news.google.com/rss/articles/CBMiakFVX3lxTE9GUkp5RjlhY01pNzNpN0FpS0tBaDhEXzdMU2F0Qk96aWkwZXRKYzc4dC1kT0Z2ZmJac0xROEtIN2h5ekV1M2FKNmcyWlU1RnA2RUpzN3BydmotbWhxNGQ2U3NQclNqalAxb3c?oc=5",
     "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IUS1yT2REa3RZa0dTaWo5RGh2WEFrbVppR01kSGlOd3JPNDBxOXJOZ25wMmF6ZnBwT0ZIRlZRUms3SmZiNUQ1N3hGVFVfRC1VOGpWQklWNkNzdzhMUnN0NDNoVS1IRlNReVhr?oc=5",
-    "https://news.google.com/rss/articles/CBMizwFBVV95cUxORmRzeXJCMGxCTFE5OV80N1ZLTXluQ2ZFcWFTVDNYbDB3SElGemNjVWZQMzdxZUZvUU5yU3U4el9FSTNTNjJ2d1dEd2xIcEhpSHB1d2wtT0ozUlg5QzVRUHFId01OZldrbkhXaGdkN2hoc2p5bmVxX0dIVGdRdHMzRGJTemhyNktHeklrZ2pQVHh4UTZhTUFmd1NZTmJWSEFqcUJkVnVBZngzcmlvYjUzNUcxR2VpbkNoc2pDUUxzX1JZajhYdG1fUzA0cE9NQzg?oc=5"
+    "https://news.google.com/rss/articles/CBMizwFBVV95cUxORmRzeXJCMGxCTFE5OV80N1ZLTXluQ2ZFcWFTVDNYbDB3SElGemNjVWZQMzdxZUZvUU5yU3U4el9FSTNTNjJ2d1dEd2xIcEhpSHB1d2wtT0ozUlg5QzVRUHFId01OZldrbkhXaGdkN2hoc2p5bmVxX0dIVGdRdHMzRGJTemhyNktHeklrZ2pQVHh4UTZhTUFmd1NZTmJWSEFqcUJkVnVBZngzcmlvYjUzNUcxR2VpbkNoc2pDUUxzX1JZajhYdG1fUzA0cE9NQzg?oc=5",
+    "https://www.talkesport.com/news/lol/blg-eliminate-t1-worlds-2026-faker-reaction/",
+    "https://www.talkesport.com/news/gta-6-racetrack-mud-club-supercar-streets/",
+    "https://www.talkesport.com/news/esports-world-cup-2026/free-fire/ffws-2026-knockout-phase-1-week-2-dates-standings-format/",
+    "https://www.talkesport.com/mobile-gaming/garena-free-fire/ffws-2026-global-finals-knockout-phase-1-week-1-results/",
+    "https://gameriv.com/osrs-hardcore-worlds-give-everyday-progression-a-fresh-purpose/",
+    "https://gameriv.com/battlefield-6-player-sues-ea-over-permanent-ban-and-wins-judge-orders-account-restoration/",
+    "https://gameriv.com/how-bonk-allegedly-cheated-in-valorant-vct-qualifier/",
+    "https://www.hotspawn.com/dota2/news/gaimin-gladiators-hint-at-return-to-dota-2-who-could-they-potentially-sign",
+    "https://www.hotspawn.com/league-of-legends/news/bilibili-gaming-t1-worlds-2026",
+    "https://europeangaming.eu/portal/press-releases/2026/11/09/217652/allwyn-national-lottery-christmas-campaign/",
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfMFl0OEdUWWl6eXFBQkktaGVnQjh2elJzT2FvOEpGTE8wSGJiRWIwODhyWXBLY3JyX3VCdV9VQm54eHlWT1N6Ti1OdHNfR1JPRjdfaXlfM0FkaTg?oc=5",
+    "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1oZXhuWEZXMjRPMFlybzJsQ2VPajg2TU1PckRYUlAwOHVrOTc1c2xYM3FmR293d24wVXBPcDA0T0hLSTF6bVpKSU5zOUtsSHZpbHBR?oc=5",
+    "https://news.google.com/rss/articles/CBMizwFBVV95cUxNdUpwc2s5MjdFRkZfekktMmZUZWIzRkZ0Y28xSTBpZTdkUXZ6eUhXcGJaaDNEX01sNFBkMkdsRUVvdWxJbXBOY3VUMlU0OVZqUVR1VUQyZmI3TEFJeFB0WUMwVHJCTV9ZLXBJOG9pWi1BUkJIWVNObGR0WWZLblJ2bFhxM05yUU5Nc0wxNGNWajdVT1RnVmtINTlhM3B6X3puT0F5Um15bTVFdDdnRmhaOGt3SXBlOUxQOHhvRW5kM2g3bDhsamlTU2RiYUh0NEk?oc=5"
   ],
   "title_hashes": [
-    "007a9bc3f0930d3c34d8fab39c02be53",
-    "11419289c045c72d7cf5c494323f9a64",
-    "aca2804c11abdb3f5ffc17c672044aca",
-    "24627de3cd15bf49861f53a5160e874e",
-    "2d9087a07a8b4f44e0b88a350c2d0330",
-    "4e3a106b3cc4204f610eda9c20be4a48",
-    "9c191842124b9ff3d05a4a180168cd77",
-    "61053c464b4ba6051593a81dcb90c078",
-    "64877d4b87a2978f76c192a271375748",
-    "b57d3cf2272f31d9a7a7f7aec1cac8b2",
-    "151bb845d2d3efc3287f2d0fa0b6b2a8",
-    "a52d34a1c42c81132943aa9817324245",
     "4a316748b20e11cc77af89d73908c1af",
     "09db6284504f597c33b9e6e66552aca2",
     "123f44b4fa32589bbe390d3e32e4aefe",
@@ -16001,7 +15989,19 @@
     "c995a6eaace06fe676c410b5263dce0d",
     "a31766084133beedeefacf37c151b714",
     "248e17e74de8ec3baebce51002957a8d",
-    "3d87306be302f7e8757e39cc00ddd1b8"
+    "3d87306be302f7e8757e39cc00ddd1b8",
+    "221e041afe829fcff52c2ad5f3eed073",
+    "b59e4c3e31cf0d6922a2746400bfacec",
+    "5c7618ed1bb930fabec03afda158740f",
+    "b294a2c4d0628ebd1c02b3d332171310",
+    "d44f85e31cc606b66afcaaa987a2cc30",
+    "dcaa5177f0ec846ca0d6e7b84912ba3a",
+    "9565f54499f5e213c8938c8a4c478841",
+    "1f14820d18212983c8112a8f4b581697",
+    "7f2de04e08a885ed04e2ab717d308308",
+    "28a70f5a324ae798db989157366244ba",
+    "7a834c1c99575ac144f54661a4f4a335",
+    "26d880be3f7653fd312398c6f91b6221"
   ],
   "liquipedia": {
     "counterstrike:Astralis": {
@@ -17152,9 +17152,10 @@
       "revids": [
         "1141768",
         "1145003",
-        "1146813"
+        "1146813",
+        "1154451"
       ],
-      "size": 22701
+      "size": 22790
     },
     "overwatch:Overwatch World Cup/2026": {
       "revids": [
@@ -17189,9 +17190,10 @@
     },
     "overwatch:T1": {
       "revids": [
-        "1141842"
+        "1141842",
+        "1154446"
       ],
-      "size": 8221
+      "size": 9157
     },
     "overwatch:Team Falcons": {
       "revids": [
